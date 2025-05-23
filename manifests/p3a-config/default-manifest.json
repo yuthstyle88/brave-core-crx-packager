@@ -1,6 +1,6 @@
 {
   "description": "P3A Configuration component",
-  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnoxEP5x4hknFEzRmhqVqQga/VB+2JoI48/fWMm0QOxmKmy/eswSTsAnW+uIPoIwIQ8zdt8rkuZo+K35gCnrhWhCgLLPFrpBdk5KHDnXyr4o8VBAsL/nd68r+F6ye5RW2UPzpfgTgWGy6KEBH23YkAJ9l0ZPU2HkL05A+rrpHtlEgi/uC8f2TfbT/BPREd+zo2rEPj/CgZhEMvAMagmVYaINSUgIZYPwItG+UCB9U0rpd1cfmsURsesWNoAz8llyMIU55TS+Bqk9S+xLrhwe6fv/AzusVOpkmv6gIToQrieDM9lJL7xNQ1rWyVvFgtT2zy+a0pRPMcaI/Qg2nwHwRCQIDAQAB",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmIWpbWlRPCHMl4U9ykbpUZmvfcIUbFd5rdJ7nM0PycNBm6aKMxLgO/AT5cvVTILCcbKWK5us/dHohMcFBMU5MgNUKHcZ6HTfuoxbb+CXMtDX9FzLNDcHzvXR0aZQa1QdgujHB/huuZPHJ9qrhiCMenjRgvr/ZlqWCg5kkoZTS6HTZ3BIuVl9NfVZPgBvBl81X5Tf4j4bzL4ZDO0jAofD2PDyP4bkogUKHMmTL3TI+faKpJECgUz7oefJ81Xdgxig98+5Y374r/leUWECOmlcQZex+ksfAG8jMTlLCg5pXJlohOmo//58s3Rsn9KmY5XFHsEVwRHQKzs3xOj0RaV0LwIDAQAB",
   "manifest_version": 2,
   "name": "P3A Configuration",
   "version": "0.0.0"

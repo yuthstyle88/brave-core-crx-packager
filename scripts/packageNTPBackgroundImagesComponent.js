@@ -21,10 +21,10 @@ const stageFiles = util.stageDir.bind(
 const generateManifestFile = (publicKey) => {
   const manifestFile = getOriginalManifest()
   const manifestContent = {
-    description: 'Brave NTP background images component',
+    description: 'iBrowe NTP background images component',
     key: publicKey,
     manifest_version: 2,
-    name: 'Brave NTP background images',
+    name: 'iBrowe NTP background images',
     version: '0.0.0'
   }
   fs.writeFileSync(manifestFile, JSON.stringify(manifestContent))

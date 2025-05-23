@@ -21,10 +21,10 @@ const stageFiles = (locale, version, outputDir) => {
 const generateManifestFile = (regionPlatform, componentData) => {
   const manifestPath = getManifestPath(regionPlatform)
   const manifestContent = {
-    description: `Brave NTP sponsored images component (${regionPlatform})`,
+    description: `iBrowe NTP sponsored images component (${regionPlatform})`,
     key: componentData.key,
     manifest_version: 2,
-    name: 'Brave NTP sponsored images',
+    name: 'iBrowe NTP sponsored images',
     version: '0.0.0'
   }
   fs.writeFileSync(manifestPath, JSON.stringify(manifestContent))

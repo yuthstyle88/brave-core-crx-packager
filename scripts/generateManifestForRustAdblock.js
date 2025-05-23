@@ -12,11 +12,11 @@ const outPath = path.join('build', 'ad-block-updater')
 
 const generateManifestFile = async (name, base64PublicKey, subdir) => {
   const manifest = '{\n' +
-                 '  "description": "Brave Ad Block Updater extension",\n' +
+                 '  "description": "iBrowe Ad Block Updater extension",\n' +
                  '  "key": "' + base64PublicKey + '",\n' +
                  '  "manifest_version": 2,\n' +
-                 '  "name": "Brave Ad Block Updater (' + name + ')",\n' +
-                 '  "version": "0.0.0"\n' +
+                 '  "name": "iBrowe Ad Block Updater (' + name + ')",\n' +
+                 '  "version": "1.0.0"\n' +
                  '}\n'
 
   const filePath = path.join(outPath, subdir, 'manifest.json')

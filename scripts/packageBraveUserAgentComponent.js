@@ -27,10 +27,10 @@ const stageFiles = (version, outputDir) => {
 const generateManifestFile = (publicKey) => {
   const manifestFile = getOriginalManifest()
   const manifestContent = {
-    description: 'Brave User Agent component',
+    description: 'iBrowe User Agent component',
     key: publicKey,
     manifest_version: 2,
-    name: 'Brave User Agent',
+    name: 'iBrowe User Agent',
     version: '0.0.0'
   }
   fs.writeFileSync(manifestFile, JSON.stringify(manifestContent))

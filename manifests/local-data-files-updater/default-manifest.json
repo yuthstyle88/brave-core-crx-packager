@@ -1,7 +1,7 @@
 {
-  "description": "Brave Local Data Files Updater extension",
-  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs4TIQXRCftLpGmQZxmm6AU8pqGKLoDyi537HGQyRKcK7j/CSXCf3vwJr7xkV72p7bayutuzyNZ3740QxBPiesfBOp8bBb8d2VgTHP3b+SuNmK/rsSRsMRhT05x8AAr/7ab6U3rW0Gsalm2653xnnQS8vt0s62xQTmC+UMXowaSLUZ0Be/TOu6lHZhOeo0NBMKc6PkOu0R1EEfP7dJR6SM/v4dBUBZ1HXcuziVbCXVyU51opZCMjlxyUlQR9pTGk+Zh5sDn1Vw1MwLnWiEfQ4EGL1V7GeI4vgLoOLgq7tmhEratHGCfC1IHm9luMACRr/ybMI6DQJOvgBvecb292FxQIDAQAB",
+  "description": "iBrowe Local Data Files Updater extension",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn8zMYhHVD4WKJstAcA0GhA68Pj70C5KbNoRuHjCzmqa9oCnAeYD3I1R0el6WIux5YrciwFM6yQr0mThA4d2Y+gbbovHzXQZtO5NC+KVNLaSz4U19V+pOW2kZUqD+1mc9oJ8a9VjpnZXdiaBREMFyILLhGYT+X2yomp+5dqyCUz39zOB3mFyI6ZnNzwsxMN4e8q14OEGkSR6Ao51Cjqhhg7rIkiL8Gv2OZIAMt/hUlg2vhedbiUW9dgj0kuH29CT0lGxjMYCYht53UCqFfOZ3TQHHV4mldAHKqJlB5dio/afXmcSfeaPm5fVHkRnRS212BQizuV7+9OGKXHbLuZNomwIDAQAB",
   "manifest_version": 2,
-  "name": "Brave Local Data Files Updater",
+  "name": "iBrowe Local Data Files Updater",
   "version": "0.0.0"
 }

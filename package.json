@@ -1,7 +1,7 @@
 {
   "name": "brave-core-crx-packager",
   "version": "1.0.0",
-  "description": "Packages component and theme extensions used in the Brave browser",
+  "description": "Packages component and theme extensions used in the iBrowe browser",
   "type": "module",
   "dependencies": {
     "@aws-sdk/client-dynamodb": "3.777.0",
@@ -10,6 +10,7 @@
     "@sentry/node": "7.120.3",
     "adblock-rs": "0.9.5",
     "brave-site-specific-scripts": "github:brave/brave-site-specific-scripts",
+    "glob": "^11.0.2",
     "p3a-config": "github:brave-experiments/p3a-config",
     "pbf": "4.0.1",
     "playlist-component": "github:brave/playlist-component",
@@ -53,7 +54,8 @@
     "package-user-model-installer-updates": "node ./scripts/packageBraveAdsResourcesComponent",
     "package-manifest-v2-extensions": "node ./scripts/packageManifestV2Extensions",
     "generate-puffpatches": "node ./scripts/generatePuffpatches",
-    "upload-component": "node ./scripts/uploadComponent"
+    "upload-component": "node ./scripts/uploadComponent",
+    "update-catalog": "node scripts/update_list_catalog.js"
   },
   "repository": {
     "type": "git",

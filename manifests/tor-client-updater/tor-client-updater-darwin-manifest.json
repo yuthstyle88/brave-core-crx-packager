@@ -1,7 +1,7 @@
 {
-  "description": "Brave Tor Client Updater extension",
-  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw2QUXSbVuRxYpItYApZ8Ly/fGeUD3A+vb3J7Ot62CF32wTfWweANWyyB+EBGfbtNDAuRlAbNk0QYeCQEttufjLh3Kd5KR5fSyyNNd2cAzAckQ8p7JdiFYjvqZLGC5vlnHgqq4O8xACX5EPwHLNFDiSpsthNmz3GCUrHrzPHjHVfy+IuucQXygnRv2fwIaAIxJmTbYm4fqsGKpfolWdMejKVAy1hc9mApZSyt4oGvUu4SJZnxlYMrY4Ze+OWbDesi2JGy+6dA1ddL9IdnwCb39CBOMNjaHeCVz0MKxdCWGPieQM0R7S1KvDCVqAkss6NAbLB6AVM0JulqxC9b+hr/xwIDAQAB",
+  "description": "iBrowe Tor Client Updater extension",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnKWbkZK+5tqglbsO1ggnTHN8R4CXR/et9hJ+Ggk0PziMK2ULJ0Cw9t7jRkOd46P9TNY2K5lz/0JcWHhOWNe/UC44Jm+kDJXzN/Ys6aGQRRKebX1MW8AQZmYDv0iyt+W3lyDbCXDYjoCCfoFgLfRD8MY6xvHsnGh6CeuJObOciKE5ie5TAAjEBdfWKrEiidg7JSTAZW7WrAwBrynvjuBWwuaXeEYr14+DK4BUsPIuFAa+lsZfzHogKNYXEFlaArtQ2TcxL/WegeuGMRp/JNqM3D/+4wLjBaFYr7E5Uam/ThC4At6oaOX11EPQu1+jeIyqQYKwcQHAEPH/pOlChLTFnwIDAQAB",
   "manifest_version": 2,
-  "name": "Brave Tor Client Updater (Mac)",
+  "name": "iBrowe Tor Client Updater (Mac)",
   "version": "0.0.0"
 }

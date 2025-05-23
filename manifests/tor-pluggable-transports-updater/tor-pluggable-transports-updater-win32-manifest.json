@@ -1,7 +1,7 @@
 {
-  "description": "Brave Tor Pluggable Transports Updater extension",
-  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0IHQS/8g4/MBIKh6qQRVQ4auvWHFaqMtCO+8C8VEqNxCxR9BWZb5kL+0QaLOeDjdbzO/YXdFSt/9tRiH4sQ//0XEuxmatKebzKSBBwg30oTveQeGrmtQf0FU3f6iPoPjtujNVmMtG2Azp33NqTH+lYwdTSDpXwZwgpt2xxBdEaBwWf/gz8OYaAniqu4xKvFpa7ai5ihRhOEP05gGFTJGSB9KbyRo4P6VSJwMZoeGlNxYSJkRr1ZpzU0lNL1qWBpBR2LCk8SpDXluT4CZeDWJ/Ux9c5nb1yma/uOscVniKvRRohudxoXxwsGSFtowmNLOZWSo49j+k3eBrFjdkzxn6QIDAQAB",
+  "description": "iBrowe Tor Pluggable Transports Updater extension",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq4SxZFtu6EvXagmr5EJntpP92w2o9dzlLlLGdc9/yob/GY3lsuXNhZh2VBrKySswnf9i6LOg1ARD3nuCqJAte5z646R1wbgUWgoYKnmhRRMkmmahGA1VLU0nwgzWL5HRYGbpb91y7HEw0EKod/WDXABi6nwlMjKaX7xW5XqVMngdB1PEjqkgE9vCgu4maOSoM8PkqKwWZDA9fBQTv6+ifs+tkCtI/v6ylWys5dv6PCAreRQBCDU5VsEm0212+bqIIWxOiDT6o2POtCCXPjbyLazcHJqOaBV08d716vJ/8N72MZCJMZjfZ/eVv/4Qy6QxZzYER6JFAPMDxOx/j4zRQQIDAQAB",
   "manifest_version": 2,
-  "name": "Brave Tor Pluggable Transports Updater (Windows)",
+  "name": "iBrowe Tor Pluggable Transports Updater (Windows)",
   "version": "0.0.0"
 }

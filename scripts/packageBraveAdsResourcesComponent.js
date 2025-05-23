@@ -244,10 +244,10 @@ const stageFiles = (locale, version, outputDir) => {
 const generateManifestFile = (componentData) => {
   const manifestFile = getOriginalManifest(componentData.locale)
   const manifestContent = {
-    description: 'Brave Ads Resources Component',
+    description: 'iBrowe Ads Resources Component',
     key: componentData.key,
     manifest_version: 2,
-    name: 'Brave Ads Resources',
+    name: 'iBrowe Ads Resources',
     version: '0.0.0'
   }
   fs.writeFileSync(manifestFile, JSON.stringify(manifestContent))

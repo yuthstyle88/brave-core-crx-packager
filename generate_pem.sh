@@ -1,0 +1,76 @@
+#!/bin/bash
+
+# กำหนดโฟลเดอร์ที่จะเก็บไฟล์ .pem
+BASE_DIR="/Users/yongyutjantaboot/WebstormProjects/brave-core-crx-packager/out-ad-block-updater-pem"
+
+# รายการ ID ทั้งหมด
+IDS=(
+acjngemejiflkehbcbomjgkbfhjlgioh
+adcocjohghhfpidemphmcmlmhnfgikei
+afggnigkiebjlahlhcjgjahbhfikcipa
+almolcgbkikkhliiibfjkohebgklegam
+beeceepafhbchnbfdkfalfipoancnjkm
+bfpgedeaaibpoidldhjcknekahbikncb
+cdbbhgbmjhfnhnmgeddbliobbofkgdhe
+cgmhmpbimmakidhlkcnnehhicoclofep
+cjoooeeofnfjohnalnghhmdlalopplja
+cpapfkpkeaajehipopnaiihfmbfbnkdp
+dcfccddjfmckaigemleendolfmmaaiii
+eaidcpcfnepdmmhbglgjhpjdfodkdcki
+eaokkjgnlhceblfhbhpeoebmfldocmnc
+fbljdmoohhbifebddjnbbljgencmpjlb
+fdmemomgcgpopbhhmdkdedkphkglhopj
+fejmaeodjeekfldnbegjagemjgnmhfof
+femdbljnkmindcakmnbjhfefepeaicnm
+flnkmpokemfpaajmiimmjeiandgoodgg
+fmddkdeghohhfoglgdpkhlnfgmmffklg
+gdlpebjigadbdpjpfpdbmogebilelnbh
+ggjlfgjhaeedkajcdpomeidjlniafdnp
+gkboaolpopklhgplhaaiboijnklogmbc
+gomenlogbembmkbghmaoledggliepdef
+hkeaopcnlcfbmbogejmbipnnopjlpiph
+hmnnhojoekmmehfpmeegehbmifiijobb
+iiglahilpgmhlcogkkihklnbcjjgpddl
+iihfaghdnbilkdhmmnnkebhodfgeaopd
+iodkpdagapdfkphljnddpjlldadblomo
+jbjcimgbgpgbgkjalhlhgldfflklfgef
+jcfckfokjmopfomnoebdkdhbhcgjfnbi
+jiajbjlakknofnkmlokcbanjbajpbdkl
+johkmlmpfakcaopiapbmcocgpkabdmed
+kdakdkdknmkkafefhcbngpinlfoopoej
+kdddfellohomdnfkdhombbddhojklibj
+keclkbppmfihehggeadflldbjpolcpgf
+kjdbffhfijkonelaglifggkchhmgmeli
+lbnibkdpkdjnookgfeogjdanfenekmpe
+ldnolaledjfkfgpjkbkcfjiaejeeanmh
+lfmefmifdjlfneapckmpkinmlofjehbp
+llgjaaddopeckcifdceaaadmemagkepi
+meimhmgfbckapkbbbdaoefgnbppmkodp
+mfddibmblmbccpadfndgakiopmmhebop
+mhccgcegedfkhdbfbgllfkkcjhgkoinc
+mjhbdghipcamfoojbeikdojibeelbmil
+mpgdjfnjjmglioiflfioiappfbdbkeno
+nbkknaieglghmocpollinelcggiehfco
+ngcohbdfildjnmfnicgdipopmlhdcokg
+nnpbcdahaefknppiijdmnckpdgojejck
+npcnkjiaolpnapjleimicclmdcccoeme
+oegebjahecghlckbhkmojgnpcgdeajdi
+oimegboipnkgekgoccmlljjlhhbjaoil
+olkjbfppmeijhkjhjjmfdbloighaigmh
+omoaeaghhgmiojkeaemjkpkmelmalbgo
+onooookdmjmijocbeafcldnbfiaobhjk
+ooamlicohiiaodkaemgoimcihidbedmp
+oojedkppeblkjkcdlmlahnhndjmbicoi
+phdmgpanpejkbmbljlhcehpadabljfbk
+phmomndefejccjmpiehbogokakkmnmgb
+)
+
+# สร้างไฟล์ .pem สำหรับแต่ละ ID
+for id in "${IDS[@]}"; do
+    pem_file="$BASE_DIR/ad-block-updater-$id.pem"
+    echo "กำลังสร้าง $pem_file"
+    openssl genrsa 2048 | openssl pkcs8 -topk8 -nocrypt -out "$pem_file"
+    chmod 600 "$pem_file"
+done
+
+echo "เสร็จสิ้นการสร้างไฟล์ทั้งหมด"

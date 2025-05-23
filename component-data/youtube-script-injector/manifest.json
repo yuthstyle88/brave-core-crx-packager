@@ -1,7 +1,7 @@
 {
-   "description": "Brave YouTube Injector Component",
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnwhDV1BTzTeDNsi+DxnyxrKqugj/a/8dKQE8usNweMkpORdxFxflbJkA5IErDyW3xca63pdMYhArPjHr0OUBACYKBfzEYF/Yo0kNxxJLWylr7FKwZxOKosmlZXUW8J2wtFu8ua6oQB2lEOk7y2jxwUAka/a0JPxeDsU9ByadmAdVZ7aaiCEGsJgEtHrpPha/2AJi8xerYLeB4bFfFc2bdXKEsN4UzjVLYpCfsKAuxEtO2QC2+Rylz60Vq3ANjjnlXINDJrl3jsSwF6GXHEE4Qzl7Qvu142N9G2rsSxMyPlunD8EGrEjK9fGRc6RPGQy1LbyY3imXpiDp0vXicCaYuwIDAQAB",
+   "description": "iBrowe YouTube Injector Component",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuBTglRmAR66CHcLG07zV9g2arclW2XiIIgLHnJegLBkizisa0aUi0uAI8jZaLQBnDCMH7HgOAGBY9JfVQCzrkg4FheoU4DAcgnFr/3jjQvLjpULy7dxw3ow9KrpmzByWGQxKtSi9s1ZMqqaQvl82xRdfX+7kbM94leU1wkmu6WpkrYOb7LkPm3qj1sV6E67zeKEPmDImdmHkei6AYF1LIK0+L9fhisF+xCNg4aEu6+0/ebNQamBtRbLPV1zcDxotlq92tPTggCiiPMLZr9RRgpBjuToQuh4+KXNJoLr9H+k6jDhDXgDARsJjJTndHdPedy7+19BvK+lAenv5dIDXQwIDAQAB",
    "manifest_version": 2,
-   "name": "Brave YouTube Injector",
+   "name": "iBrowe YouTube Injector",
    "version": "0.0.0"
 }
