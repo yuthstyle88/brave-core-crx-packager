@@ -25,10 +25,10 @@ const generateManifestFile = async (name, base64PublicKey, subdir) => {
 }
 
 const generateManifestFileForRegionalCatalog =
-  generateManifestFile.bind(null, 'Regional Catalog', regionalCatalogPubkey, regionalCatalogComponentId)
+  generateManifestFile.bind(null, 'Regional Catalog', regionalCatalogPubkey(), regionalCatalogComponentId)
 
 const generateManifestFileForResources =
-  generateManifestFile.bind(null, 'Resources', resourcesPubkey, resourcesComponentId)
+  generateManifestFile.bind(null, 'Resources', resourcesPubkey(), resourcesComponentId)
 
 const generateManifestFilesForAllLists = async () => {
   const catalog = await getListCatalog()
