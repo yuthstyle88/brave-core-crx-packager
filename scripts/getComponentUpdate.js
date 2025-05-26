@@ -1,103 +1,37 @@
-import util from '../lib/util.js'
-import { randomUUID } from 'crypto'
-import commander from 'commander'
-import fetch from 'node-fetch'
-import fs from 'fs-extra'
-import path from 'path'
-import unzip from 'unzip-crx-3'
-import ntpUtil  from '../lib/ntpUtil.js'
-interface RequestData {
-  request: {
-    '@os': string;
-    '@updater': string;
-    acceptformat: string;
-    apps: Array<{
-      appid: string;
-      enabled: boolean;
-      installsource: string;
-      ping: { r: number };
-      updatecheck: object;
-      version: string;
-    }>;
-    arch: string;
-    dedup: string;
-    hw: {
-      avx: boolean;
-      physmemory: number;
-      sse: boolean;
-      sse2: boolean;
-      sse3: boolean;
-      sse41: boolean;
-      sse42: boolean;
-      ssse3: boolean;
-    };
-    ismachine: boolean;
-    nacl_arch: string;
-    os: {
-      arch: string;
-      platform: string;
-      version: string;
-    };
-    prodchannel: string;
-    prodversion: string;
-    protocol: string;
-    requestid: string;
-    sessionid: string;
-    updaterchannel: string;
-    updaterversion: string;
-  }
-}
-
-const simdFlags = {
-  sse: false,
-  sse2: false,
-  sse3: false,
-  sse41: false,
-  sse42: false,
-  ssse3: false
-}
-
-interface UpdateParams {
-  binary: string,
-  endpoint: string,
-  region: string,
-  privateKeyFile: string,
-  publisherProofKey: string,
-  publisherProofKeyAlt: string,
-  verifiedContentsKey: string
-}
-
-const DOWNLOAD_DIR = path.resolve('./downloads')
-const PEM_DIR = path.resolve('./out-all-pem')
+import { randomUUID } from 'crypto';
+import commander from 'commander';
+import fetch from 'node-fetch';
+import fs from 'fs-extra';
+import path from 'path';
+import unzip from 'unzip-crx-3';
+import util from '../lib/util.js';
+import ntpUtil from '../lib/ntpUtil.js';
+const DOWNLOAD_DIR = path.resolve('./downloads');
+const PEM_DIR = path.resolve('./out-all-pem');
 
 const ensureDownloadDir = async () => {
-  await fs.ensureDir(DOWNLOAD_DIR)
-}
+  await fs.ensureDir(DOWNLOAD_DIR);
+};
 
-const downloadFile = async (url: string, outputPath: string) => {
+const downloadFile = async (url, outputPath) => {
   const res = await fetch(url, {
     headers: {
       'BraveServiceKey': 'qztbjzBqJueQZLFkwTTJrieu8Vw3789u'
     }
-  })
-  if (!res.ok) throw new Error(`Download failed: ${res.status}`)
-  const fileStream = fs.createWriteStream(outputPath)
-  return new Promise<void>((resolve, reject) => {
-    res.body.pipe(fileStream)
-    res.body.on('error', reject)
-    fileStream.on('finish', resolve)
-  })
-}
+  });
+  if (!res.ok) throw new Error(`Download failed: ${res.status}`);
+  const fileStream = fs.createWriteStream(outputPath);
+  return new Promise((resolve, reject) => {
+    res.body.pipe(fileStream);
+    res.body.on('error', reject);
+    fileStream.on('finish', resolve);
+  });
+};
+
 async function updatePublicKeyInManifest(stagingDir, newPublicKey) {
   const manifestPath = path.join(stagingDir, 'manifest.json');
-
-  // อ่านไฟล์ manifest.json
   const manifest = await fs.readJson(manifestPath);
-
-  // อัปเดตค่า public_key ใน manifest
   manifest.public_key = newPublicKey;
-
-  // เขียนกลับไฟล์ manifest.json
   await fs.writeJson(manifestPath, manifest, { spaces: 2 });
 }
 
@@ -106,73 +40,72 @@ const generateVerifiedContents = (stagingDir, signingKey) => {
     stagingDir,
     ['resources.json', 'list.txt', 'list_catalog.json'],
     signingKey
-  )
-}
+  );
+};
 
-const checkForComponentsUpdates = async ({
-  binary,
-  endpoint,
-  region,
-  publisherProofKey,
-  publisherProofKeyAlt,
-  verifiedContentsKey,
-}: UpdateParams) => {
-  const extensions = (await util.getAllExtensions()).Items || []
-  await ensureDownloadDir()
+const checkForComponentsUpdates = async (params) => {
+  const {
+    binary,
+    endpoint,
+    region,
+    privateKeyFile,
+    publisherProofKey,
+    publisherProofKeyAlt,
+    verifiedContentsKey,
+  } = params;
+
+  const allExtensions = await util.getAllExtensions(endpoint, region);
+  const extensions = allExtensions.Items || [];
+  await ensureDownloadDir();
   await Promise.all(extensions.map(async (ext) => {
     try {
       const result = await sendDataForCheckComponentUpdates(
         ext.os || '', ext.id, ext.nacl_arch || '', ext.arch || '',
         ext.platform || '', ext.version || '', ext.prodversion || '', ext.updaterversion || ''
-      )
-      const stagingDir = path.join('build', 'ad-block-updater', ext.id)
-      const currentVersion = ext.version || '0.0.0'
-      const nextVersion = result?.response?.apps?.[0]?.updatecheck?.nextversion || '0.0.0'
+      );
+      const stagingDir = path.join('build', 'component-updater', ext.id);
+      const currentVersion = ext.version || '0.0.0';
+      const nextVersion = result && result.response && result.response.apps && result.response.apps[0] && result.response.apps[0].updatecheck
+        ? result.response.apps[0].updatecheck.nextversion || '0.0.0'
+        : '0.0.0';
       if (isNewerVersion(nextVersion, currentVersion)) {
-        // สมมุติว่า url ไฟล์ดาวน์โหลดมีใน result
-        const pipelines = result?.response?.apps?.[0]?.updatecheck?.pipelines || []
-        let crxUrl = ''
+        const pipelines = result?.response?.apps?.[0]?.updatecheck?.pipelines || [];
+        let crxUrl = '';
         if (pipelines.length > 0) {
-          const downloadOp = pipelines[0].operations.find(op => op.type === 'download')
+          const downloadOp = pipelines[0].operations.find(op => op.type === 'download');
           if (downloadOp && downloadOp.urls && downloadOp.urls.length > 0) {
-            crxUrl = downloadOp.urls[0].url
+            crxUrl = downloadOp.urls[0].url;
           }
         }
         if (crxUrl) {
-          const crxFile = path.join(DOWNLOAD_DIR, `${ext.id}-${nextVersion}.crx`)
-          await downloadFile(crxUrl, crxFile)
-          console.log(`Down loaded ${crxFile} successfully.`)
-          return unzip(crxFile, stagingDir).then( async () => {
-            generateVerifiedContents(stagingDir, verifiedContentsKey)
-            const privateKeyFile = path.join(PEM_DIR, `${ext.id}.pem`)
-            const [newPublicKey] = await ntpUtil.generatePublicKeyAndID(privateKeyFile)
+          const crxFile = path.join(DOWNLOAD_DIR, `${ext.id}-${nextVersion}.crx`);
+          await downloadFile(crxUrl, crxFile);
+          console.log(`Down loaded ${crxFile} successfully.`);
+          return unzip(crxFile, stagingDir).then(async () => {
+            generateVerifiedContents(stagingDir, verifiedContentsKey);
+            const keyFile = privateKeyFile || `${ext.id}.pem`;
+            const privateKeyFile = path.join(PEM_DIR, keyFile);
+            const [newPublicKey] = await ntpUtil.generatePublicKeyAndID(privateKeyFile);
             await updatePublicKeyInManifest(stagingDir, newPublicKey);
             util.generateCRXFile(binary, crxFile, privateKeyFile, publisherProofKey,
-              publisherProofKeyAlt, stagingDir)
-            await util.updateDBForCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
-            await util.uploadCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
-            console.log(`Update available for ${ext.name} (${currentVersion} -> ${nextVersion})`)
-          })
+              publisherProofKeyAlt, stagingDir);
+            await util.updateDBForCRXFile(endpoint, region, ext.id, currentVersion, nextVersion);
+            await util.uploadCRXFile(endpoint, region, ext.id, currentVersion, nextVersion);
+            console.log(`Update available for ${ext.name} (${currentVersion} -> ${nextVersion})`);
+          });
         }
       }
     } catch (err) {
-      console.error(`[${ext.id}] Err:`, err)
+      console.error(`[${ext.id}] Err:`, err);
     }
-  }))
-}
+  }));
+};
 
 const sendDataForCheckComponentUpdates = async (
-  os: string,
-  id: string,
-  nacl_arch: string,
-  arch: string,
-  platform: string,
-  version: string,
-  prodversion: string,
-  updaterversion: string
+  os, id, nacl_arch, arch, platform, version, prodversion, updaterversion
 ) => {
-  const url = 'https://go-updater.brave.com/extensions'
-  const data: RequestData = {
+  const url = 'https://go-updater.brave.com/extensions';
+  const data = {
     request: {
       '@os': os,
       '@updater': 'BraveComponentUpdater',
@@ -192,7 +125,12 @@ const sendDataForCheckComponentUpdates = async (
       hw: {
         avx: false,
         physmemory: 7,
-        ...simdFlags
+        sse: false,
+        sse2: false,
+        sse3: false,
+        sse41: false,
+        sse42: false,
+        ssse3: false
       },
       ismachine: true,
       nacl_arch,
@@ -205,52 +143,52 @@ const sendDataForCheckComponentUpdates = async (
       updaterchannel: 'stable',
       updaterversion
     }
-  }
-  return await postData(url, data)
-}
+  };
+  return await postData(url, data);
+};
 
-const postData = async (url: string, data: any) => {
+const postData = async (url, data) => {
+  const dataString = JSON.stringify(data);
   const res = await fetch(url, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data)
-  })
-  return await res.json()
-}
+    headers: { 'Content-Type': 'application/json', 'BraveServiceKey': 'qztbjzBqJueQZLFkwTTJrieu8Vw3789u'},
+    body: dataString
+  });
+  return await res.json();
+};
 
-function isNewerVersion (nextVersion: string, currentVersion: string): boolean {
-  const nextParts = nextVersion.split('.').map(Number)
-  const currParts = currentVersion.split('.').map(Number)
-  const length = Math.max(nextParts.length, currParts.length)
+function isNewerVersion(nextVersion, currentVersion) {
+  const nextParts = nextVersion.split('.').map(Number);
+  const currParts = currentVersion.split('.').map(Number);
+  const length = Math.max(nextParts.length, currParts.length);
 
   for (let i = 0; i < length; i++) {
-    const n = nextParts[i] || 0
-    const c = currParts[i] || 0
-    if (n > c) return true
-    if (n < c) return false
+    const n = nextParts[i] || 0;
+    const c = currParts[i] || 0;
+    if (n > c) return true;
+    if (n < c) return false;
   }
-  return false
+  return false;
 }
 
-const processJob = async (commanderInstance: typeof commander) => {
+const processJob = async (commanderInstance) => {
+  await checkForComponentsUpdates(commanderInstance);
+};
 
-  await checkForComponentsUpdates(commanderInstance.endpoint, commanderInstance.region)
-}
-
-util.installErrorHandlers()
+util.installErrorHandlers();
 
 util.addCommonScriptOptions(
   commander
-    .option('-d, --keys-directory <dir>', 'directory containing private keys for signing crx files')
+    .option('-f, --key-file <file>', 'private key file for signing crx', 'key.pem')
     .option('-l, --local-run', 'Runs updater job without connecting anywhere remotely')
-).parse(process.argv)
+).parse(process.argv);
 
 (async () => {
   try {
-    await util.createTableIfNotExists(commander.endpoint, commander.region)
-    await processJob(commander)
+    await util.createTableIfNotExists(commander.endpoint, commander.region);
+    await processJob(commander);
   } catch (err) {
-    console.error('Caught exception:', err)
-    process.exit(1)
+    console.error('Caught exception:', err);
+    process.exit(1);
   }
-})()
+})();
