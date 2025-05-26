@@ -55,6 +55,7 @@ const simdFlags = {
   sse42: false,
   ssse3: false
 }
+
 interface UpdateParams {
   binary: string,
   endpoint: string,
@@ -77,24 +78,15 @@ const downloadFile = async (url: string, outputPath: string) => {
     headers: {
       'BraveServiceKey': 'qztbjzBqJueQZLFkwTTJrieu8Vw3789u'
     }
-  });
-  if (!res.ok) throw new Error(`Download failed: ${res.status}`);
-  const fileStream = fs.createWriteStream(outputPath);
+  })
+  if (!res.ok) throw new Error(`Download failed: ${res.status}`)
+  const fileStream = fs.createWriteStream(outputPath)
   return new Promise<void>((resolve, reject) => {
-    res.body.pipe(fileStream);
-    res.body.on('error', reject);
-    fileStream.on('finish', resolve);
-  });
+    res.body.pipe(fileStream)
+    res.body.on('error', reject)
+    fileStream.on('finish', resolve)
+  })
 }
-
-async function stageFiles (version, outputDir) {
-  // ad-block components are already written in the output directory
-  // so we don't need to stage anything
-  const originalManifest = path.join(outputDir, 'manifest.json')
-  // note - in-place manifest replacement, unlike other components
-  util.copyManifestWithVersion(originalManifest, outputDir, version)
-}
-
 
 const checkForComponentsUpdates = async ({
   binary,
@@ -131,13 +123,11 @@ const checkForComponentsUpdates = async ({
           const downloadPath = path.join(DOWNLOAD_DIR, `${ext.id}-${nextVersion}.crx`)
           await downloadFile(crxUrl, downloadPath)
           console.log(`Down loaded ${downloadPath} successfully.`)
-          stageFiles(currentVersion, stagingDir).then(async () => {
-            util.generateCRXFile(binary, downloadPath, privateKeyFile, publisherProofKey,
-              publisherProofKeyAlt, stagingDir)
-            await util.updateDBForCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
-            await util.uploadCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
-            console.log(`Update available for ${ext.name} (${currentVersion} -> ${nextVersion})`)
-          })
+          util.generateCRXFile(binary, downloadPath, privateKeyFile, publisherProofKey,
+            publisherProofKeyAlt, stagingDir)
+          await util.updateDBForCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
+          await util.uploadCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
+          console.log(`Update available for ${ext.name} (${currentVersion} -> ${nextVersion})`)
         }
       }
     } catch (err) {
@@ -203,7 +193,7 @@ const postData = async (url: string, data: any) => {
   return await res.json()
 }
 
-function isNewerVersion(nextVersion: string, currentVersion: string): boolean {
+function isNewerVersion (nextVersion: string, currentVersion: string): boolean {
   const nextParts = nextVersion.split('.').map(Number)
   const currParts = currentVersion.split('.').map(Number)
   const length = Math.max(nextParts.length, currParts.length)
