@@ -64,9 +64,7 @@ interface UpdateParams {
   privateKeyFile: string,
   publisherProofKey: string,
   publisherProofKeyAlt: string,
-  verifiedContentsKey: string,
-  componentSubdir: string,
-  componentName: string,
+  verifiedContentsKey: string
 }
 
 const DOWNLOAD_DIR = path.resolve('./downloads')
@@ -103,6 +101,13 @@ async function updatePublicKeyInManifest(stagingDir, newPublicKey) {
   await fs.writeJson(manifestPath, manifest, { spaces: 2 });
 }
 
+const generateVerifiedContents = (stagingDir, signingKey) => {
+  util.generateAndWriteVerifiedContents(
+    stagingDir,
+    ['resources.json', 'list.txt', 'list_catalog.json'],
+    signingKey
+  )
+}
 
 const checkForComponentsUpdates = async ({
   binary,
@@ -112,8 +117,6 @@ const checkForComponentsUpdates = async ({
   publisherProofKey,
   publisherProofKeyAlt,
   verifiedContentsKey,
-  componentSubdir,
-  componentName
 }: UpdateParams) => {
   const extensions = (await util.getAllExtensions()).Items || []
   await ensureDownloadDir()
@@ -141,7 +144,7 @@ const checkForComponentsUpdates = async ({
           await downloadFile(crxUrl, crxFile)
           console.log(`Down loaded ${crxFile} successfully.`)
           return unzip(crxFile, stagingDir).then( async () => {
-            const privateKeyFile = path.join(PEM_DIR, `${componentName}-${ext.id}.pem`)
+            generateVerifiedContents(stagingDir, verifiedContentsKey)
             const [newPublicKey] = await ntpUtil.generatePublicKeyAndID(privateKeyFile)
             await updatePublicKeyInManifest(stagingDir, newPublicKey);
             util.generateCRXFile(binary, crxFile, privateKeyFile, publisherProofKey,
