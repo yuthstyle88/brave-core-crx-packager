@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # กำหนดโฟลเดอร์ที่จะเก็บไฟล์ .pem
-BASE_DIR="/Users/yongyutjantaboot/WebstormProjects/brave-core-crx-packager/out-ad-block-updater-pem"
+BASE_DIR="/Users/yongyutjantaboot/WebstormProjects/brave-core-crx-packager/out-all-pem"
 
 # รายการ ID ทั้งหมด
 IDS=(
@@ -67,7 +67,7 @@ phmomndefejccjmpiehbogokakkmnmgb
 
 # สร้างไฟล์ .pem สำหรับแต่ละ ID
 for id in "${IDS[@]}"; do
-    pem_file="$BASE_DIR/ad-block-updater-$id.pem"
+    pem_file="$BASE_DIR/$id.pem"
     echo "กำลังสร้าง $pem_file"
     openssl genrsa 2048 | openssl pkcs8 -topk8 -nocrypt -out "$pem_file"
     chmod 600 "$pem_file"

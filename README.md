@@ -21,6 +21,8 @@ Clone the repository and install Node dependencies:
 git clone git@github.com:brave/brave-core-crx-packager.git
 cd brave-core-crx-packager
 git submodule init
+
+
 git submodule update
 # If you use NVM to switch between Node versions
 nvm use

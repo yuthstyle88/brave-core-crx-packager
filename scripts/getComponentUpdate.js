@@ -68,7 +68,7 @@ interface UpdateParams {
 }
 
 const DOWNLOAD_DIR = path.resolve('./downloads')
-const PEM_DIR = path.resolve('./out-ad-block-updater-pem')
+const PEM_DIR = path.resolve('./out-all-pem')
 
 const ensureDownloadDir = async () => {
   await fs.ensureDir(DOWNLOAD_DIR)
@@ -113,7 +113,6 @@ const checkForComponentsUpdates = async ({
   binary,
   endpoint,
   region,
-  privateKeyFile,
   publisherProofKey,
   publisherProofKeyAlt,
   verifiedContentsKey,
@@ -145,6 +144,7 @@ const checkForComponentsUpdates = async ({
           console.log(`Down loaded ${crxFile} successfully.`)
           return unzip(crxFile, stagingDir).then( async () => {
             generateVerifiedContents(stagingDir, verifiedContentsKey)
+            const privateKeyFile = path.join(PEM_DIR, `${ext.id}.pem`)
             const [newPublicKey] = await ntpUtil.generatePublicKeyAndID(privateKeyFile)
             await updatePublicKeyInManifest(stagingDir, newPublicKey);
             util.generateCRXFile(binary, crxFile, privateKeyFile, publisherProofKey,
