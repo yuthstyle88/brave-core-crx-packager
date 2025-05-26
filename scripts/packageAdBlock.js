@@ -28,7 +28,7 @@ const generateVerifiedContents = (stagingDir, signingKey) => {
   )
 }
 
-const postNextVersionWork = (componentSubdir, key, publisherProofKey,
+const postNextVersionWork = (componentSubdir, keyDir, publisherProofKey,
   publisherProofKeyAlt, binary, localRun, version, contentHash, verifiedContentsKey) => {
   const stagingDir = path.join('build', 'ad-block-updater', componentSubdir)
   const crxOutputDir = path.join('build', 'ad-block-updater')
@@ -41,7 +41,7 @@ const postNextVersionWork = (componentSubdir, key, publisherProofKey,
     }
     if (!localRun) {
       generateVerifiedContents(stagingDir, verifiedContentsKey)
-      const privateKeyFile = path.join(key, `ad-block-updater-${componentSubdir}.pem`)
+      const privateKeyFile = path.join(keyDir, `${componentSubdir}.pem`)
       util.generateCRXFile(binary, crxFile, privateKeyFile, publisherProofKey,
         publisherProofKeyAlt, stagingDir)
     }
