@@ -2,6 +2,8 @@ import util from '../lib/util.js'
 import { randomUUID } from 'crypto'
 import commander from 'commander'
 import fetch from 'node-fetch'
+import fs from 'fs-extra'
+import path from 'path'
 
 interface RequestData {
   request: {
@@ -53,24 +55,89 @@ const simdFlags = {
   sse42: false,
   ssse3: false
 }
+interface UpdateParams {
+  binary: string,
+  endpoint: string,
+  region: string,
+  privateKeyFile: string,
+  publisherProofKey: string,
+  publisherProofKeyAlt: string,
+  verifiedContentsKey: string,
+  componentSubdir: string,
+}
 
-const checkForComponentsUpdates = async (endpoint: string, region: string) => {
+const DOWNLOAD_DIR = path.resolve('./downloads')
+
+const ensureDownloadDir = async () => {
+  await fs.ensureDir(DOWNLOAD_DIR)
+}
+
+const downloadFile = async (url: string, outputPath: string) => {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Download failed: ${res.status}`);
+  const fileStream = fs.createWriteStream(outputPath);
+  return new Promise<void>((resolve, reject) => {
+    res.body.pipe(fileStream);
+    res.body.on('error', reject);
+    fileStream.on('finish', resolve);
+  });
+}
+
+async function stageFiles (version, outputDir) {
+  // ad-block components are already written in the output directory
+  // so we don't need to stage anything
+  const originalManifest = path.join(outputDir, 'manifest.json')
+  // note - in-place manifest replacement, unlike other components
+  util.copyManifestWithVersion(originalManifest, outputDir, version)
+}
+
+
+const checkForComponentsUpdates = async ({
+  binary,
+  endpoint,
+  region,
+  privateKeyFile,
+  publisherProofKey,
+  publisherProofKeyAlt,
+  verifiedContentsKey,
+  componentSubdir
+}: UpdateParams) => {
   const extensions = (await util.getAllExtensions()).Items || []
-  // Optimization: ใช้ Promise.all รันเช็คหลาย extension พร้อมกัน
+  await ensureDownloadDir()
   await Promise.all(extensions.map(async (ext) => {
     try {
       const result = await sendDataForCheckComponentUpdates(
-        ext.os || '', ext.id, ext.nacl_arch || '', ext.arch || '', ext.platform || '', ext.version || '', ext.prodversion || '', ext.updaterversion || ''
+        ext.os || '', ext.id, ext.nacl_arch || '', ext.arch || '',
+        ext.platform || '', ext.version || '', ext.prodversion || '', ext.updaterversion || ''
       )
+      const stagingDir = path.join('build', 'ad-block-updater', componentSubdir)
       const currentVersion = ext.version || '0.0.0'
       const nextVersion = result?.response?.apps?.[0]?.updatecheck?.nextversion || '0.0.0'
       if (isNewerVersion(nextVersion, currentVersion)) {
-        await util.updateDBForCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
-        await util.uploadCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
-        console.log(`Update available for ${ext.name} (${currentVersion} -> ${nextVersion})`)
+        // สมมุติว่า url ไฟล์ดาวน์โหลดมีใน result
+        const pipelines = result?.response?.apps?.[0]?.updatecheck?.pipelines || []
+        let crxUrl = ''
+        if (pipelines.length > 0) {
+          const downloadOp = pipelines[0].operations.find(op => op.type === 'download')
+          if (downloadOp && downloadOp.urls && downloadOp.urls.length > 0) {
+            crxUrl = downloadOp.urls[0].url
+          }
+        }
+        if (crxUrl) {
+          const downloadPath = path.join(DOWNLOAD_DIR, `${ext.id}-${nextVersion}.crx`)
+          await downloadFile(crxUrl, downloadPath)
+          console.log(`Down loaded ${downloadPath} successfully.`)
+          stageFiles(currentVersion, stagingDir).then(async () => {
+            util.generateCRXFile(binary, downloadPath, privateKeyFile, publisherProofKey,
+              publisherProofKeyAlt, stagingDir)
+            await util.updateDBForCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
+            await util.uploadCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
+            console.log(`Update available for ${ext.name} (${currentVersion} -> ${nextVersion})`)
+          })
+        }
       }
     } catch (err) {
-      console.error(`[${ext.id}] เกิดข้อผิดพลาด:`, err)
+      console.error(`[${ext.id}] Err:`, err)
     }
   }))
 }
@@ -147,6 +214,7 @@ function isNewerVersion(nextVersion: string, currentVersion: string): boolean {
 }
 
 const processJob = async (commanderInstance: typeof commander) => {
+
   await checkForComponentsUpdates(commanderInstance.endpoint, commanderInstance.region)
 }
 
