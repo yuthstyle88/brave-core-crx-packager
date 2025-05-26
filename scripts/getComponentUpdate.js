@@ -4,7 +4,8 @@ import commander from 'commander'
 import fetch from 'node-fetch'
 import fs from 'fs-extra'
 import path from 'path'
-
+import unzip from 'unzip-crx-3'
+import ntpUtil  from '../lib/ntpUtil.js'
 interface RequestData {
   request: {
     '@os': string;
@@ -65,9 +66,11 @@ interface UpdateParams {
   publisherProofKeyAlt: string,
   verifiedContentsKey: string,
   componentSubdir: string,
+  componentName: string,
 }
 
 const DOWNLOAD_DIR = path.resolve('./downloads')
+const PEM_DIR = path.resolve('./out-ad-block-updater-pem')
 
 const ensureDownloadDir = async () => {
   await fs.ensureDir(DOWNLOAD_DIR)
@@ -87,6 +90,19 @@ const downloadFile = async (url: string, outputPath: string) => {
     fileStream.on('finish', resolve)
   })
 }
+async function updatePublicKeyInManifest(stagingDir, newPublicKey) {
+  const manifestPath = path.join(stagingDir, 'manifest.json');
+
+  // อ่านไฟล์ manifest.json
+  const manifest = await fs.readJson(manifestPath);
+
+  // อัปเดตค่า public_key ใน manifest
+  manifest.public_key = newPublicKey;
+
+  // เขียนกลับไฟล์ manifest.json
+  await fs.writeJson(manifestPath, manifest, { spaces: 2 });
+}
+
 
 const checkForComponentsUpdates = async ({
   binary,
@@ -96,7 +112,8 @@ const checkForComponentsUpdates = async ({
   publisherProofKey,
   publisherProofKeyAlt,
   verifiedContentsKey,
-  componentSubdir
+  componentSubdir,
+  componentName
 }: UpdateParams) => {
   const extensions = (await util.getAllExtensions()).Items || []
   await ensureDownloadDir()
@@ -106,7 +123,7 @@ const checkForComponentsUpdates = async ({
         ext.os || '', ext.id, ext.nacl_arch || '', ext.arch || '',
         ext.platform || '', ext.version || '', ext.prodversion || '', ext.updaterversion || ''
       )
-      const stagingDir = path.join('build', 'ad-block-updater', componentSubdir)
+      const stagingDir = path.join('build', 'ad-block-updater', ext.id)
       const currentVersion = ext.version || '0.0.0'
       const nextVersion = result?.response?.apps?.[0]?.updatecheck?.nextversion || '0.0.0'
       if (isNewerVersion(nextVersion, currentVersion)) {
@@ -120,14 +137,19 @@ const checkForComponentsUpdates = async ({
           }
         }
         if (crxUrl) {
-          const downloadPath = path.join(DOWNLOAD_DIR, `${ext.id}-${nextVersion}.crx`)
-          await downloadFile(crxUrl, downloadPath)
-          console.log(`Down loaded ${downloadPath} successfully.`)
-          util.generateCRXFile(binary, downloadPath, privateKeyFile, publisherProofKey,
-            publisherProofKeyAlt, stagingDir)
-          await util.updateDBForCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
-          await util.uploadCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
-          console.log(`Update available for ${ext.name} (${currentVersion} -> ${nextVersion})`)
+          const crxFile = path.join(DOWNLOAD_DIR, `${ext.id}-${nextVersion}.crx`)
+          await downloadFile(crxUrl, crxFile)
+          console.log(`Down loaded ${crxFile} successfully.`)
+          return unzip(crxFile, stagingDir).then( async () => {
+            const privateKeyFile = path.join(PEM_DIR, `${componentName}-${ext.id}.pem`)
+            const [newPublicKey] = await ntpUtil.generatePublicKeyAndID(privateKeyFile)
+            await updatePublicKeyInManifest(stagingDir, newPublicKey);
+            util.generateCRXFile(binary, crxFile, privateKeyFile, publisherProofKey,
+              publisherProofKeyAlt, stagingDir)
+            await util.updateDBForCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
+            await util.uploadCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
+            console.log(`Update available for ${ext.name} (${currentVersion} -> ${nextVersion})`)
+          })
         }
       }
     } catch (err) {
