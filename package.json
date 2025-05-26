@@ -9,8 +9,9 @@
     "@mongodb-js/zstd": "^1.2.0",
     "@sentry/node": "7.120.3",
     "adblock-rs": "0.9.5",
-    "brave-site-specific-scripts": "github:brave/brave-site-specific-scripts",
+    "brave-wallet-lists": "^1.24.18",
     "glob": "^11.0.2",
+    "node-fetch": "^3.3.2",
     "p3a-config": "github:brave-experiments/p3a-config",
     "pbf": "4.0.1",
     "playlist-component": "github:brave/playlist-component",
@@ -18,13 +19,20 @@
     "unzip-crx-3": "0.2.0"
   },
   "devDependencies": {
+    "brave-site-specific-scripts": "github:brave/brave-site-specific-scripts",
+    "clean-webpack-plugin": "^4.0.0",
     "commander": "2.20.3",
+    "copy-webpack-plugin": "^13.0.0",
     "fs-extra": "11.3.0",
     "level": "8.0.1",
     "mkdirp": "3.0.1",
     "replace-in-file": "7.2.0",
     "rimraf": "5.0.10",
-    "standard": "17.1.2"
+    "standard": "17.1.2",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
   },
   "scripts": {
     "clean": "rimraf build/",
