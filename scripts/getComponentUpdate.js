@@ -43,6 +43,14 @@ interface RequestData {
   }
 }
 
+const simdFlags = {
+  sse: false,
+  sse2: false,
+  sse3: false,
+  sse41: false,
+  sse42: false,
+  ssse3: false
+};
 
 const checkForComponentsUpdates = async () => {
   const extensions = (await util.getAllExtensions()).Items || [];
@@ -75,12 +83,7 @@ const sendDataForCheckComponentUpdates = async (os, id, nacl_arch, arch, platfor
       hw: {
         avx: false,
         physmemory: 7,
-        sse: false,
-        sse2: false,
-        sse3: false,
-        sse41: false,
-        sse42: false,
-        ssse3: false
+        ...simdFlags
       },
       ismachine: true,
       nacl_arch: nacl_arch,
