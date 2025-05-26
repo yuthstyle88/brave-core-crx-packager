@@ -1,7 +1,7 @@
 import util from '../lib/util.js'
 import { randomUUID } from 'crypto'
 import commander from 'commander'
-import fetch from 'node-fetch' // ใช้ import แบบ ES6
+import fetch from 'node-fetch'
 
 interface RequestData {
   request: {
@@ -56,20 +56,23 @@ const simdFlags = {
 
 const checkForComponentsUpdates = async (endpoint: string, region: string) => {
   const extensions = (await util.getAllExtensions()).Items || []
-  for (const ext of extensions) {
-    const result = await sendDataForCheckComponentUpdates(
-      ext.os, ext.id, ext.nacl_arch, ext.arch, ext.platform, ext.version, ext.prodversion, ext.updaterversion
-    )
-    const currentVersion = ext.version
-    const nextVersion = result?.response?.apps?.[0]?.updatecheck?.nextversion || '0.0.0'
-    if (isNewerVersion(nextVersion, currentVersion)) {
-      util.updateDBForCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
-      util.uploadCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
-      console.log(
-        `Update available for ${ext.name} (${currentVersion} -> ${nextVersion})`
+  // Optimization: ใช้ Promise.all รันเช็คหลาย extension พร้อมกัน
+  await Promise.all(extensions.map(async (ext) => {
+    try {
+      const result = await sendDataForCheckComponentUpdates(
+        ext.os || '', ext.id, ext.nacl_arch || '', ext.arch || '', ext.platform || '', ext.version || '', ext.prodversion || '', ext.updaterversion || ''
       )
+      const currentVersion = ext.version || '0.0.0'
+      const nextVersion = result?.response?.apps?.[0]?.updatecheck?.nextversion || '0.0.0'
+      if (isNewerVersion(nextVersion, currentVersion)) {
+        await util.updateDBForCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
+        await util.uploadCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
+        console.log(`Update available for ${ext.name} (${currentVersion} -> ${nextVersion})`)
+      }
+    } catch (err) {
+      console.error(`[${ext.id}] เกิดข้อผิดพลาด:`, err)
     }
-  }
+  }))
 }
 
 const sendDataForCheckComponentUpdates = async (
@@ -98,7 +101,7 @@ const sendDataForCheckComponentUpdates = async (
           version: prodversion
         }
       ],
-      arch: arch,
+      arch,
       dedup: 'cr',
       hw: {
         avx: false,
@@ -106,22 +109,17 @@ const sendDataForCheckComponentUpdates = async (
         ...simdFlags
       },
       ismachine: true,
-      nacl_arch: nacl_arch,
-      os: {
-        arch: arch,
-        platform: platform,
-        version: version
-      },
+      nacl_arch,
+      os: { arch, platform, version },
       prodchannel: 'stable',
       prodversion: updaterversion,
       protocol: '4.0',
       requestid: `{${randomUUID()}}`,
       sessionid: `{${randomUUID()}}`,
       updaterchannel: 'stable',
-      updaterversion: updaterversion
+      updaterversion
     }
   }
-  // return json โดยตรง
   return await postData(url, data)
 }
 
@@ -131,11 +129,10 @@ const postData = async (url: string, data: any) => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
   })
-  // อ่านผลลัพธ์เป็น json
   return await res.json()
 }
 
-function isNewerVersion (nextVersion: string, currentVersion: string): boolean {
+function isNewerVersion(nextVersion: string, currentVersion: string): boolean {
   const nextParts = nextVersion.split('.').map(Number)
   const currParts = currentVersion.split('.').map(Number)
   const length = Math.max(nextParts.length, currParts.length)
@@ -146,7 +143,7 @@ function isNewerVersion (nextVersion: string, currentVersion: string): boolean {
     if (n > c) return true
     if (n < c) return false
   }
-  return false // เท่ากัน
+  return false
 }
 
 const processJob = async (commanderInstance: typeof commander) => {
@@ -161,14 +158,12 @@ util.addCommonScriptOptions(
     .option('-l, --local-run', 'Runs updater job without connecting anywhere remotely')
 ).parse(process.argv)
 
-  // ฟังก์ชัน main entry point ที่ถูกต้อง
-  (async () => {
-    try {
-      util.createTableIfNotExists(commander.endpoint, commander.region).then(async () => {
-        await processJob(commander)
-      })
-    } catch (err) {
-      console.error('Caught exception:', err)
-      process.exit(1)
-    }
-  })()
+(async () => {
+  try {
+    await util.createTableIfNotExists(commander.endpoint, commander.region)
+    await processJob(commander)
+  } catch (err) {
+    console.error('Caught exception:', err)
+    process.exit(1)
+  }
+})()
