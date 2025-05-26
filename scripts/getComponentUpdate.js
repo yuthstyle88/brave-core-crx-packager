@@ -73,7 +73,11 @@ const ensureDownloadDir = async () => {
 }
 
 const downloadFile = async (url: string, outputPath: string) => {
-  const res = await fetch(url);
+  const res = await fetch(url, {
+    headers: {
+      'BraveServiceKey': 'qztbjzBqJueQZLFkwTTJrieu8Vw3789u'
+    }
+  });
   if (!res.ok) throw new Error(`Download failed: ${res.status}`);
   const fileStream = fs.createWriteStream(outputPath);
   return new Promise<void>((resolve, reject) => {
