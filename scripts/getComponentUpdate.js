@@ -15,6 +15,7 @@ const ensureDownloadDir = async () => {
 }
 
 const downloadFile = async (url, outputPath) => {
+  console.log(`Downloading ${url} to ${outputPath}`)
   const res = await fetch(url, {
     headers: {
       'BraveServiceKey': 'qztbjzBqJueQZLFkwTTJrieu8Vw3789u'
@@ -29,11 +30,21 @@ const downloadFile = async (url, outputPath) => {
   })
 }
 
-async function updatePublicKeyInManifest (stagingDir, newPublicKey) {
+function updatePublicKeyInManifest (stagingDir, newPublicKey) {
   const manifestPath = path.join(stagingDir, 'manifest.json')
-  const manifest = await fs.readJson(manifestPath)
-  manifest.public_key = newPublicKey
-  await fs.writeJson(manifestPath, manifest, { spaces: 2 })
+  fs.readJson(manifestPath).then(data => {
+    if (data && data.manifest_version && data.manifest_version !== 'undefined') {
+      console.log(`Update manifest ${manifestPath} !`)
+      data.key = newPublicKey
+      fs.writeFileSync(
+        manifestPath,
+        JSON.stringify(data, null, 2),
+        'utf8'
+      )
+    }else{
+      console.log('manifest not found')
+    }
+  })
 }
 
 const generateVerifiedContents = (stagingDir, signingKey) => {
@@ -49,7 +60,6 @@ const checkForComponentsUpdates = async (platFroms, versions, params) => {
     binary,
     endpoint,
     region,
-    privateKeyFile,
     publisherProofKey,
     publisherProofKeyAlt,
     verifiedContentsKey,
@@ -61,13 +71,13 @@ const checkForComponentsUpdates = async (platFroms, versions, params) => {
   }
 
   console.log(
-    `Checking for component updates for ${platFroms} ${endpoint} ${region} ${binary} ${privateKeyFile} ${publisherProofKey} ${publisherProofKeyAlt} ${verifiedContentsKey}`
+    `Checking for component updates for ${platFroms} ${endpoint} ${region} ${binary} ${publisherProofKey} ${publisherProofKeyAlt} ${verifiedContentsKey}`
   )
   const allExtensions = await util.getAllExtensions(endpoint, region)
   const extensions = allExtensions.Items || []
   await ensureDownloadDir()
-  await Promise.all(extensions.map(async (ext) => {
-    const prodVersions = ['135.1.0.2','135.1.0.3'];
+  for (const ext of extensions) {
+    const prodVersions = ['135.1.0.2', '135.1.0.3']
     for (const version of versions) {
       for (const prodVersion of prodVersions) {
 
@@ -118,20 +128,28 @@ const checkForComponentsUpdates = async (platFroms, versions, params) => {
               }
             }
             if (crxUrl) {
-              const crxFile = path.join(DOWNLOAD_DIR, `${ext.ID.S}-${nextVersion}.crx`)
+              const pathname = new URL(crxUrl).pathname
+              const extension = path.extname(pathname)
+              const crxFile = path.join(DOWNLOAD_DIR, `${ext.ID.S}-${nextVersion}${extension}`)
               await downloadFile(crxUrl, crxFile)
               console.log(`Down loaded ${crxFile} successfully.`)
-              unzip(crxFile, stagingDir).then(async () => {
-                generateVerifiedContents(stagingDir, verifiedContentsKey)
-                const keyFile = privateKeyFile || `${ext.ID.S}.pem`
-                const privateKeyFile = path.join(PEM_DIR, keyFile)
-                const [newPublicKey] = await ntpUtil.generatePublicKeyAndID(privateKeyFile)
-                await updatePublicKeyInManifest(stagingDir, newPublicKey)
-                util.generateCRXFile(binary, crxFile, privateKeyFile, publisherProofKey,
-                  publisherProofKeyAlt, stagingDir)
-                await util.updateDBForCRXFile(endpoint, region, ext.ID.S, currentVersion, nextVersion)
-                await util.uploadCRXFile(endpoint, region, ext.ID.S, currentVersion, nextVersion)
-                console.log(`Update available for ${ext.Title.S} (${currentVersion} -> ${nextVersion})`)
+              unzip(crxFile, stagingDir).then(() => {
+                const data = util.parseManifest(path.join(stagingDir, 'manifest.json'))
+                if (data && data.name && data.name !== 'undefined') {
+                  const crxOutputDir = path.join('build', 'component-updater')
+                  const crxFile = path.join(crxOutputDir, `component-updater-${ext.ID.S}.crx`)
+                  console.log(`Process ${data.name} !.`)
+                  generateVerifiedContents(stagingDir, verifiedContentsKey)
+                  const keyFile = `${ext.ID.S}.pem`
+                  const privateKeyFile = path.join(PEM_DIR, keyFile)
+                  const [newPublicKey] = ntpUtil.generatePublicKeyAndID(privateKeyFile)
+                  updatePublicKeyInManifest(stagingDir, newPublicKey)
+                  util.generateCRXFile(binary, crxFile, privateKeyFile, publisherProofKey,
+                    publisherProofKeyAlt, stagingDir)
+                  util.updateDBForCRXFile(endpoint, region, crxFile, currentVersion, nextVersion)
+                  // await util.uploadCRXFile(endpoint, region, ext.ID.S, currentVersion, nextVersion)
+                  console.log(`Update available for ${ext.Title.S} (${currentVersion} -> ${nextVersion})`)
+                }
               })
             }
           }
@@ -140,7 +158,7 @@ const checkForComponentsUpdates = async (platFroms, versions, params) => {
         }
       }
     }
-  }))
+  }
 }
 
 const sendDataForCheckComponentUpdates = async (
@@ -227,7 +245,7 @@ util.addCommonScriptOptions(
     await util.createTableIfNotExists(commander.endpoint, commander.region)
     const platforms = [
       ['android', ['1.0.0', '2.0.0', '3.0.0']],
-      ['iOS', ['18.5', '19.0', '20.0']]
+      // ['iOS', ['18.5', '19.0', '20.0']]
     ]
 
     platforms.forEach(async (pf) => {

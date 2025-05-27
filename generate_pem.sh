@@ -63,14 +63,85 @@ ooamlicohiiaodkaemgoimcihidbedmp
 oojedkppeblkjkcdlmlahnhndjmbicoi
 phdmgpanpejkbmbljlhcehpadabljfbk
 phmomndefejccjmpiehbogokakkmnmgb
+jdfljimmboeigmdgniclollfijpkcoaf
+afalakplffnnnlkncjhbmahjfjhmlkal
+eeigpngbgcognadeebkilcpcaedhellh
+aoojcmojmmcbpfgoecoadbdpnagfchel
+jflookgnkcckhobaglndicnbbgbonegd
+nlpaeekllejnmhoonlpcefpfnpbajbpe
+cldoidikboihgcjfkhdeidbpclkineef
+cpoalefficncklhjfpglfiplenlpccdb
+biahpgbdmdkfgndcmfiipgcebobojjkp
+kkjipiepeooghlclkedllogndmohhnhi
+giekcmmlnklenlaomppkphknjmnnpneh
+hfnkpimlhhgieaddgfemjhofmfblmnib
+ggkkehgbnfjpeggfpleeakpidbkibbmn
+khaoiebndkojlmppeemjhbpbandiljpe
+jamhcnnkihinmdlkakkaopbjbbcngflc
+laoigpblnllgcgjnjnllmfolckpjlhki
+gccbbckogglekeggclmmekihdgdpdgoe
+aoojcmojmmcbpfgoecoadbdpnagfchel
+oimompecagnajdejgnnjijobebaeigek
+ojhpjlocmbogdgmfpkhlaaeamibhnphh
+pphbpmdlkglnolofoaifgkbmkdoobalm
+heplpbhjcbmiibdlchlanmdenffpiibo
+jcffalbkohmmfjmgkdcphlimplejkmon
+obedbbhbpmojnkanicioggnmelmoomoc
+hajigopbbjhghbfimgkfmpenfkclmohk
+efniojlnjndmcbiieegkicadnoecjjef
+jflhchccmppkfebkiaminageehmchikm
+bfdgpgibhagkpdlnjonhkabjoijopoge
+ldimlcelhnjgpjjemdjokpgeeikdinbm
+cffkpbalmllkdoenhmdmpbkajipdjfam
+ghnjmapememheddlfgmklijahiofgkea
+fnpjliiiicbbpkfihnggnmobcpppjhlj
+dmoefgliihlcfplldbllllbofegmojne
+llhecljkijgcaalnbfadljdpkpbehakp
+hmabmnondepbfogenlfklniehjedmicd
+oooemoeokehlgldpjjhcgbndjcekllim
+kdcalgmhljnckmnfcboeabeepgnlaemf
+jboldinnegecjonfmaahihagfahjceoj
+lddghfaofadfpaajgncgkbjhalgohfkd
+djhjpnilfflibdflbkgapjfldapkjcgl
+njhlaafgablgnekjaodhgbaomabjibaf
+fijddbnggnpidebfbejillgbopcikfpi
+ekodlgldheejnlkhiceghfgdcplpeoek
+oidcknjcjepjgfpammgdalpnjefekhge
+abeicfkepbhgindohkebelkkhnnijcaf
+cklgijeopkpaadeipkhdaodemoenlene
+pmgkiiodjlmmpimpmphjhkodjnjfkeke
+omkkefoeihpbpebhhbhmjekpnegokpbj
+oimfmeehpinnecjghphifehbbnddjkmf
+enkheaiicpeffbfgjiklngbpkilnbkoi
+hjeidaaocognlgpdkfeenmiefipcffbo
+lgfeompbgommiobcenmodekodmdajcal
+egooomckhdgnfbpofhkbhbkiejaihdll
+emaecjinaegfkoklcdafkiocjhoeilao
+fbmjnabmpmfnfknjmbegjmjigmelggmf
+facajiciiepdpjnoifonbfgcnlbpbieo
+gpgegghiabhggiplapgdfnfcmodkccji
+agfanagdjcijocanbeednbhclejcjlfo
+nkmllpnhpfieajahfpfmjneipnddhimi
+pdecoifadfkklajdlmndjpkhabpklldh
+paoecjnjjbclkgbempaeemcbeldldlbo
+dbcccdegkijbppmeaihneimbghfghkdl
+llpoppgpcimnmhgehpipdmamalmpfbjd
+fmcofgdkijoanfaodpdfjipdgnjbiolk
+jmomcjcilfpbaaklkifaijjcnancamde
+gemncmbgjgcjjepjkindgdhdilnaanlc
+coofeapfgmpkchclgdphgpmfhmnplbpn
 )
 
 # สร้างไฟล์ .pem สำหรับแต่ละ ID
 for id in "${IDS[@]}"; do
     pem_file="$BASE_DIR/$id.pem"
-    echo "กำลังสร้าง $pem_file"
-    openssl genrsa 2048 | openssl pkcs8 -topk8 -nocrypt -out "$pem_file"
-    chmod 600 "$pem_file"
+    if [ ! -f "$pem_file" ]; then
+        echo "Creating.. $pem_file"
+        openssl genrsa 2048 | openssl pkcs8 -topk8 -nocrypt -out "$pem_file"
+        chmod 600 "$pem_file"
+    else
+        echo "$pem_file Existed skipping"
+    fi
 done
 
-echo "เสร็จสิ้นการสร้างไฟล์ทั้งหมด"
+echo "Successfully"
