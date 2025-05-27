@@ -104,7 +104,7 @@ const checkForComponentsUpdates = async (platFroms, versions, params) => {
             os, apps, hw, 'arm64', 'arm', requestOS, prodVersion, prodVersion
           )
           const stagingDir = path.join('build', 'component-updater', ext.ID.S)
-          const currentVersion = ext.version || '0.0.0'
+          const currentVersion = ext.Version.S || '0.0.0'
           const nextVersion = result && result.response && result.response.apps && result.response.apps[0] && result.response.apps[0].updatecheck
             ? result.response.apps[0].updatecheck.nextversion || '0.0.0'
             : '0.0.0'
@@ -118,25 +118,25 @@ const checkForComponentsUpdates = async (platFroms, versions, params) => {
               }
             }
             if (crxUrl) {
-              const crxFile = path.join(DOWNLOAD_DIR, `${ext.id}-${nextVersion}.crx`)
+              const crxFile = path.join(DOWNLOAD_DIR, `${ext.ID.S}-${nextVersion}.crx`)
               await downloadFile(crxUrl, crxFile)
               console.log(`Down loaded ${crxFile} successfully.`)
               unzip(crxFile, stagingDir).then(async () => {
                 generateVerifiedContents(stagingDir, verifiedContentsKey)
-                const keyFile = privateKeyFile || `${ext.id}.pem`
+                const keyFile = privateKeyFile || `${ext.ID.S}.pem`
                 const privateKeyFile = path.join(PEM_DIR, keyFile)
                 const [newPublicKey] = await ntpUtil.generatePublicKeyAndID(privateKeyFile)
                 await updatePublicKeyInManifest(stagingDir, newPublicKey)
                 util.generateCRXFile(binary, crxFile, privateKeyFile, publisherProofKey,
                   publisherProofKeyAlt, stagingDir)
-                await util.updateDBForCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
-                await util.uploadCRXFile(endpoint, region, ext.id, currentVersion, nextVersion)
-                console.log(`Update available for ${ext.name} (${currentVersion} -> ${nextVersion})`)
+                await util.updateDBForCRXFile(endpoint, region, ext.ID.S, currentVersion, nextVersion)
+                await util.uploadCRXFile(endpoint, region, ext.ID.S, currentVersion, nextVersion)
+                console.log(`Update available for ${ext.Title.S} (${currentVersion} -> ${nextVersion})`)
               })
             }
           }
         } catch (err) {
-          console.error(`[${ext.id}] Err:`, err)
+          console.error(`[${ext.ID.S}] Err:`, err)
         }
       }
     }
