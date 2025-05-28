@@ -12,7 +12,7 @@ util.installErrorHandlers()
 commander
   .option('-d, --crx-directory <dir>', 'directory containing multiple crx files to upload')
   .option('-f, --crx-file <file>', 'crx file to upload', 'extension.crx')
-  .option('-e, --endpoint <endpoint>', 'DynamoDB endpoint to connect to', '')// If setup locally, use http://localhost:8000
+  .option('-e, --endpoint <endpoint>', 'DynamoDB endpoint to connect to', '') // If setup locally, use http://localhost:8000
   .option('-r, --region <region>', 'The AWS region to use', 'us-west-2')
   .parse(process.argv)
 
@@ -31,17 +31,25 @@ if (fs.lstatSync(crxParam).isDirectory()) {
   fs.readdirSync(crxParam).forEach(file => {
     if (path.parse(file).ext === '.crx') {
       const id = util.getFilenameFromPath(file)
-      const isChanged = util.isUpdateCRXFile(commander.endpoint, commander.region, id)
-      if (isChanged) {
-        uploadJobs.push(util.uploadCRXFile(commander.endpoint, commander.region, path.join(crxParam, file), id))
-      }
+      // Push Promise ที่ผลลัพธ์ของ isUpdateCRXFile ครอบคลุมทั้งฟังก์ชัน upload
+      uploadJobs.push(
+        util.isUpdateCRXFile(commander.endpoint, commander.region, id).then(isChanged => {
+          if (isChanged) {
+            return util.uploadCRXFile(commander.endpoint, commander.region, path.join(crxParam, file), id)
+          }
+        })
+      )
     }
   })
 } else {
   const id = util.getFilenameFromPath(crxParam)
-  const isChanged = util.isUpdateCRXFile(commander.endpoint, commander.region, id)
-  if (isChanged)
-      uploadJobs.push(util.uploadCRXFile(commander.endpoint, commander.region, crxParam, id))
+  uploadJobs.push(
+    util.isUpdateCRXFile(commander.endpoint, commander.region, id).then(isChanged => {
+      if (isChanged) {
+        return util.uploadCRXFile(commander.endpoint, commander.region, crxParam, id)
+      }
+    })
+  )
 }
 
 Promise.all(uploadJobs).then(() => {
@@ -55,11 +63,13 @@ Promise.all(uploadJobs).then(() => {
           if (fs.existsSync(contentHashPath)) {
             contentHash = fs.readFileSync(contentHashPath).toString()
           }
-          util.updateDBForCRXFile(commander.endpoint, commander.region, path.join(crxParam, file), undefined, contentHash)
+          const id = util.getFilenameFromPath(file)
+          util.updateDBForCRXFile(commander.endpoint, commander.region, path.join(crxParam, file), id, contentHash)
         }
       })
     } else {
-      util.updateDBForCRXFile(commander.endpoint, commander.region, crxParam)
+      const id = util.getFilenameFromPath(crxParam)
+      util.updateDBForCRXFile(commander.endpoint, commander.region, crxParam, id)
     }
   })
 }).catch((err) => {
