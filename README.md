@@ -10,6 +10,7 @@ When developing a new component extension, you must generate a new unique extens
 2. Storing the new PEM in 1Password for Teams
 3. Generating the public key for the `manifest.json` with `openssl rsa -in key.pem -pubout -outform DER | openssl base64 -A`
 4. Generating the component ID with `openssl rsa -in key.pem -pubout -outform DER | shasum -a 256 | head -c32 | tr 0-9a-f a-p`
+   **Note:** iBrowe uses the original `componentID` values from Brave to ensure full compatibility with Brave’s existing component update infrastructure and associated systems.
 5. Updating https://github.com/brave/adblock-resources/blob/master/filter_lists/regional.json with the right component_id and base64_public_key (if this is for AdBlock)
 5. Updating the CRX packager to use the new PEM
 
@@ -160,7 +161,7 @@ or update the AWS CLI config file to use [`credential_process`](https://docs.aws
 ```
 [profile dev]
 region = us-west-2
-credential_process = aws-vault exec --no-session --json dev
+credential_process = aws-vault exec --no-session --json dev 
 
 [profile extensions-dev-role]
 source_profile = dev

@@ -9,7 +9,7 @@
     "first_party_protections": true,
     "list_text_component": {
       "component_id": "iodkpdagapdfkphljnddpjlldadblomo",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqEX0UiRGPsL9pzZrdbhv3R4joCW4ByQ3cbD574jjBGRYoKsgSGlhwMAbVg3SataBtwOLtu6lXb/CXjsekCrAxRHeUvgJkOe2adTQAFdOC5hqtdvRAKkdkjA7Nla397NldBQVft8jcI5X3i8z2FBDK12d2O3RTrspjY7Ow8NoovJ9mTdgRdZGGJEHdWZPfDIqJUTNnlb7qfCEGVT5Ct7mMIs6PU+j8zobVSSLsGIy+yw7yOXBKAVerlYe+EqrCkKAynMreKhpdfux2sQax2ntTKagvYD4U8pIH5BeWaduRmul2qLjYdHp1GrVbRa0qed5hx48rOcjXzs1WneqJOCR+wIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA08frcjQXWwyorCFM9u+LWbyWvs1mdzdYHIPdKDkg7xt4gyXqalWOFJOjaEDl4r7tqrTFtjKGSL8JPOXQK+Ll3mdCHsEoOrD+SIgNtIrfSkG6lEirMR4RGTG2gA+a+cYgQiYRj5+Dupa1Qqy1QUeHf4W+0OlcdENzGw+OVD3oao9ttIJ5eFpCPA22kfnNCHZQ3aa/JyUiP2+gVILzhsUdrb9H/Q78n20LJA6XeOVRtTX/T04xmY2gBeUN7i/bp91u5IjeQipuCE7WUiiN8QqosoIOa79W/LD1l6RIF2Lbi8ggFK9JyAGEOSv0MIw/eAtevCKjcDByKt+TdR07bExo4wIDAQAB"
     },
     "sources": [
       {
@@ -150,8 +150,7 @@
         "format": "Standard",
         "support_url": "https://github.com/brave-experiments/sugarcoat-pipeline"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiylfa1+yEx56qy5ochmylgv6iP2qQba2TiZ+SYw7YSayMwGXSwTdoDh3IKnCYcqcq57/SQb3wB/rUmMTEgyb3kQJAKFT7DWLbsVR+g+QZT0WGprNLnFPKclaF1EERyDHeX6qFuhPzTYmHK+61231wcgDLVDjBecOzr8j6OLUAubrgK8TBjI8lXyRoX6ofGDz2FrR/lZBEiyy92ygVWGWqcG4bAdyqx1bs5AFtdoY00++1nBmN0OIVoX5qPD9k1vXc/lH+c8kRpU4yIZrC+ieHRuXmegnYIB6lTy6P+G/KHM28JvYQrJbvrVnyHukpxWJ8VHNJPZ6Pe14yu3TF3ptKQIDAQAB"
+    ]
   },
   {
     "uuid": "9F38E77A-64AA-4C5F-AF37-727CAE1266FF",
@@ -166,7 +165,7 @@
     "first_party_protections": true,
     "list_text_component": {
       "component_id": "eaokkjgnlhceblfhbhpeoebmfldocmnc",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu1sJ+xdjVQAY7DGu4gbJSxSXPWkmVS74upaa8SugVGYSMG8kSSfhoE8Jqs5det0NodLIq/STrpvXESf5jCkAmNZhAOqv2vuWjbau0Z3ZmhgW5T5JK5WMvyJ8CKeA1CTP5LfMLp1B+pyUhBpEgAHRDK3iJlBejLJidupdbdK8sCXuKh2HuhKrjIG2nnQDEHz927MtpsRbhgTatpfakZ+CDwjt1NJLnpx7LvwWGyvE/hSne/nUyVVkdRh3zkTv4euzWBc67K/McoJtS8A0WqgQSXhQqboU9iNtkmQmdbBucyhDOZvdHbIAwCbHZeWD5kU7s9ohKSigVVgYhbasVJJ85QIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0tb+EwKS/eV9UpTsHDpLgHMm6qevaJ1FWWrqvCk0dbhhMy876294dgRfYT0xCAxYFiS7eZS07OsdXg8Xbl69GU0it5wQ9KQ2f5cbJNk9ioc4jWbeXT1UsZhzyXJCiYz7vOOnAj/0dMvNnhJ5DTm9KhNK/yJ4WsW9em2kRbfQOfOLDUP57udeqYX5t1PBd/J9PA+19BvYTgBe5YyjA8Q+nY3Uyy8Cj1SM7AlKs6WLIfrxn154wgKhHxMsTnR3wpr+hO53BSx5T6n+nQXw//CTOsDh6OcfcZ/QZCWmgsX75TH9FiA3sqJ1Co+JGA8bGmZ/JMk1j2ZLmsvzgSiyqa2gzQIDAQAB"
     },
     "sources": [
       {
@@ -175,8 +174,7 @@
         "format": "Standard",
         "support_url": "https://github.com/brave/adblock-lists"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3Dx4BuF85T0tIOemGF6K02h6APprrSP0M5bdSqEag4YHo0uTsvPldc4JAddnsa3G2DuADwA4n1kIrLwp+K5Ad/DD5JlgfepZXoT+g+qR2zbayNbVC3SHUVqn9bSTPImpmDOXU5MQQTxpV2xSDZO+MkAKOsZjxs7rHBas4vbrTUTiy27Qbaq9gKyw07udZ4ouWpWyxEI3EP5HBKtYiJPJteIdHbyrV9vCa/fC7v29T+aug/SjqbdmFdazp30C+MaJaV9vHUQuAuyWE4fjcOfaZ2Vx3PgxzbsDembh/i6+rZ2ShyKefzxVtkWOGVK9ROKz3/0HQ8EsRxyzHHPdYGm6VwIDAQAB"
+    ]
   },
   {
     "uuid": "E99CBD02-FFD1-4651-9BDD-6A9ED7B87819",
@@ -187,7 +185,7 @@
     "default_enabled": true,
     "list_text_component": {
       "component_id": "adcocjohghhfpidemphmcmlmhnfgikei",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApvt/0O8tEzvcvXouv6MocCBIEbFo+NPt2td35IPwKwkJul/6YwusCbqE+62gwdPDRzUw4+X+htq2/zQ3GBOFTkLIEsySJU72zf62JKw8hAfoB0gM+jNDyD1IrZU4n5nTdQf5oQ1oJFJONEI7zo1ZvNUVPZQp0ZZB+gmRcWIBRY6SvuZCFEDDevivZMXbJJ+A2FxKrs7u+89sgGoEVHSHS/c7rmLypLpVcJQXbTjJvnTaz0lMqFFPqH6NdDU0vJzqDrG8HkTn4qgal79xtC/AToIgNbi+pIL4N0zW66i3nr3NMGvV8C92ixRRxg9s3AqNhGLdhXjqP5WjGyq/+2ZTjwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAutTUFFFqjpCR8OwWSN/aH8ZctnALTspDcvzHj4uB+dcBaiFQ0HVW490bYPbeL/KIegWuz16NV0YEKqpbVYjOxOpnPYQBekDjwVjkIXi5wOsBwZxW0PS7x+TcGCJh98hI+s0yKVJDYizwTxeiEiTiYDODswaNF5Lqgi8zj+Q7/jf9V7YPIjSul6SXF4gObiV5yMFK1ySXcs/OCTx+KIxUJrL598JfZedSUXsgI8fi1Xl4E7S9jIyZ+z9rgofsqiU7KP3ydaWYBG7VVqW9tkZjTEXGIukOTHvkgVhW1PQjQYH++8Vt5yG0w6k9S92iT14CW13ooWCNx01U9kaVVLc3qQIDAQAB"
     },
     "sources": [
       {
@@ -202,8 +200,7 @@
         "format": "Standard",
         "support_url": "https://github.com/brave/adblock-lists"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1lJgf3Adc0vCchOr+yLm9ZPXpA3tfIL0dc+3sifoKacn1FXNZDzVvNgpv4SjUIbbDwHllTOnP6hdoBMFh9ARZ8FOroPWErPzRDB2i4u+WkgAsfQ1odH+vsSYLK0jG/d5c0DPJPVJK/8aFP/KtV7Bu86DDPyxjOv54JjA+W+hyFKZjS+H0Msy0z5Q3u6W5lHYLaUE2lBGVbJ6GMGwdsFW5NnEVr/gcYMuOB6anLzN2jUVatHnk8XL38w1OgjoFfLD3TXklLQMptWJ9sOrREfP0DdvTwobQv9n+eW7hSqlyKIf0mF/0qPZi+nfOrON5pi6AJ9C5r/ABoQVkEynpxzD7QIDAQAB"
+    ]
   },
   {
     "uuid": "AC023D22-AE88-4060-A978-4FEEEC4221693",
@@ -214,7 +211,7 @@
     "permission_mask": 1,
     "list_text_component": {
       "component_id": "cdbbhgbmjhfnhnmgeddbliobbofkgdhe",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjKPncUiS7rkYx0cGKqpLQW7/p2msa2TUNLOMzYYLHZ8KOlpf9tt3eQX0WYY5BSVxVPuNYldhtCyMbDGgI9RjgxpCxPOS4iII14EoJZ7HLAEkYODOc2GX86l6jJZHYESfqYyHjT16fi9570IxrQwqsFuNfdVZufxVzvvMW8OuHtJMbnnP3AHwQo5QoR7ANPl41CHqGo97e5WkSCfSfNjNQwK6UrlrDhrb+PFkrX2MijyAwDAWwlXokDTBZUeV3HJCU+DHrTY4O8j9jZ39Pmjxcx/JZsA+lgVgbTfukWefetKONmiiVjQ6WP0L1WJGDbAKzpmYgA98t/visaNVQwo9aQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoDVzAHcnUwGAZFQVKYwGTsboPfxDw6DbsTWmfwdBsuJKgHb4z3/KQbyXaGj/h23VjVYBtphm6pWw778VqPyByEDVLOw0A5z+3ypYB4yhN4CGVvZGcGOUMkoCinY1OkJ1w1WFJWDmP4d+2pttFS4Akn3CaG0xZc7rtVR+NRtHYw8VO4tGjBkwleSM3ok7B2SuB+FG/zKGINECJ9Xj8gd31mRC2f3BEW8f7D1107kGYlVpcZVpAe97dERO7Zx9V08r96JKQbOcsFtDhXoYUS4ky8OtKmFCHxocxssH3fVzhrlcvlYeuzaNE+7Xmvb5Zj3nfCnzwbWMIsH6PPTepGeLDQIDAQAB"
     },
     "sources": [
       {
@@ -235,8 +232,7 @@
         "format": "Standard",
         "support_url": "https://github.com/brave/adblock-lists"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArks76Gh+b6eZdQVqEd7egImPqk5U9byBTEFwQleuYR+LV9o+usQ6ltwCg+ifMFa6rYsirnyhW1IT2ggc3rYMS5jnbO05NVIEfwi3Hs3zTJhaVNlrboLmyZTwpK8Pd5ZwTSl+xtUktIFIme0/n7jt1breIuCgEC7J8q7B+03zu1dRQZUCZiHHKT94D7n38kvWfUV255ueK4F8IKd43MJ95CkxcYvLI1EpE0/KhsUC80xsbNsYLNZmn6ro+bFC+n9gFFzn2iRdV8fDso6gFVYwHvy8IBHyVNL53dlNTeA5ufHbMYWta/R61a8S32X9sikW/H9Oa60Xp6eWgi6sYo2i9wIDAQAB"
+    ]
   },
   {
     "uuid": "67E792D4-AE03-4D1A-9EDE-80E01C81F9B8",
@@ -245,7 +241,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "omoaeaghhgmiojkeaemjkpkmelmalbgo",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwuamupaHUtekv0vTpfSTZx3yVPj2+QcNFOnSyIVflc/dG40Aw+zmL7MGisVG8o/1HzOG+rEj3X5pDfi3RdVoSfyGQk5GnNNYGN5g5Plci7q/VhihDhSYglVahESoSRla/Ttz47fFP121XS6PfqlVQzsVlNMOXFv9cqhRNHW6Um76uieuaOC/Kwn6T4uQG1nPxRz+/HJ2HObteNHyd0ZYBXSlTmSaPt7RPNC6asAq8/7ot91UWdWaPvW1o/VgiDX+vLVkA3KCPfpu105K9YWw4DF76n5iNv4KZQ3Y+FhBDvhXrxroaQdh89ZODxc61XAxTgz7Zt0d+t0H5kiK/mc9nwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr7KItXUg31h+SDpypHTSaZ3fo61/VQIMs2xx7lScsIIZuuh1Ww9FT+aszbC28Wz1FDGh/RaNcq+iuyiTzVp9kB0ovFGaLNvtSjVLsIgRhwYZrVNKqLbxe2VaDTHtU8Zp4ww7DXmSkqz/Y4QnXewhUwKbwh1Qtu4A2XkWrPEC3ayKjKgX7wDc43obEqATR7tFN8KD3Jft5Bigc4Z7stiOMV4329Mp2/42R4V1JODRq3igC+pNgKK1DUazKgfpdvKGfxuKfUFdTY8wreEq3+cA3vm4kBaaX0sWl3GcqRLF1GI5aDD06Nrwy1CzaGlaoetY5BaMP0LV4mz3yTKzUzNDxQIDAQAB"
     },
     "sources": [
       {
@@ -271,8 +267,7 @@
         "format": "Standard",
         "support_url": "https://github.com/uBlockOrigin/uAssets"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4EXUmvWxw1z9NJE+WHiM+2RfXIRclw/dPYooLgqgzTghGnM2fTUeqyv19gAm9/vC2tt5cSv6qZdSnnvAcuHzjquko8T4n3q1G2pdxj8oOV/fCaZGhVKrCI6vJF9je/ymHH9PekmwhFOPu6DtHq2RPEYUitrCzjb04ey9yaJnb4n+ipwympuPhTeDDv5f/1LfqP+YusHqS7nBR3cqr+4wH3MZqQVbO6viiVRmiMfI7ifSYK4gY3W8NwM8/WIhdheNNWIKZ+vsLsj+hYowsKtkQIos3mLZTJBT6zZXt6fUIA2yI37+9ZZrWXca0NU8VuCeQkR3I7N6I14iA1vgu7Rn5QIDAQAB"
+    ]
   },
   {
     "uuid": "7911A1CB-304E-4CDB-ABB3-E2A94A37E4DD",
@@ -281,7 +276,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "nbkknaieglghmocpollinelcggiehfco",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4DXPhaN5VD5s1VM8UsmFtbTwcQBxKH6GlnEavzSSi5zoTt+lB/fsqqq1V43hSHxxWzGntxTcI0GGLeF8JnRqok1GvRE0F7hV5c+jnwQGQKTIoH++PePdzUCS8LFik6fcXnkvQ/EWUzinhUP82hTvQaojszKlRJbBlGDkDjjNF6Ib+chYEGIAej5sxgdLnPxpjG+pYnDn61TPWXdYB8QVJWGQWj77RpYZRIk+Da59u3A+S/kcBRm9pawrZ8e+JOZNP/pIZHiWsw9zbOqUlrAMC0yWXA3Zi4Q46h7/bMV/75LqOshUVlQyhoKCgoRZZ9IuGq+ILzsMhEWmPznJJq8sQwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlsfAHW9sdQt7HPGZDivce2bY1zs3y62g/0sayWi9Oqnsk/dUclco1+x8A5DozMNWgzFbh1JYMspckHe2JrLg1vNt6RIjWsnpYmGJowkxH0QBXvoZGZ9H//mlrWlAxT4gGA9OPSTNv5gAnVgGfyZ+Mkotsa5gkHpdO+1QUpNXQmHtuH+vQuWTSBW8lrz6LHNeujSw1GpZ/tUmFC6YGLmJpmlFkhnBFG5Uc6sxrAzl0+1/Bk8AVhLOkSgK9rLO6JRHNN74m3QL3PukPTtqJ7EVp4YH+/vWALPRSAJVktj81BaAGfMwsgyA+PA1QmLvkheSoBEP5RkYLF88OubMOWuKswIDAQAB"
     },
     "sources": [
       {
@@ -289,8 +284,7 @@
         "format": "Standard",
         "support_url": "https://forums.lanik.us/"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArCxaLNUNdHl7nOzx+9gyiJmtQMzUgs33+Xl7+E5sJ67tCspO0s/otcerWAkcrpJxMEzp3vvP4pj4XH5D63plhZsux0FAJjKUECklZT3nh5iH/+LeBdoy0/JHNDUo5+ESZCwIAAYNC7FcXjihws0/RCTp2qQYPK4VoLZw4RHQ5Mq3ML9thLfZCAdoz2lHks7djWNgCsjcgHK4opCh5b3ILzhsHnKUE99GdW9Ifxyawf6hfqWVYHgptLMfAgwJ9mcd+0ZBByLbdHqWvMULFOYWU5RlJUIHp2rvyI7pVwPJWBrW56is7RS2M3KY1dE80JnHN9rQn545KTpIrijSDYfCiwIDAQAB"
+    ]
   },
   {
     "uuid": "690FF3B4-8B6B-4709-8505-FEC6643D7BD9",
@@ -299,7 +293,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "kdddfellohomdnfkdhombbddhojklibj",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp+xSPLtTRay2cOXehkuyxpz9TSPnwj5sHCtSWEoxATpAzJOh9DL5mJjasIC/PpvLMs1XABuN8+TCY05RpIjuq3Av01kwxM6XouGqtTzvKx7o8iQ48pwXNRdLWWW+9WKW9TCYr5hJIbt8dgKIbpDX3zICUZUZHiw53/sFJpyCpUfi9r39qoCQAqndrh/pedc08iKVnP26Jb3l1QA+sY2Rm71twFJdQXktxQODzgSj0VUPSbtjy1dYCUC0oAcWyWJwZfmodCzsT42jU3IFyl+Ehjzaly6VFAUQ4Wpm/w7vR5xvZwLVsYggIa0XrQ+3sUcJPGe4qpP62lA+iuxPAwOK9wIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6AeCHWNaXM4CXbb0iOarXvE1u14CmbX7zNGEVuG03KjsH0YGUdU03WEWz7jf60rAsMXwru12vQ9fH1NU8bw0Jq49khM86+kEOvWcrMP/Kg0o16kqlh7gIU+sUehZzXT0ggC8MeDkE3efZCWhAq/8sm4WXt8YdWRse09UhRTenMvrZuZsJOFxCfTpUpzRyMloHZo2nWjJsP0Jia8jgoEDqUGdUsxOWZvJdq38cb0c5Pcjer/JKGv2S7lQJM9iy5mB2zIqbqg4mXKftgTofqmRRlpw/GH7p6RzfjDs9+5nLEUNKKbNqj3ABRMJmZ/rutvL+lEFRlTsK2sFKQ1pN2Z5nwIDAQAB"
     },
     "sources": [
       {
@@ -307,8 +301,7 @@
         "format": "Standard",
         "support_url": "https://forums.lanik.us/"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9w/m/PBGP5pStSVhM4e8ApZuUZ4HGSgshGoLjulALYuGWdcahRNZHfzevHBauHquER6xlBQP/ndIaZiHxUlfLO7JzO9S34SC9aBAt9+xxmPJ4JSupp8aCFvHPNfnEaMbQ/MEGJ7HQgtw+6VZAFD2rWqLxjQwyIDx8v/nR2alvEQqJlrBQgVycBRTmapwdaPJjUcepzOKhzOPhdik2YsPwZMlw/2oUXhQPJScmpaEheGPk8L66eM0n0GDpojBkWRZgpk5K2p2TcrEZbvixNTQKwvKWvf0+7ty2yYMIGDZP+TS1H8Q1S9apfC1Q/dH6eiMTYKy45ZNbpDZYUzb6RuP3QIDAQAB"
+    ]
   },
   {
     "uuid": "2F3DCE16-A19A-493C-A88F-2E110FBD37D6",
@@ -318,7 +311,7 @@
     "default_enabled": true,
     "list_text_component": {
       "component_id": "bfpgedeaaibpoidldhjcknekahbikncb",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApXrtZOplb0ZXM7nlAi5YA8WhiX73YI4Vz82BxEYK5uaQ2KY9gD3ayQ46DOllEOBDya2wI0d54e0ne9/+fXSaxSF3WxMVCmmYiuSOdceHTuxzBVwFdC8ejgK8M/5K70A8kkv64gWSnOHwVgyvbUv5wT27lQg7QJeF+n708jlbXxJd0frnDVJnjt0IABq0RKMlm22UYdd3F8YDHT1+jXugB86p47Mn2Bapz1tloH4sCHcSdypdA0dAsjQFonv8EYEe2X4s98fjrvMxrwrs00x+QrcAmNy1pn+wk6wi/5aLUojjO+k/+XZEZiEbVn+ldhMc0XPvKpfngwKWK6RpTwpsUwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo+9SX/yWLEQ4FuTYSu1XHlv7UX4lFA8edY/LGXAVlNTR6K49gz4G+5ZDUV3J/2XzJNZhkjsa57NlMtrNXj7ySbLlkEx8VRYtSkqsTLFW/62lgudGv1YjCyo7Z9UcidltQ5yvr7il7kj28Xp83kK0SqbmO8ZtPL27JXVH4XeAJcposqK1kKnzq0ZQ2iGZaRr3/MZDPhcAcyxGgTl4dmbf6qVkqMGA4m04hdbByOz3I3Bhrd7pEid7GzcTBqCpOznSMSr9Zd//uS44heG+T5hHWy4jdNocDs/edYWei9reTyJJZz75LYicjo68FcLihV56pL+ElP9ik0MnbKvhiKGUqwIDAQAB"
     },
     "sources": [
       {
@@ -326,8 +319,7 @@
         "format": "Standard",
         "support_url": "https://forums.lanik.us/"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzfOMSucefHBwz4hD5x204ntrX/Oz+iNVKBI+HUQvG0+6dnb78BhdMGFK7XeCAPGZxxxagIlRxEn6YC7QYd3VEYOJ+vIIQW1tV/zbJAMBgVkPQuWg48I8/s2moaz03geIFemvDzkUfOM1JvNDODZ0Ocvy8Z17nQiysugCT3xxmU8J0Zy4YZiWTR8fVi8p9EhH5nQIw2RpkmKwhAIhN2DqpaDTc36k08iM1bkZEwz66Yxyyx6AbVzlIi9oZ2/wVENselBiNZ3IMa/NR+5XhaNIlGeSajGZA7CntTxcisF//S29xs+1EGDRQVFxboWHWVZhZnLpVooe4IARZwJRMutAZwIDAQAB"
+    ]
   },
   {
     "uuid": "1ED1870B-997C-4BFE-AEBC-B67D679BAF3B",
@@ -336,7 +328,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "cjoooeeofnfjohnalnghhmdlalopplja",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqQsPEXJNUu2khKNUZX6uBBiMbndDwCxefoYPGv5vXSejESIz2TzRRoRhZamjJ7dHFucJOV4oadG0jDWmv/qLbYo6ND2PyTtdK0H1UhaJuW8VtmlUDzwnC8GF5s3yylo/MnVP+djkn388R0yaszrm6iZCGnDnX4zgoxYxHg87yQ+U+NKuCfb2c3RHHcNqjj0A80vxUWPrtBdOmCLh+Y8HGbV4aMRX6mczkPzm5CjCGg+f+eUSxEm/43U/vTDEHXMT5crI1eQvyIEvZ3Ie2Qt/RTcWbMqAaOwNer1BuUwxRZLAbC25khEFSgeX4zqMy/WJuJifdMfNG/vMAL8ku181dQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwT/whWZ8/vRCFxvHdPQwmPXnumXkbGViSmOM01LAO9MElkzuLbrXG+DWLHZHQ9C7htUwZd3T97v1sogPSdhWZnf6A9iS6Zfy7ODQ/X99avDGtJ7ibFpUjyJCys/qnadanEdSPrDcybYylfBhpn4EZPvqM0k/9MCnrV7sqqL75YCNQYjLG6GurTFjbJvypx425ME9KTcVXk/lNXjfABXrt3DvgvCtCIflpWYJjU5sBiB+mdmm9S89NVOr7/ycWIJHHcXLHnGNtog2dTIUIpndGJdo4f5XGc9z5k+bf0FFkjihf96rWYZ25nFd0NWD4qfnhxShqEEE+fTmyO6ZAVT7AQIDAQAB"
     },
     "sources": [
       {
@@ -344,8 +336,7 @@
         "format": "Standard",
         "support_url": "https://forums.lanik.us/"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmeruESfw2oDoog1mNaHHF0b7b7NInrT+PyZ3oequcehNkGJKQtHdtxz7ARQIQfs+Gg8ULoVdcTCRE2edS9mrLyTIwoIn7qHjyH+fFE0CBAxlyIswFwB6JeGOnzTeuwl4oTj4afU6Q5B2BuTJsrMXK/mtCrcCDvL8MFk35Cl6JlkuNh/fNKEOk/HhIIV4+eMHI/BRP4+j7Ka4kVJOF9So9KxRCU7j71DNt1Mx65BDKxbAZUPV9x6UugpH/hKLkebnRCvnaGfUPEUi0aYWAxBO5vA3mYL7v5PkSNkhPkmFzOGiZfhfavDpY1J+eUYP56fmmd4RgssVXAytSWgug3VnwQIDAQAB"
+    ]
   },
   {
     "uuid": "BD308B90-D3BB-4041-9114-22E096B0BA77",
@@ -354,7 +345,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "cpapfkpkeaajehipopnaiihfmbfbnkdp",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxwaaj++OmLL1nQpHSBFZJMin3PUQeamkXBHjtj0SxwrRN8/UjceZ3W2CIgIRl0d/qtPsfpc08BrHfQQqTjVf+hmEF72diQmjr/LH8e02+Tz3Tk/RCnaUHVISte4kVMbio6GXSvbzvTnUFkdb6VpP4HEXmkQXfqO2GG8uR8tvIz3bGGDpmB1gMu0d0j/UQ0wdYDTzSe1fWCJobHJPDBiK1UFLK+ggNP4rtoZEYEOhNmCQkFsV+QGVAHZrlWQXqA03PoqqaTRfPTHQfBftpmG3p7WZks53DWNY4lcqHDRUX6ltIt+8Ax6CDAM+GowvFe4meGzJbqXH6WFvhhmgTxrOWQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuVX8dFpyecLvqXjE62jxF36gRB48vZrWDpAuL2+nze3EVSItskmMJIHG9y/AmrKctlPXpDZS9XXO7/WrJfW27unWYZ708w2nykxIwCDeQ8Lxuy7dp94axgUpRF5JY9xhi0uhnoBvvvt3LBOKb0r3CfIhqyRLkC2h7RQnndHJCcT2O+W7cgGlEF+75dDy7+VsSut5OCzT3/9LXus/BHUKHVk1+xzLnh3CLfofBAdSasntQKJzpU9lNo8UtFjYSaNYx1JHqSjAa2e26jbRYigGY5FGrNbPZPB9RvjMpzrpgU19McD901LjvQVd0+cBjFU4p++v4nsSuVPFxJDoLuxlvQIDAQAB"
     },
     "sources": [
       {
@@ -362,8 +353,7 @@
         "format": "Standard",
         "support_url": "https://github.com/brave/adblock-lists"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsiu7aPrOZ10unfBzLDg9O1Gv8X0xEGFT/tHzBr4RIks3BV6p4NGmeQ5SRsrz7lAdNtKoq2dcqVVW0FsPElKyr7V76qwT6RVTmjz+0caNw2I4fParjScwRd6fCIhb7CQZJcdL5K2awj58fbE319VCm3cF8ZJBY5DnMoMJrtcwvZuujLJX5BlkNqR5tRNPT5PGAOYdbZFwWFGAvVDkSfMlMcX2KgSBvnacdJ82AH8+sgr51NCdAk7kqBNAS31Ik6iBQJqNDcaf9xFoVcuz63CyXpB+q71xlvkb0Ah8Cpw4AMb/m2fPTUrmzlacYJ3rtPeWisf1zGFLWdGMytlUqVZufwIDAQAB"
+    ]
   },
   {
     "uuid": "2D57ADED-3531-419A-9DED-7F8868BC1561",
@@ -372,7 +362,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "phdmgpanpejkbmbljlhcehpadabljfbk",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4G115uDrBhFu5WdlgppnAD37NsrcQG1IDgclSsr7UeGs3sU3L5o6MjDVnjQfFKHGI8DFz4rPNw1VEwSvQsOBkI3EB/fMKh9c+H+JkDHC44OT+brDLtb27nHJAgjAC/MrMt5c3dmAJp7Tp4ZasYo9DhNXGjQzdWY75A/jNn0dLbMtthGPUZTiQLa149xBS84vn+YeNUNt746y6zlV1dOH+SYhgmNo01HfMeGro5pwupklkcHbRVN0CXEso4SWGFlhjrFg0IRjJQ2CafMX0N30IXZejXNKOnNWdFCyjNQeQU/CEwKdl//inPalY3u94H5blrF0OZ48ezmU3FLkpJLQ0QIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs8f7Uuad+4/lEdIx0X6lfmQnwHLTz1JUL4s61SUgi8ai/Y8enCPloLaAyrs1jIg5tG7fN5pea8bqnKx0yzqDSoTVJcChq1Coj9gc6zIJBBZjurjmO7kB64exJAdt+nXQGGmaEo1Eb7Y4XJAp2K4Fgcxtwb42HQ1jSYVQR+7rtmAotSyAEdeGxqw2BSppvstzuYnT4iprjDxSzgGBQj9aa+UrybtIqZZcYqxxrDWo4BFAzh4dXkaif9B7Lu5Y/ijZu1BQwHAmkGrbwl0kP0m7bqkyVEyDO0B6SeXaX3k5tt8m1Gx6sfXFhueD0Q9/carkLzCOvMKnCxODb84vnvPqiQIDAQAB"
     },
     "sources": [
       {
@@ -380,8 +370,7 @@
         "format": "Standard",
         "support_url": "https://github.com/brave/adblock-lists"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoC8Js4ex0er8uRg/bQANPlI3blo1rjj6yhs0zuk0MAernrbhU2BX0yn9BX3X8ij2ACVvSgchBZ0TFv/JlLhZQ2l2/5h/KrPnNzQzGw8A4M5JbKna9qNYjV2Tg2rzp6oZJSkuc72nr+6SXIzQ6KUq9dkNX8Stdf46J5M9s7p+kNhkxRz5YzDyj8K+dR6U1jixWBX6xENv32d7HlzzQj8GYx9ThA9rt0HajyMueWvz3zx7ggOVE9NH/342FgYVbbCew4Hk86OljWwDJXvkl9V5Rx/z86IhOTjpyTjoUtr0rWnc0EVZgt0egBu58w+IKAiRIzvG2QoYHv9CyTpbWdmc2QIDAQAB"
+    ]
   },
   {
     "uuid": "9E8EC586-4E17-4E5E-99D7-35172C4CEA74",
@@ -390,7 +379,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "almolcgbkikkhliiibfjkohebgklegam",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmoIc90ZUus/OBpf/4fMYb5FtwMRbrqANFLDi282fYnptjP1xN2Vf/0We5qi2zvPLXwLAYIRjBbAFghGomZuru/jYEVqRyMWy6nqE16XPqkI+x3VM3iP34If5SA+y3BiN5u3ptK5qqW8C0F5m8yptbFUXsCiEhdCMWv+VzPvfQhUnQKucqLtHxK31dUCE+aQEvbwEjy4J9SuisZadVJXifb7rpIahisIopMsaekyYqlVBppCmchsLtd/lzxPbSLDli3eClO8Bt5CnVRk64njQ0xu3vKMothbJ8Yb0+AKHalkurJpFcptLigP/mTKJ/cRnWJbAqKND9uRZQx7Cmjrx0wIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9NYY9InaTzSzLflP/Cbf7dXywd/l6Z4ggeZRV5REpswKuOrGindg0MTnPYOKtcpzcY84j+i4TP3ee2A6aiS6JcLJVHU+PAytmiIzEqS/OzA8poXgC6XekSXdmbRwfZ/nOR+hK2UhikCCzz7U1C8O5yC49buyBuR1XxxkZrnTtLz1cjSp5UKEwo/BfQe81kG8KI/jv1immh4GqmDw61kts8g3TPfBJ1AMm+9Tf3WAhEfpo+36PlHbFmc4aacQkddlXaQg9PXWyE9DTg3iQx3x2riaHPBAXALtZJ6d/Gg+J5w/+f3vQnS/Oa7A4UFL+wDJM3Gvo5a7TxLWN1sNJzba+QIDAQAB"
     },
     "sources": [
       {
@@ -398,8 +387,7 @@
         "format": "Standard",
         "support_url": "https://github.com/brave/adblock-lists"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyl+2lh6U3V3biKlYbdR40nKF5e03WQcrCyCLOs7omTvEAG7GzH0UIq4PkBJeYIJ9VX7XneQ4nW4CkkaY3jw3kdwzD63ZkSBb7J0LXVK/lhvWBO+2BNXuOOvx+fdVOAuyxqlYldYuFkShpJXPoNfw2BDQ7Sf4pEXi/pL0WuTn6UCDOn04OydAtUDOMtyFeYtJdIyORe01iP70Ep2+h1YnhzqzBqB5u9KDZV4LFv8YpWpegJ1Nluicy63/QY/HFsvS0da02inuZnlQ2pkz6ibDecRIIgbLg4qQ++b57LrtTL6aRVg/9kScF0nojwyhxRhe9hYdNO2h8/nAoJ6lCs6WgQIDAQAB"
+    ]
   },
   {
     "uuid": "78672887-A098-4D2C-B0CB-A3DEC4834DA7",
@@ -408,7 +396,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "mjhbdghipcamfoojbeikdojibeelbmil",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArNtM9cDbb+G/F29DNMy+QcqVZlAGWndeghwryutoxw7DBhdmY1qVkUXfiuTEGQbpU/z0AG1sIA27yjoVMIDcPF6x6lWtqzVyNddN5DLwkultB5Tt0Gwozx/b9MdKB3WZ2L6Y9LJTqH7beJcMkXqdA0Re+pLcEqV6/GBapXR8GIu3EZu37MCFjHP51HBE1nFdzbpbM3GYSJT/VxhMzrMnDRyLCnip32XuyJnDx3D0SVANDH9amnI2ia40ISVoVT3J5TEt8ZcGk+kuu2Z5Fy3nENIjGZQwG0mjllenpCy2r7vYkitXTTPXV7K9dNv/iK7AikkQausJFsygWktm3fO8+wIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1gz4qYnW0mrT6G+GZuHy3LDl7aEyVLCHb0jIEXkbPw3SG7tNXWgsvJ4th+HFfG9mefvmgaYlvKE6t5RIHBtNHwwiQVKZcLSF+MDoAL4s9ksJj1O8PYgqgfywzvVV4Z1gopDtRf3rzG0+FM03S2H8sNX3yRI7851JZnmtwkt7rhs4JHebifU0ZhsPG/kqhjRSslgXM6l0+Ig9HtpO9jpyzOWjlgsq9kVgrIDsgbpkHWfnh178WkbsO/y8hAlp84aHFLPRbWfacLpK4HY3qTw3+K5+VaqS39/JtSkyyuIfXYfKWqcOl+qtpM26EUrB9ZxYOV3oe8B5fcIRGeu+ovXmpQIDAQAB"
     },
     "sources": [
       {
@@ -416,8 +404,7 @@
         "format": "Standard",
         "support_url": "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy0erWfTx4/Htb/uqtYKaWj3AHt7YSiQysvZzH3Fdpjrlg2TdNxAhRfp7k5MJA8oL7llLSEFeJ/xIokfx9KbDLO5VRCgKNRyLPgaQ+9ONZB5OnA4lwrLiEXhML6dqKgU6a7j/d4JU4SvGf2WF9/qPnhE3b33g4k3fhxJ/7R5V6jgbx0jwhpLH7NfySTZqvOGbEEwZxVyehotRLgldcTo/S/8sH+tw6mSBRNnUk0vkr0TK0uqCy5Vg5gMPfpdGHpwh6m1zEqR6BJTrMZpQg0KIbLOPZfp0+oZputZ7PWhSAbdQbjq0TP3drxZ+jeciSDcBUaDDiQlTC64LiOsccfYFzQIDAQAB"
+    ]
   },
   {
     "uuid": "E2FA7D98-0BD5-493E-8AF4-950604ADE9CB",
@@ -426,7 +413,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "acjngemejiflkehbcbomjgkbfhjlgioh",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxyhX9+0tk4Yakx7klz2/WeVyS2V4sO3hRaZ0N4YfaHoiru6D3DFnsABekXEcm/S4qcBFPFZSQlGNLcwC4sMzsA4DKM0pkzg9bcGVIPQti0C8XNJavi8oUGsjCxytvdsLbOajz8RTtNCRx43xDESxrawPIrxq6FV3UqS9PAqbOrRcbTy7f+cn79Zr1X01uB7Bel3SBb6PzQLLCNQ5vIdfv+L/kIlYcSK8yvVkUkYa20KCK9zIRLDXtk8ueL0R9Iq1Ew2QerYZqCGuwktKeM4X8sP7jkzNzczf23GtpBKssL4BYKot+W+6iohCflERA1RZkhesoENIwFgatOa0EmPSgQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqXyniR6267bkHXP6b/vsvE6oSoRRpcUN+Bh0Jmy1s7RPsGXh2fPOyE9B189C6+2AD5VmSEWfV/c+IRsnJwvq2+pQAaldIYOkYMjWDIrLWz3/M5QJTFRSuxp8yd14H9hUEEkaiVmTWG4OvynhSX9SVCanalFtk3WEsTLyZ8+C8UYoG0bLKTs/+ngZXeiJo+N4BQbLKWPpIzAnRWec8gLpO+J9CDDkfO+mJbrOU4Xxnu3XPWl3WknFC8aCpXx8wEf0+SvyUpk9ffvxirKnbOeASVq+M6/Xw24ZBkoznPRt/AUjH8jGfi+soBPm8Oy5Oel3yRhV2doLJ7kYHh+1HRzARQIDAQAB"
     },
     "sources": [
       {
@@ -434,8 +421,7 @@
         "format": "Standard",
         "support_url": "https://github.com/AdguardTeam/AdguardFilters#adguard-filters"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqSdf/5E5bN3Sqa5RAIQbldm38HfKzMIoy71Rrw4pTNHZ1lnneijdQdwAOJx4LBIkp+KTOJxdwdL/x88ipFrR3dIHcYUZUS6tuUtxax9Hr6EWSZn/rX9psKLA5/l3wnkVQ9domH/KlwDATrU1/VZwqmwYVBHnm/2mG+DL0RFAxb15uTdYw0xCaTw79n7n/SYPFNWzchJTf4rxr2RsrpkI9LzLakupSdZixgWAk/nWZKArmGo0XSHquQWIASRbqnqbwxG4FeDt6lRW9RUmjZAt5xAHueo26ZX9zp/SOztoHccoOFcUSlE033Y7vn8vPQmV1EPTL5kVTRZPKH7F1Oj7TQIDAQAB"
+    ]
   },
   {
     "uuid": "9FCEECEC-52B4-4487-8E57-8781E82C91D0",
@@ -446,7 +432,7 @@
     ],
     "list_text_component": {
       "component_id": "mpgdjfnjjmglioiflfioiappfbdbkeno",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgHY0i3NqvaTUs/QTYC60o+ddyQByuLD6rDMrosMPvVDQV2KUdHGRB2+AhZSlnYxeDb5Wuy0Q3HhdukT7BpxpYYdep67H4agfwmsiG02r7yQA9AvhrYYlKyikvIJlpfiktV3rvpjvHEDupvkkrzV8ke1tlsbiu/50/BszJcwLZzpUIyu/XFmx37iUJM5qfB1txAYEDxid7QNByU1hx5KTbJ/HQaTHVTYGcLVvVZCuPuM5WBZ7ZFXVe2wTOK9F78uAFr/R0JJz/YaCMNgw3MuK7TRbZZJSaO0heB7uIyYy6266QIpqrgSWMayS36QcjJq40hOZmNhG+4phy2/b7/MpwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiwJi5R2iXCrOgqbya07JdfF7ljHfMtQ5+KZVzXB/vqY3CZz/Z8K70NvAQvuWehye885c16rJr94mjuenLMiIgb2oOMRRp0pzpwvxmxPfxP4I2eJtsy2eToHQ2S/pAht3LpCNkUe5OkM+bEcdfOJSTZ9JL8Gx4Caoz5MsaGCk/+Kt4+GuTcczZBxFSE5nIYBHn9qCmiyukqBZsu75W9kZunShwjGUI9ah0feJKHSRVSSg+c9gj8lPAJ4SJOiJx2ywKSakP6OXq6j+GpZjhTwAMEo02qLHa2HNiZogCaVXauu2AjszAyCrbatY0+gf4cXUBpPUMgqe93eL+NWA/Z8Z0wIDAQAB"
     },
     "sources": [
       {
@@ -454,8 +440,7 @@
         "format": "Standard",
         "support_url": "https://forums.lanik.us/viewforum.php?f=98"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtxSeTSBZJsms5wrl2tD8+QEu18NB7Jk0MhZ4VqqoKjXy7cQYNT7dajaL6DBkgbZ6OM0sKL9vkgEB6UbqChU85Pqw9B+PtZS2dL5M6gUU0YyQqGNW3snxrcbzVKHEsBbfWDbKqljLnvj2kYXSMKSImtbj9Mz8mqhKTZJa//4I9So6xOIy8SCitWRl48mXCZPQanaGYzb+FeZADxvy3lrbdTINtCfuFOD//DgVmPqJ8n3SK3e0uOi7ZG5tOIzdqlPUlju7J63w5m8FIAHemM3TTFtq1RPnBeiqjsnIjV1WMYqUPip7p2ro6JtvC/7dk9IrTzVyIRPjQPRrGh0/P+vv+QIDAQAB"
+    ]
   },
   {
     "uuid": "F61D6B7B-4110-4EA4-9C81-38FB4CE90AEC",
@@ -464,7 +449,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "lbnibkdpkdjnookgfeogjdanfenekmpe",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7AdRZFRwYdE1cQxx1Dk8C94Pz+U3Z1u8rWQ359r3IJHjKU2rZ1qYnoh4NSw6Evx6ox0IuZjUyB2KhaS0bPwxfl9Yo1rU9AWeB+KiMfKSO9c4QZF/M3fbZEz2DHw3FqVDLNXlmTs4c+2ZhM0h5rrSvnOpf4raNtHr5mGQFeEShuZ8Aw9suVnj/nt6cblA6HbdYjfd6Ay+5yYnd6onvqMYlHG494hRVzTsmoSCXUmGCuLR695PqAL41mufsVrWwqzPtfxfnGuA2wYR62IRNrKZFznaQd/kEKhN2ixtVeKcM/RmNHDfTPOzaqq1RNv7DQ7GWOEnYlsgi4eSfQ5IDZFM+wIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3DrVF5uLsOqE65lAq+2r64XT7TOFc1UEUSmUNDVEikerRunftboTousMOS/OMOsv/ggeggD3lrszsqSpejDOdbkaREzNz6CLnSIF0Y5yeHfxzQi10xOXIWjdE/s45qC56ZkISTZbfBRgJZHc/ustHeKQoDtChLoomB+5NEwukWEbVGSW7Wz04f6NbpFWptVPt/+WTQ/XnMgqkpRxcb6Q6KHwxIaCYyUZ2TtueMmVYmXLzmOzS4XWGOSXXy/+CjBIIp0cSq8kBTKgqNNeeCsOrcCmoAjCCrovKFcfLSO65sF7HnQT4nz4HqcxekSIyv2oLHFIhOMX31CbgRoiNlQIAwIDAQAB"
     },
     "sources": [
       {
@@ -472,8 +457,7 @@
         "format": "Standard",
         "support_url": "https://github.com/blocklistproject/Lists"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAms5tf5TTX2PZZjMMLFhJ0FM58BdtVXOPMYBGm8g5cKgAv9N5lVBntSlstBz/2ZNdNCEGHReWmMxvnrxl2JHsyNpsKXDnABZukX28lt9DvmK5PezWGoEnyN0OBrbfsyeVMLn/zM4/ggaH73fvg9KNumTgC1d4Ol7wsDBYCGFV8HM2TBuwfkYl2PhuGFM82ZGDcltwOfiUmqn1/uFw6n7nQVGBenuIAYw0Pd6Pm6tQd3neB3qancu+pzyvcSrpVeTp2QnoOfYGZ3KktO0sYbztNbbbIingBOo2bOxQdYmTyXAFuRkR86mdUotQfPYUWm6xiTnwMszNiwu6Kzjc40B86QIDAQAB"
+    ]
   },
   {
     "uuid": "FD176DD1-F9A0-4469-B43E-B1764893DD5C",
@@ -484,7 +468,7 @@
     ],
     "list_text_component": {
       "component_id": "fdmemomgcgpopbhhmdkdedkphkglhopj",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn2cOtvNmsobdjThDc9LMDvbIDfSGDM4qGblDV7MgSMusQOg/TYAOPpxGgg/+dPRhT8jobs9WU7onUwikWM392Qk/zCrZjCzkyh5AGDlJf5GPgEVcyGjHPw2wLlAp5NAMRqDmkwwn7Isom0SqKA4TqCDc9ajDmY6+XlP7PRzTdqT090g6cAzA4eEGDHWk0qOqFC8S7bZFjTDce3ilFKQK6qDuBhXgywATxPX6tTXucLHEy19KuFOGk8X+CxktlETQmoZjofYRe9sQeMV4YRZbsdf7QLTUEFO83m9ix9aZ7RnwuGc8JVxa6zg/xCC29/fABXeHMchzYCA1+HfbZA+azwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ayYVbKhBxMRUzAx8dHTUgwOnb9sot7kIp+JsxKI4ML+0/pbkPA242VtB0B/GzmLwbkhWlPCxd8c7Ndc10iaRcV1JQmj2EtkadJRDCFIBZcBpCmpzGjYRy/+peCT+d4ijcQWPC3lDsKni3VzGj5il1lN7uLKiUS9brB9T3gm6o/icbtQhWBo3O67EZz2iLrjB631VVlh9rC7OID3A9cZ0iVv1bnmFxRE+QR3D2nCiWwVanJEmLz9wogqWKWuVg6jN/8homLxKSDFkTX2iYAk1mMXnEeNDjatoW3FwHjrgY4i8B+iyVHQ3uwQKegBnqiIz52hE4CYGKND0YSkgcXe7QIDAQAB"
     },
     "sources": [
       {
@@ -492,8 +476,7 @@
         "format": "Standard",
         "support_url": "https://stanev.org/abp/"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsISFMrbaaJm02Q6L6YjG3tmjhciKfjtwynVp52Cgo0uC7JwpY0BKXfLM2nONmohn3X+oWYv32mnq5i8vVDAh9PbLs60wi4Fn4xOmHvtvgf5HaY4CntLow7i4g6abumR0NrOeZoKMiJupzIetMUSqWC48sdpPOE2jukIF0dkCv6de2YafspkT/CIg8OAV2yCXfljUJroEZYux9q2pSG/GgQODlIVMORZPOZ65McwUnQmvMlN3g3IyGY4Nw5nunIRvf49mUFnGcKdUG8YWmCsKO1DWuQzk43jbJ2w+DNpNk4PBemRkrObFdPwZm6zu7rFzuARHzYF8XTEHpVICsMeorwIDAQAB"
+    ]
   },
   {
     "uuid": "11F62B02-9D1F-4263-A7F8-77D2B55D4594",
@@ -504,7 +487,7 @@
     ],
     "list_text_component": {
       "component_id": "hmnnhojoekmmehfpmeegehbmifiijobb",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtuZtUwReN4/aGwtjA6m4sVqjte1zHTny4SgXmdJcyuB1gXUTPLlwohJiedxvQzLC3FVuMSuxho6wxIbM0PFc2CM/3nVSTcPi7ZbjsNKmJ45A/3hyKwQayfIHV9VVdd9Tv1K/IF1o4d2nQfSajjSDzlbb73nlzhAy5JIIOkt4/DKaz4qrBEizExR6zbE5ldHHgaTQsnNrKhxscF+tuJ7TInO5do5EAFqjvDmgHdQNoFc3wUE81mUX88GD/rgQds5GNPBkKZ0bi3PcaLW1Dkhver+bwG8BoamCL5Ay2VZ0vTbjq9KG3j9NXAEASnMMuD56Ag544DwoxXCoDF9wEZ/DwwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsuEvYhF/FMM1QVVZjD9aLAv1cHKJ8yW6xyqdO/zzTJnJwl/nLteQqTDz2ckp/k8p0+jlLYMgtO8PrfAlLf9FOPdbfvXYPO8w6jZsZykaMtl5vV8ab23GhSAq/DtFTosaicFS/5XgA0ZiBBz+RtTd+7FctJJlCMdQtm5YtjjkCNMn04bcNbqSwD31qeO0W3y3NTMEDVSMBij4bsgNjI49GDPUU7RA3xpIQ0OouIQBu7oFznP6+hR07vuDGZ7vaJ0P3WLV0BtFoN3CeTXgKr+unWUJK0G/Z+sqqeKiffJRnIAwSnXt6iOYQPqOjfJWkKie5KANn4xRwivgLwBtEQh32QIDAQAB"
     },
     "sources": [
       {
@@ -512,8 +495,7 @@
         "format": "Standard",
         "support_url": "http://abpchina.org/forum/forum.php"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwAROYAcs0HvQU1VPm5RIQqYm+Qbs/tl+JlMH1LsLdBIqGkihVXTRzJCVs6FX9GUjIC6BN+cs83c9llX076bM6AHjmMfy6D9UZ+7VFabEDIPERcqqH13iTGDNeY9ZPEmkHEDZ2ax6KHLEN/16gngMASxc/2PL8dZIi0+VNQYeurlTb2hWTsC/MFSbgXDmWJ0vuTF18nl7MAzm5T5lSUY7rr59Xng0clVd+FVxYYhAN+e+QhOJwSxTCfqNvdpftrSyHeeaUmfOoT9Bs3DKhChG1+sHifxoa0NtxEqSJBZ3j6ggsxOST2DeVykxuWtzz1BYwxpyT+bnZ0l2QCG2xM1JHwIDAQAB"
+    ]
   },
   {
     "uuid": "CC98E4BA-9257-4386-A1BC-1BBF6980324F",
@@ -522,7 +504,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "npcnkjiaolpnapjleimicclmdcccoeme",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi8P3e1aw3P4acGW0+xe4fzEyP7GWbnnDGk+QUW8FLyN6s8EWYpX29LFAmvkOv0LdUiJ081zpZq28ownQEFomToNLswmqTR1w+F4Y5DQGmRigR0+yXyQ4+c4xwFaet10hTFOf3BBZDCJuGWKBYK3z7hwVSop4UM3vfjeIFnQ7AFkAfYzxGtMBjnF6E7SNg7k9iYD+R1vmuxgJyePOOQQUAsPeFgOID+5/LtiQLtGrkzKNvxKKX6aprcoQCSSDQhtcHv+GTL1ScJFjl1Ed+oy/F7mGd7qU9IB5WaembA7TfjbDkjH2LSWSZHf1108ja8wUSMGVhV0KTODCDXneYXDQwQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvIQjbrD4WQSVtj/1O6UnoUc6Rrr/72xXbtgYMSMmWep2YaZnAayMQ4JCWjsUsCAzzY1uZz8tP9Jh+HUrAYSMCs8z6p/t8D/ThFcW5ytg6rfiPlhEw5973lH2TEGuNUg+V3TLujR6vLIK4jAtS7pJAVuuWqWIeBMZRKl9/xIdO514QMDm+S2LehaSAsaSTV7Ax8L2u2A2sykhdlebQH75pBZk0xhXvQWpWrquiPzCKbu7wcZAAFJ/dyOo3o2d69lU+G7gNV3Su3ha+Qz8caXpkDQSwvPuJml/ewgzfMg3EYvJ7zxh7SecS6rkPDIrJVI9GRrSkuSpTqcsfkrrkzTUXwIDAQAB"
     },
     "sources": [
       {
@@ -530,8 +512,7 @@
         "format": "Standard",
         "support_url": "https://github.com/cjx82630/cjxlist"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArWRZMb6STsTnJJGgg2s9/omg2M6On/GWzunldcdjX326BqpJtXwoUDAQt3nmw7fQtd4aMjH/3+SXaOHbEgb6tsy54S7iXdyx05oQ4T5o73tvvHIjXliaAOWhU4j9GPDVUoP3Y7yfQEd/H6N5fTu4evtAI+wTD0wx04vPBedaeCEh2cJskSs7ImxJsLfnLj5jop2XmQuuH6Qa2moEH+bRVQ9jVWF+PSPSScaM0z9teS3DfFpzDocDmxkR5SlBdU0HE+/wYtOhwevaWcUmw1II+6gHWcM2Rnnu4/Xld0W+y828UvrRnyWKxoJ6GhNuUYvpAZsMopTE0qAC6JF4tO1bLwIDAQAB"
+    ]
   },
   {
     "uuid": "92AA0D3B-34AC-4657-9A5C-DBAD339AF8E2",
@@ -540,7 +521,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "fbljdmoohhbifebddjnbbljgencmpjlb",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzSvhL3kQD6GaW+r/tosWfYPcf4AWGid4WpbhL9lIe+Leu+bz/MiKv8wdjlYGhyx+eFiIRHhXYAek1ZbeK/Simyp8j+dnmCixAsRLc6hSnHnbXqUVNgNqFgMkGuGRrlcgzQQjc63SRhrGUhloJs0RxkhVGBx2DVwv0L+qIIRgxyOVs3hHGV+ngXGvU09Q7oaXvfzYVZfQuo7HQXTK9/+lqkiSISxwz2q/iY+ZA4LzkhzDsFBObv1/foi1MlfNy/vSSLBMes4EXPPRU6YaXvXkSrV5BB4n+GGI9s4C3Mzx4n6zGSD6Nh3Wc2qYUgbaNNQkm8eIosNG8K8RfAEQaMThQwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjkh0+nE6zjRR/dwKZUIHDn4weq1OVVo/HwNI8SZJcVJkbHtIV6GzqSMkybkMUeFiwL9hyAtk4RgJuhutcCfqhi2nc3dcy7OMf34JkX6cZ68UA+/lmO/XkQCg8m8PIErvQlV4HlxX42h1e/JuZBI9GGPqT55Q1ONyKPTwM6u9wOCzASLB5+OpH0CSQMsV2VweTdnDquY97yuurbZDijLalK4QbG2tCFZM1etW0hz/EIFkGTz/qalpc/QckpF9wdsl8KMON5eiDqiTIQHEgtR+AVllC0L2KV17PjGdfUbHeZA3pO4Cvct7o1jvaS6tNNepcTjIZePlXmNQVzwtxPngRQIDAQAB"
     },
     "sources": [
       {
@@ -548,8 +529,7 @@
         "format": "Standard",
         "support_url": "https://github.com/AdguardTeam/AdguardFilters#adguard-filters"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz/7bC3u83py0YhEwUIdDIQCKvO/nmwAPhC2wsp8XFdJwpJBRbJ7WiQrTzVgBCJeoYW9d21mkF9IQq+qzwK6D7reLeLU9rmzEgya+58yBiTvzldcV3pIH9u1SKkah+O0jn04PAMBayo1hyIRlay5WDPknA7zMH7WGvehPfaaXXeIZ/8Ihy5sOdWFwQZJsy6r6bv+A3bx2+cSBb5OQQxeFDUuVxycaSSTYPKZdVohJI6eearBcXYB13zhep8OliJvsNjpMvHS4FQZp0Bv9o8ZNa+WXTfse7PeWLAd4pp1aiWeLRTDOX5v+we1PK0i/P4mOFOaWo622eSjC8cu5U7dEywIDAQAB"
+    ]
   },
   {
     "uuid": "7CCB6921-7FDA-4A9B-B70A-12DD0A8F08EA",
@@ -561,7 +541,7 @@
     ],
     "list_text_component": {
       "component_id": "oegebjahecghlckbhkmojgnpcgdeajdi",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArh4k4kD1y5pKe5T1JQmyhzKFsNlbmmK07B5LZ3uVhf8M8bn9kJrc8SHCHNenTEYVgEfDMf1PcK7djsIIDYsLOQ3IhJFUkHVJZr+o3urECBzCale+BNi3TpfT4B9LtCS4ls9TKb2fS1/TKFPrhSjrS/Qd+uwvmbYkewPzoBatX+RZRLgsRLPzls26w2GLmJycQ6rfP/ep4R3boVSwux6TQz3sPwsJgSo7vFLobvlRtontRZlzyGJYrym9w5z89/V0XhAmw09fPkou6UbkFUFxapFpFJyIOGlHc9vpx+aBDo4l5npUPlYT3ClyqA7C8Y+X35/svgiwTc05bB6pwqu1ZQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm+XdUYqGlWQU7mjdw4ohG/mNXKwr6LY2qsgHF8Q5w2pGgDi15ZNlrRZta+iETCfAQUrTGS+Zf3x9LLNTHMTMLB8wKOOHpGwDGI4biWD9MuGWYNwjXCH+Jzk7hwJPIIcLgrt2Qm8Vzk+1o8jiAzldXUmyOCLLMtSUpsCSC41/yJvd3+3zQ4VZE9GdFtPQojQ8DrGhkWDSF3Vxa0jc+WWYuJgxRhUdt8DNdBK44+Cc6ahAC+EtII2y0PuzoJM39SjE1SlEmrtoG/YKTCGeDMnHd8eUg26Fqn9Yu+Vq0oEhGaNH7erTLKitK9JoQn8rxySZtysBYOCOmSK2QrK2aQnDSQIDAQAB"
     },
     "sources": [
       {
@@ -569,8 +549,7 @@
         "format": "Standard",
         "support_url": "https://github.com/tomasko126/easylistczechandslovak"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq3lIPCYu+DTEu/lm21rFKKM/Q1zhL12uEQu/9Zfw4DWTNIgyOAWy9RRtAq6CcYN6kExpCpav5IP8zHHhwITBguxUgRbabySYRYxv0VSZtHQU5upq3z+7Iix/nKOEu51JHbzEPlY/R396joFqAPbVYTgkYUt6nWG2JmiLun5n9wC8BVa+xQFlJlTsnxPkL+pf/c2cZPCD8bBS4JGJxnn9nJA23Ha4ik+srrhTcF7JRA9B5JTNmuQ2yp6jn5yC4XX5z7eycMF3YACQB6Ih/XBAUyHjN5D8ZI+xKb4Mo231z3MdtkM9R4WZYMLBL6QrWlx+l0hLdV6dwZ7kCVmCwU+oJQIDAQAB"
+    ]
   },
   {
     "uuid": "E71426E7-E898-401C-A195-177945415F38",
@@ -582,7 +561,7 @@
     "first_party_protections": true,
     "list_text_component": {
       "component_id": "lfmefmifdjlfneapckmpkinmlofjehbp",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6J2F2ycBlh2tZm3KMKLsFsZfQQBNAzd+q1LH1fE+e7XRr2VFwkMeop62RUAv3PmgIWDl1hQCA0hxVg04jsLIT8keT7iq8QMTa8KSUqP8uaZWUQ7CMY+XCxxeruOhOzqEHbpZNaoQaK9hsvyfacTbHVe2ZFD/VntMjjTtrzfxav98QKtumKH1MjEIdy6C+LMUCIT+cOuagjzalCivbludWZNozfvgPN2c9Vr4mXTwiJ40MP7/FFcK5yLmT0Hgj4TMwX96NuLkQZ++ss3qzBdGnaTDhWm6rrM+MC4To4hxhzzVBfNV2pSz2gCHSXoyA2r2UxcWSkVDMG2o/tSZX9uvqQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAro09nlr+gtwbX9/Ge1KkwPc/JUtASswsncs2AeDq+wSrdChYlk1aRQxsI7sqgZxfchFlV1ePNfMwtDYvm8aVPRL8BWL+lXiB+wuc0crkyP2WlUTzvGRQ6k2/aMpaMiV2yYHEttiPrt/G2esojQ5izlXeWWQuZdOwSUZUFOiBB+GpOO3S3XcWuucqZaXxZqThdcsAtr2r1i6yYTr5UPOZ0hLoYEpa8dhSTz8t3E6d4/0dIph3cVc68o4LcbVyjSf0qj3iu90SI6kLYMwvLYqnoeP4SztHEIric/t9LMy6jBlttjUc8quHAK0YkyzsHxY5gDgYxV0n4jVPSGO7v+L6tQIDAQAB"
     },
     "sources": [
       {
@@ -590,8 +569,7 @@
         "format": "Standard",
         "support_url": "https://forums.lanik.us/viewforum.php?f=90"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoumEriiHUX3dNyJWc21RO1UfrkZe/OdQKUYCG4Y0tiKiF2hoDAiy2YBk4PeK4vuAKRIfcwJxkpYrAb+bcd03N4fL9J9UMcXLqVHU8RdowH2wPQxQxXnCX+OH6IoxTx59Ri8KxDPKOqSnCnlPTjNICx3+OEJ9iYX1g//etS4CcjXxiVFcNDgZjLJBd4c4hOhoTnd8yXssgxTzfeHAmpnK/y4+EIYk42u8SOC0eWQ6WyMZ4HOmz2jeGb2etjIzs3PA1klWbdhohwvDKaRnGAdrETaPW7ANVpCDF7AlfaFZq1pJAXEBrxfebuZTBmxk+HVv+o67zCrU8TQPCbQYvOkJ0QIDAQAB"
+    ]
   },
   {
     "uuid": "0783DBFD-B5E0-4982-9B4A-711BDDB925B7",
@@ -602,7 +580,7 @@
     ],
     "list_text_component": {
       "component_id": "dcfccddjfmckaigemleendolfmmaaiii",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtpHOyWDum/axFvNtgM+E4Mu7QdltVR70Se+z9VyM3u6IVnc4+dxeRKkwNRM86d0AgOytlLI8iMaGtuQCe08G1UShXdvcxbuwCISzUYTVqtmXq7R6f7Tpl4eWN9ZRj89axdSg8en3ECtoak8Uufd+uT5EfypvwuQOCfv1yg4xaNF0BUxPkguVwvyfDZWZ4SFzJflrtqIh/Y08fBbt6PUuhEvTukEfm5+AnxUK4IYCVVDNNm9PumjtkpYgJ3cCKJtzfe4cnFWUWxbGYQ0SjgcIadzHoGzoRXpaypm1SC83OBVtVIDRqM87CI56hvXvu3/QhBnZykZL7Hh/RDvmRqzO3wIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2GGsDGLGstjzJ6Njq07IxyPNd8C9Ru1VpMmKNxz5ndFb3asimEkp8m67NfVw/O2qKVZjp9DUU/UBOCV+z4b1k2wHzl7c91fHofGWn986+v0RMo4k5lRHjQquifF52F51FL4VXwsS+CMcbA3L6oeLQ0oU/lNgX6Vipt4a6Sxfs3qM0A8OEb3yXm4KFOJ0PaQc6AM35qpG8T/fFanbNo/bjiy2MPKjgbU13UMC+I/WoPesGyJ2JZOz10k2P9jl61A8NElkb7sXyyHpJGYclZDbk+/LbndiRpox3VdzxVRUB27PGIBdUbO5HCX60E6e1JpkAZqwvn6UGIL3cZxSfxKJzQIDAQAB"
     },
     "sources": [
       {
@@ -610,8 +588,7 @@
         "format": "Standard",
         "support_url": "https://adblock.ee/"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzohq0pMYOh23u0tlzVek0vcbrMMbJRJ+62KZrSD77Go6LpATD3xVJUF1eoW/blh5RQaQ0qHO0XDMed4R9AXgKRZDznys7FcqPUChXgclCU2BBsZvlzLdlmMaCF90c/JkuuMRAaUeruxMp/49kXz0q0ubR4L6K4lwjsORRuu5PmrATDAAZxhfV/9byVm1G3A2jCuHAKxlNuen0xdCUaxD4gb+TxvjpfRyTunAbGG1KV4nVPz6OnbHsoTcCjHug250qED+lBBrq6VZIbGwfNIRfMyt6kY/GO5q2lpmiSmblYoh6L7y6aIjQD5AhyILX8gkXxWBQjR5BL5vJ5ol0Xzj5QIDAQAB"
+    ]
   },
   {
     "uuid": "1C6D8556-3400-4358-B9AD-72689D7B2C46",
@@ -622,7 +599,7 @@
     ],
     "list_text_component": {
       "component_id": "afggnigkiebjlahlhcjgjahbhfikcipa",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApzSs030qMcFi+OoiJvYklBwP5f8c+pvUuNsJfQR08FB9OKg3ns/9D+gANWBDa76MdbR3ZTKaghjxFzv2+trmd72acUBB5mhYn2KIyBepKjLJ5stZHhT6NC/s8tc2qolQhB4Swj95mKupjFHMOfPzIJOPmPTkZE0PktkDgRcnt2h8myhBP0ZvW6eSrIaxZN0L4hBFC82Bkgpm2RBkxv8eemmjFaSQLtic60wdISA9p1vtRcHvUujL0PXPL8024Jnv1jVF5gfsiyGQPDVEpzHfHq5S+qEeHuALrxTMeFzPD09AR7B9vBjfShOgtrFnwCHUg9kIPoePZ3gVHLNSzM3t3QIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArdXXJ+WZzAI80RpFiJ4d/qfObPb4yODpqGG1E1u3k2lNsmvjPt0OYjDpFlcq24ZbdJey9pkxraWGmUN7wyaV7tuFzcv7XOTQc9Z5i/MjkS8mDqbDju1xNCno8skFJT1eJcY7TY1RyWj0PLrU/8Ta9t9+CBRJtEFuHSXImzm1iL4QB1aRBSnuDDOPiw2oTIdTNv0DSyxjumKu0oWNsBIBT/j42OGtrcaGi+7drp+NDOHAtTHIYZzDSquWhn7stVbw3sgfxlgBRoAsqgaSorNoUpJAdLUNjjD4LkXXf/VgUe8IZBC6TE9PRYQQ2Tj8oK9q3/WDHAIqsNPuSZgA0e/oiQIDAQAB"
     },
     "sources": [
       {
@@ -630,8 +607,7 @@
         "format": "Standard",
         "support_url": "https://github.com/finnish-easylist-addition/finnish-easylist-addition"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApoVqwtU91c6ViBfZq/e2R57qCW2diihAZQqAO1bTQexFpwnRAs8vgQHc5T/SBvSsKQlTYX3uMdgBW4fyTvx8/aG2iP5tlk5GZFhgoD/T+b7TYJ5FPM2Tha39zbxMr9u1efC5z9AZJ7s2p+S+b8Qac6VglBxlrnZd2hkWKnPvIWw2UqQ0WrfM1/jE6BdEDw3izrHfk7eWRDjdtWQ5HUc4QaGPMWZwBfHjROR3tlzeWo+wpQ2hm6C8QrCNGvOxUJ0C5BMF5fZff1pQi/sR6NaFWBajO+D19aDx8BDIhq22vpn1YUdELPTCmakw4pFHgHA0CaQFs+4cppscWrXqvjJkEwIDAQAB"
+    ]
   },
   {
     "uuid": "9852EFC4-99E4-4F2D-A915-9C3196C7A1DE",
@@ -643,7 +619,7 @@
     "first_party_protections": true,
     "list_text_component": {
       "component_id": "flnkmpokemfpaajmiimmjeiandgoodgg",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArik16ARggdQRtI6Ggje09eCQo3rkgxUXT/A7QNN9QqZMj3Lg5N1PAALBqAWNRNKny6D31Y0DVfrsDYDJ4p0Dp8dN4Iog3h9503DzYbdZLAL16SqfTtIlxQLUG8mc9cLf6JoitiZUQ9qeDTZ0MOIcpuDMmaAG1NR/z7b35DHCd16+4VM90bEbM3XoAJiC6Fgxdsu/mEThAxHwacAM/3E7rN+Y1AWQS5cuPfzyHOEWJoTn9gM+zUosmcNsEW4a2qdJnDbsEeIYV7ZYdvbtkLpf78LkskhEmPmOMbHfxE8/EZajBNZINrOP44CxB5qig3L/4DHvGVlKs2utGiZ4HRJiGQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkVzCLbLHysLUVRX/5MiA0jhfvF7xvQTUCNZ8DDlSY1LFr5sgXhoSQBeeBZyrq/Bhh2cibjX8Uz9njjNKn5DFOHYlQQW3W7+KpomTWXqGSeesjYotT31Em+gugr9MXxmRSH1FMBgHnjha1IgUkTWkZCECcRvyyWyi7FTq2BT15SO46BLaJb2SVilrGMvOabrqhHv4a9jY+DITVeZWrxO5LSkY2+zmsiyoDeD8biZtZQfVlY/3umKRgwb6n6of1D8JuBuE+mv6cTw7WLWIdz61635zJRpxpUWEHnIg8k//PIcBPywxUV1G5S1qhK11A0r4RyShuGMnOVWfL6wDOa0P5wIDAQAB"
     },
     "sources": [
       {
@@ -651,8 +627,7 @@
         "format": "Standard",
         "support_url": "https://github.com/AdguardTeam/AdguardFilters#adguard-filters"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAye4IaCOkmMLK3qNdMAItcGYYKnCS5KJkIHyJnJOA4l95hC+C4xfIVPGlXMqAoOwDP4Xj8dnpS006K04JrbRl5RvdQnZbykX6raxfxF87hWALOEy3GW3BmcCILg4mTzf6RY3lBO7/Z7BviM58DCVoe/zstSWhz3RlOLbCYNAk3P3l3UVmCm9oKz4zUMuWp2Ys7W73OA07bIKaWLZvX9UehkYVwWB+mF0ZhJAaD6W90ieqjk7l2r0/E/wOX+l0DC7WySyosDHChek/nODOCkY6ufhNE6ZvE6Bk/Je8xlS8BqaOsATOwDDuAyw1AI1EuOy4C+yWUhhrM44u91V17FqkKQIDAQAB"
+    ]
   },
   {
     "uuid": "6C0F4C7F-969B-48A0-897A-14583015A587",
@@ -663,7 +638,7 @@
     ],
     "list_text_component": {
       "component_id": "onooookdmjmijocbeafcldnbfiaobhjk",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy7ViZnOuI2+Ayu4ahZKjoUhrf6M6nrP+EVcQ8h2nl9h+D8bopq1+cVHcGdbUuF5+GQRxNltBGUE8sEcyGqc5jnCJ0G0vcc4vFa0ug/QVG6Xqn8qpcZVoGlK41Q28RdsUzgcmqguphA62KdRaEup1KSDGCsNnbFuwZkiTFfPTZuZuzKhI0KHXTD8vV4Azn/rWKJmqWM9H7g01eCh+bjhINFTLGyVngJdA0xV3VnugqyT3GLDm1UHdUNU03xe8da8j7IqcFQo1LZm/ii1F4COBEsagdOxPZgIj/QKyIEPdBcEpaJJoBDNH5HrFVKDKYqFn3ScjZIzjx0/dTXZ7dV6W8QIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0yGEvi7QclPePwbV8yv1ntLeAtmvZhrmTmLfmDADXe7v3lqcKfncwSeLcRO7fyYpBWhBAx17qFLUOOF2MNyCcQnRJhMD/0ruwRe7JwGvJqmjHOlCPL5hEuK0sU7PrlkuTo3ZkDoCJ7s2wb94KE+0zYN5ZSrBbtyGxpSHO1jQNoddhF22uSgY74HmPwCBkj+Rc2rjXJ9g4odA76uyf3UnrgurHQ8OjGX0W/iMSfai5L8+06ySXgXucqRPPPoIOvxaTpdPHr8Z9GlJYmmiWwHChi7diiO9VQOA5LHRkgh4rZEflCFlMQp8uEuGg6olxzgGJ0C8Bsey6IC2FivwN6DNPwIDAQAB"
     },
     "sources": [
       {
@@ -671,8 +646,7 @@
         "format": "Standard",
         "support_url": "https://github.com/kargig/greek-adblockplus-filter"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlGr8h1MkJa4ie33D1IMhw0I5t7eQFaIOXi/XdqLmEKdEd4YZ5Py7vyhDLZCFFZBUTV7px4JVJTvP3tm2OXmfFvdWaoou3kEhcwCzD1hc12pnggBo2JCY0hnA8MgiuYDohOWiO1I6oSuDjSmKCZB/aomNWH9RURf7uJUIZa4jnzzK0veWfRB0nU7MA9QUjiS/iDlg5dFZfwhAsbSjcfSFR80evbqy/YLbnzvfkpYxk+ALODTBOgCMO2Ef4CMrv0aV9nBaKXdaBQLfg+sTAfKZMCOKZle0zyNvqinQL7zgHhOSUqTgt8VVrnBYNL7LYmGr0CpkYVb5mR7JqpO/lG0cmQIDAQAB"
+    ]
   },
   {
     "uuid": "EDEEE15A-6FA9-4FAC-8CA8-3565508EAAC3",
@@ -683,7 +657,7 @@
     ],
     "list_text_component": {
       "component_id": "ldnolaledjfkfgpjkbkcfjiaejeeanmh",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArGYLsyDkXY5WfsX2QIgTidjsdahHzBG4Sw3DXzq5DWn+VLSOGG0Ub8FvsPthY5+TYQhpes5oEiys4Uw6+Nd+LPYiCDd65iwxNtt44DwqAGBAMChUw8kljQ/AYorivPd6hm+HzfyCKsrTWDOd71/3vhQwAVK9buL8NOtFQ8iVyy/zVpUHM8RJStEBa0vRypDbq2XukZysNOLOHeUJo4K9oXXG+ZegxeKkQwkqfp2KzetgO06MmOQYIOwaDkUBKnktlZDlPjYKlYhURzZSr9pEJI2VGJ+dxAmD/1fD+6SdfV57HtqqHp0NGCEiTgHUFKFefbw1brxVhWktuPW4Hymm1wIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjjUBa7ucUnv4Fbr1jEQtbGmVvJ13QDELZRhz7W5Po0Py82U5pJ1dJS2ooWMAIi07E1RJAGuC44eW+LzgQD8aYo7H5CY6WfyFfWxI8yzvr3hBJHZhA+ngbEw5Sd1GL/N5rbKo/txMYpnuAqa7Fc5n85NQ5OtuUT5uGNhonnIi1G4NkAT4r1jHyYMGBaAto6PPWwyn/SeBR+ZeJOBbGVJyTNfPjMX0wAFqhJpVSOvE7Yxb3BG35mx+ThkUKi89w6KX7hr1NXR8i9f/xHfOLP5H+7awYs4vYKIw0PSRE4Jd8C1rofXyqWnLtFUvg517uJD/6PV3B3gZuhMlCvc16BDpgQIDAQAB"
     },
     "sources": [
       {
@@ -691,8 +665,7 @@
         "format": "Standard",
         "support_url": "https://github.com/hufilter/hufilter"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy2CmKz7RfV86FiWg5cELPJzsGOW/jIlIiXfhIRahbD88fcx42D3QOYdDHkwDYRx3obQn57Zt3rZFyv1v01d635R6qEL01VhpT0l36KgytFghJEXVbnhZccUlU4llGQCYhMtTJXjt7y6v2VMrV2+uOdo+5+ShP5GO6Ye7QCHuKI8K4e3fl0M5GUVBkPHtXb085bh3oHM8lGGHlM/uy+p7UAllnG5xZR0H6E1naaOR799jjtXTxP+e7+eOGZa6TpAVFxP0O638a9SXoCvDE85XeEgUdoNF9nvB7EEIANdFz3A8eqyy1ltwgTwyTu2uaFt3X/5AegEUSnWszp4m4MCKYwIDAQAB"
+    ]
   },
   {
     "uuid": "93123971-5AE6-47BA-93EA-BE1E4682E2B6",
@@ -703,7 +676,7 @@
     ],
     "list_text_component": {
       "component_id": "olkjbfppmeijhkjhjjmfdbloighaigmh",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0UCRPI4HhiNLywJV2BmawfIMHEnrlNKjgc1aVQfzKjrhQ+st0jZfqm8kgIQtriodWFeNT0wofj/eOmXoB08b2Rx8liz1T98JCiSuRElblwaPLsoPuurRTjwKk7j1KIUADmLZ0YKE4Co9NuzdAlXkBMPkCmiGCDvC1p0M27Jg6KR2gswEYv8FDit8i6svq2aWP8ZPiihvQdalwYiHEvWUUyMnu7Wy3PAdA4WLbEUxrqxMc25jf9mScmIivhyLLEX6CiM4vV+aMND67PMs4BwIIXIivyNO7GPhaFolZAoD4ZiBjQfFZPQxMEy/q3tVgwdvXuwArVfBTh3JrFQpqrqGVQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtSs2ZBVfZ1fhaKwB2khyvSQrpYzaKy9UUWUMBIEZlivFIm80t6/YGFZKyE6GOlqwqoNlAjnGt8u/74qKJk4e5nY10JrAoHsWkaohgL+nGfXc2DXVjMCgO6U3hyqFBOsyD3VGSdHL+mLdguB4XYGC38t27lMuDTvfdoISXLDQYjCqel0tM7muuwIvZiGYj2iDgHTSBcQ856rO2M0zpgsL8MfNlia+sosa1x17YuaM7rAIYWIzL7llnWl86vijSIfQ7g6QLEsg6ZJqF3b0MmG2NDsxfxijBn/pMbnhzypY1tDOvlplmyloHstabFEIPxGi7Fxe5dW0NVFLDW0zgXF01wIDAQAB"
     },
     "sources": [
       {
@@ -711,8 +684,7 @@
         "format": "Standard",
         "support_url": "https://github.com/heradhis/indonesianadblockrules"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3tx6YBoJpSeftrzekBe/yCahznSoItSfZwqJmjudq3DmIdZGLxEqmjTLWscm5HHe35mL7RD0pl22XCGehWMxYt9vwuHZrjQoNDe2b01cyQx7DhIREELjGy8+oyhY1G9ubz8JzWM+gTImkgtogQn+ZGFsiT4gGtZO44jKrXp1ZS6+h/wxMbaEbOpnCCosjJgxFXHLUh5CCA2iKzoQYtYvhk+PCnGEsNYQt9RjWu9s0qJgAYFugmE8wOTCuIFbR4Jt1y2vaGxrxDHLjZpdlrvT0ameadXaklXdNarYKNscEx+TVMtvZk1Ly5gFDaDctxVISp42uS7LroLjA9M06QLDywIDAQAB"
+    ]
   },
   {
     "uuid": "4C07DB6B-6377-4347-836D-68702CF1494A",
@@ -724,7 +696,7 @@
     "first_party_protections": true,
     "list_text_component": {
       "component_id": "femdbljnkmindcakmnbjhfefepeaicnm",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnVs6MzHnI4M+h1pJ78gM1SuIC0zUB48PpiEoTetY4+OUvzIDLLrZXFQbX4IuXDfCCpp/Ocqu9JPGpWs3i9W9v+wGHR5W26zXK0RzwkhrZGI6HwR5XQd4mt2eGRWERHXSxcz77U59RQj8V6Rl2/eMn9M8EbPyEVcreRvCIz0TA0VgfBXPYi+SkiWDPlsXGdQdux9IYeUxXHAFICig1juxByCTk+EDAQCd+ZRXtkvD+OdbLRrasvmrmmSqfvhuSDBZ3/LcO4xGwUHVd80GKmrdL8lGjgGOdsW9ht6ASs7Et0cOa4sv7AXlItZOj9FsukwX2uXbnqL+dcR9vwJxovSr5wIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoA3PQpvLWogYawu4t9flRCf75wIVJLugxXZrgac6xLq2jy21IdUkLro1MErBYQnVwAoP1xuMNgqd8DmoXwKZHeAHZtC7xJw8/d8x3p0iuggDZOfe4KXosafkwU0Dvw3kyhIdplPVCqGPvYKsMPGzYLStywnLD8FTqchI+pNgKm51fdT1wJi6sLOmFl7TXVn+29CoD0dAXyAoqIXYZPIbFj6nxP0IxQ0hOlNhEd03u3zOYxXWRrcyxK7J776rU97Qbvd9jZuPhISfvz9ht+SbguPG28nwn+QVoX9bpMCwDdwLsKX89FGQQ6FjmE85qbKyWzOdTtJ01KZvSytXNKAbqwIDAQAB"
     },
     "sources": [
       {
@@ -732,8 +704,7 @@
         "format": "Standard",
         "support_url": "https://github.com/mediumkreation/IndianList"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqn7k2ZETcPQLMtkmkOIRUjbh7J4oEVVtIHtPNu4tKyUy7HezDNXHs4IFnMMDl/ysRA1QpmX3ZhYzKpDz0ATBYXCyl5RjT4u5O6SzTzO9DGqhZhalzEuVEAHAYYdRtn9SjCAQWAOHu+3dYdLvdmUQ46XHRfGZJSWrTPRFw7+XaglP4ejI/QdN9PAA6bAF8jwRHUHRL5m1Zxswj8nLBK8vgjlEbRT8GqsPoW5suMYeNafA8fihxGChIwmOYiiMxwe3ivnU3+arEp2jrrbnxZcYVWsJBYURGd7KZBHBxemTbFu3gk8lohiMWAOzfs96JUZQzOFLwOhqrDEf8DD+1KD8ywIDAQAB"
+    ]
   },
   {
     "uuid": "C3C2F394-D7BB-4BC2-9793-E0F13B2B5971",
@@ -744,7 +715,7 @@
     ],
     "list_text_component": {
       "component_id": "keclkbppmfihehggeadflldbjpolcpgf",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArY5SfHZo/NL+I82gOyEo/StKE3U+s9dlHoA10lWPzyo4keK+IenjBq5XEqWpatk0F/fs/Rs2nnffBmDO3lgvkKsMGXldO6k+MsxNR+1QUKCAOnOvUBV8Sk/pnc48kWx5qnGAhZP9qa9yA6MLYqWJFy1/QY70Vgw6NwMEfI+OIuhmgMUysTfWe0H6Bi9z7ZGN8dSI8LfWxKnCjozlXdG1cjSTensK7KgPEcmB3DzMnn8kipa1dEqp/RP1LNMQWCr6dlQvspTtleZGm91399o3LXQq23TdDxyE3RKKYDvpx+GkwECrUfZMeeq04qK7lhF2lMOWKvVbHLtxUZU64oNxhwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2kMklOCcyVwJ5ppBXW6n9cy1++jHyPfB1VJSQF46z/CFCIrSoxCGHQ6ZfiXIDinqsBjkJfnBiy8MiCAEC1aHo5+J2yB8zH9NDdPk9xEMpXY9IwEGzKcU2KjT+7FG8yhw8NlK6geVpVh2CAhbIQ+WM+PvqzS+ROJBd+E0VtasucT02crT4y5RsdygFKwTzCQSR6E7Fzi7Z94ENmzTsXEw45VwvP1C0ThXZDcz0X7duhxpbIKXOdmLf/W9KWhe3ctdb3EMaPjSDMuKMlDY3sdZtrFNbjVqS6U3pPu8Xn9tuU4fpsdTKxJXTNPGUPb6oP7gJLodW52cOp++0FdJYXbJrQIDAQAB"
     },
     "sources": [
       {
@@ -752,8 +723,7 @@
         "format": "Standard",
         "support_url": "https://github.com/MasterKia/PersianBlocker"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn8Wy13I4aB/tYIW+1QOC2iPC7AVn3OfNt6C+eJ/NEKnPOzRbNGnwWVxLL9u6fdOuB+ZlrlLs0ttwEmJW0q2iXZ6aQOnu98DYGgIxzN6AKWdKV9rlCCDXUrYAbJOI2NGGYB4nqbWRW3lxOeNmkgeX+Rc8sYtnncjD0qMvyr4oP2oDAIeI1wcw+5e6viJ6NSdsI9bfOMMbXDSk+JR+5lSoaY1xR/Zy3semWqqQKSZVqGSX4j6gBaW2AUuriKRiCSwWOuB1Mj9106lTuSk/7yJhfxqShm0nzDcjMS5ArC1VRR9VDKdREhzHkpBRG2CyOxEvILD/kNMbdppofTh7kxQO5wIDAQAB"
+    ]
   },
   {
     "uuid": "48796273-E783-431E-B864-44D3DCEA66DC",
@@ -764,7 +734,7 @@
     ],
     "list_text_component": {
       "component_id": "oimegboipnkgekgoccmlljjlhhbjaoil",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlBNj10brG2lQRq3Yp+L4JsrOcp+hqIbT4t8GPzow4FWiOTRsrVM+Y+wVu36yN88fmX1cutHU+zCdLy5Z45GvvZJlyL2XD1V1UPIhHfJ5x0XLuaXrTXZ+1Do4KL3IiLaTUtbAro1mmQ9/VAwCkXeIn0EE8C0ESuhYpZj9da1zvDA3wBzca9dZHV2M7sQsfz0pmU5FvjRtN3G250zLPAZRjqy2oiamYxijefxFtGZZCWBaeKCq38vdHlDkIuufxH7orTAFhOIvMmsYh33OEUexZiQiORob0IHPfmXRAlCeaOWuObyj3cwM1kogGcnJYWrag1lYdofQXqaSEv0T4D2C3wIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz3gf1L0Mr9IbDZxfRNnKSvnFTwVvD8cZFadXyA8lCjr1u88l5pu+Hf9om2eEXdeOcVWymgBnLf5fdy5Kc9tZ6wImvkGpeTClN1/qz1l4uXWjPkHUU/W1DRv2pYYHi/3DU3RATZYM2g120rOpgJmszMI05bHAR29EbOjD++vcj2zsbCZ3opnuT2/6rW/3W4d6deQjrbh/938ZURjMmWG6k8j/IAdiRF6PLEgqo0i7/3q27qDGaas7shy9zJgXp4IRPNyVoQCItELYieAwMnQqvt2Luo53xQVTxXYS9vQb06FRuS9UmwTMZ8KhIymoRB1j8ImdKFJpMViNzZ4I9nxa0QIDAQAB"
     },
     "sources": [
       {
@@ -772,8 +742,7 @@
         "format": "Standard",
         "support_url": "https://github.com/brave/adblock-lists"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxEaIQwd6wuGZehtuZHHS42m0Pgm/7LAzRDdDl7NjKrUds4TcV3uWOHSA3YElnJnztClEhv6DOZOwCgb+OTKVw+vJGHpuXkwFpKC8epLJd/z5C+AytDXc2ezuaoUFi7YTtxwQGliaKe4mgmtmvVhhk0Mqim7/xBgXWtSEgRmgzZnPGU0umqF1qoH0k5N9Nm5JOVIncziBCQ8rHU5OSnGGKtOOKXz4BPD8U73Un3TYAWNaTZHDdLRaGz4ASjshYGOjsepifUhOIGmk54tcwpWn3UL2t0317FdQjktfME7I76pufPGyN5AivVoEBHNV/p9Qlsf84+yE1zxq2ICQODtmdwIDAQAB"
+    ]
   },
   {
     "uuid": "85F65E06-D7DA-4144-B6A5-E1AA965D1E47",
@@ -784,7 +753,7 @@
     ],
     "list_text_component": {
       "component_id": "kdakdkdknmkkafefhcbngpinlfoopoej",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApCioRUjvtejrZz1HMC2iah04gruhMTQWsRkMNTIiUr63l7dNIPceWkassZ+p2tAOek0jtY6RkOkoz7a645WX+3PQA5nPbTHqzXxbDY6gWfddz7Kih4s5vYgCHvVZKfuyIQj4WYTdgT+cPLoL8VYB5H76FKXZT5V4UxKA2yapqAlUh5k2t8wULEkxeDc1mYrYM8QST5y2Z9wvBuKR99pdWPMNnXtj7wD6tJ4uDTWt3lz1qlC9GoDb4LH/8uc+hzD05p0kFKLc2MXY4qp7EQVgUE578I2KBdrDMlfXto1ifGgaNxXOcT3T6e8aMz7Ngk7LMDp27pHPJ5Gf6u0/Zb2gnQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxZskodhm7OkBWp4GlAXzhmRWqmFzasKLU6PRsIXKrHLEDLAkv9M4BISqGT7K5Blcm8nuHRfQrzIMmJ2q9rAaHl9PiSuAMPppVIzoT5pEs9aW/BQ+bpayHaz/iwHjWchdDGpqU695ZGYQA///LEBlF4JdNPhDRLFIIaKcSFeXjuK1GEg/1yemrXBiUvxPMANxyejoJ1ILyNPpHtqnfv+etQfZrasm9Luq28qC9SJzq60oAJGaTJrVmeAASVpDXHpkttXI08uUmllXQCMlJvuk7IiDNMuI5TUaTarhXRui7+2huilTMfE7BPyQ2o/2U110pSoNcVyjURPQc75O90kNJwIDAQAB"
     },
     "sources": [
       {
@@ -792,8 +761,7 @@
         "format": "Standard",
         "support_url": "https://github.com/easylist/EasyListHebrew"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqhoLBGVDmLex1QWWGBH7b78Qm008SU0cSIwf1jy/uWAVdkLSQEi/fYRewoCe9W4DULzvfx76R6az8//u707Pg7Ci1LJz4SEarMFf9NgqgdVmGR7mgi+RyveDrakS7EffdLOJfvoNwonr2obEm60SaHfgXLJhb6+xOsWQ2no0CAOLkjXSNEBD7S52CLN3Pu/0lWlEhmY3HL8f0tbXrrrn4dZbitGkPQsd2ve2cxWYOt4h3mlUx9nKcQC3cTHj5SUECIYTSNVCc2MJpy75E3/7Qz5Viyh/SM6QsQvrnAJkV4miYWTgb60gfVBJIlWELG25h/SEd9KgC9tYlTxH3dC18QIDAQAB"
+    ]
   },
   {
     "uuid": "AB1A661D-E946-4F29-B47F-CA3885F6A9F7",
@@ -804,7 +772,7 @@
     ],
     "list_text_component": {
       "component_id": "eaidcpcfnepdmmhbglgjhpjdfodkdcki",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA43OEa2Lu8pzHpK5R1xs2vuE4raav2qogtUGLbDFNHlTUo+8HinUDhV19lvmHZJM91qZzZWzCnCiurUn9U0y+jdSvpBOdLHXgFay+9znj6XfKJeWSzY4L9eul3JMFUZY4o2KLub0kAJIg1EZtZ49HuXwyufo1w2oWL1fKiIZmkxF+JQEAgTmffQExtdATulFdiRsDo5NEwzmulz/wuRV7AV8Iuju2qDRmOc64N28jBVVX8jKRvfQ3/IhCWDmCRoBhj8jbonpl/C6im8WOnOgws28UhJxLIIz73DZGZiV7M/pJw/lBRqAqCBEKa9waFD1ALOA6lvJ8oW9p8V8pX1DPuQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnKYmVztF0Amuv1X6iEKAp/0VKcQ+BdGxgq8e5dPEueDEBg4OTNuvbzAs7Tv6HfF+OLJMSDOw5Awe6hQX8ihsi6I9SXRsYrBWDLHN2m9nJvBsrl4AztIpuonReh+NNazRFCMU9IgCH3Q6DJfW2rfjILsnkhfdxL96tl7tq8sMgg1VmZ7sfzwnVAHEZM47GNfBk16I/H00uxX/4xoM3a+l/F55mRnBwSGlTKqTtMAi107JTyCYD43LDcS6OxVSU5B/jNFnADyVrlVs2pDWmazkasyz4yHu4SXp6z26EJurPIHwxTViM0ntAR0491t0IgYckOYo1IZiWE6X8NDehoYypQIDAQAB"
     },
     "sources": [
       {
@@ -812,8 +780,7 @@
         "format": "Standard",
         "support_url": "https://forums.lanik.us/viewforum.php?f=96"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj+muBcT5NKpTbhPXpHX9ZdJvdSz0xQPg0czdGXaQaVB+hCQ+bEWJuH9wA2CCokOGm1P3+N3T/8SBXsV4WYutqmCYkDdOj8kWh+6/CY3SrBz9zrmgwisA3FUhfnJ0ExQGOVBDuKyz+ZwiuwW32MvPg4mzJS42OzK6rKoNDUzFgieHPcsrtYW7lAsueWrKj+STp7tX9OILWETd8htpc+gsnv9eePKVf3YE1GduTsLS1TwY6ATdiS87PoGjYVWbKPJkVg7Ns7SFmdXXfQSG0u4JqQdcPWr5zOPrYDD6JX8BJ4p/xqJf9w22U9UHzbFYcF0mWtxIvzIpCFOkQQ+ffqsN5QIDAQAB"
+    ]
   },
   {
     "uuid": "7BC951C6-B0B8-4223-97FC-3C22605734FC",
@@ -824,7 +791,7 @@
     ],
     "list_text_component": {
       "component_id": "jbjcimgbgpgbgkjalhlhgldfflklfgef",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoJvpKI6bgOj6wE6ST1Zl9TcKL6t+ryIWhMC4LGGrpiC0l/6DK3ooYE809r+OkBjLFR7zc456nJlDev11O/ufim2oZaQAjLscoeE0tQ62vbjQSLTjBtlWGc6JPU+PmCy0rjIKCujz0PZx7+YV4KgOq3DdipZTWSGPwa0E9xksBySW+vmBPSPZvTXz6U7R7ja8v2BerWmuYmFebZ6JEfetY/CMh3do9geSm2gXPbYAttoYWT65NZmJpig1b0Q+cIrG6ZLlzYxQRVakkFIjkdsSvr3ijeXf32wAX4y8Gmsehed7+Q4IZsVnuTdHOFqtIUNJLLFY3Irg71PkO0u/W3YF2QIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoT6Fci/rp6Ir8NrzmMiFWIexZ6AULf2v6Yudgm/lNYu/dgWV0N8iMm2oAoYojna+jlLdY0/4zlmT1aVTL/bEOQYx5z4frZf3VgQmjlZNlzqSMQ3IZs5PDPs8cizDjS9niju7T9ZfD+SqN1/8SKU6kHlgoTubT/kxkOS6VesF52npCG37U0H8z2gru6VHWLINgnMRPpMqqhTiOATdZf29lOw8AQbRY3Jlxr/2kqU6k70vCvOFqV5WRqVgcjxU0YxZJzepPeCGL3gGEMML/OoFwj9iWcISuwwIdyVfH2XtyIqnaMz4kXUV6OXCZCM41i73jE8SbpgF4Za8XJzsOZZdaQIDAQAB"
     },
     "sources": [
       {
@@ -832,8 +799,7 @@
         "format": "Standard",
         "support_url": "https://github.com/DeepSpaceHarbor/Macedonian-adBlock-Filters"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs448YnoScCUAjwfyziJ0FzyIZEDCnKDnvLHN5pyCqwgkkcDML9pyQztsbtw/Kz5zyjOfc7OduPbOFgDHPwpQXiF6VlI0f96OQFdZXILT3+JOSw9ebsC19SPrDGZiTbeW5Z2t0qhMDPuyyhdb10XgI51AQNgPTrEq4beXmxSDwNbrauN8VGiN0NAak1wegKbGCn5nwN0x6aO2x18JVKFpiOe5IY0n1FeDmtpx/fXjjdC7bIy7A5bpu4TrZ8FneLaniANzXYAbGCUYQMWcO2hZVlA6CtAOyEZsAsNKDb0cOhKL7hwpX3Y7UVecw8mEmQqbw9qb9n63ziJjfVrkm8CnNwIDAQAB"
+    ]
   },
   {
     "uuid": "03F91310-9244-40FA-BCF6-DA31B832F34D",
@@ -846,7 +812,7 @@
     "first_party_protections": true,
     "list_text_component": {
       "component_id": "llgjaaddopeckcifdceaaadmemagkepi",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx6WyupIWZCmHoSLCTFycTudxxzxpyq3t+QJAQZBbszorIbORzcJKQGmMxTlbJnMHqk6duUEcZrXZqJ36CurHu9xI28F5GzMJAW5ZPoKCGvnkw+wjXGgmCMjMMfvlHqz9EFFSmillXLzl89zem9ZZC9ifB7D7nlvtUs0RdnB+HgiMLvTHmDr1vxNCqVujE/d5uwdHtyvvOs+cle3ppvOVDk4D2qGVMByUX40nB3keyEmoz7qDnPfFMiTs9F3A01JuNDdbNxOlz7hzZcuDeVHbrFP2VAOfmgrVaDSA2vsXs9gooOLr1aHXpWleEjDkniSpONSmQvummvPJG4HXU7vpGwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA52x7jzMFSSKBUUfmRxCKhqfGzTm7rsiQj7Xp//jC4eNWZGrc2I8hn7KWXxPvnyeRR/w6DqiY1H+qp+JV5SMQWIcfaUyYw+iN+TO5Gnvwyms6z6SFkdMkvtWwb6rBv0vqq3YLyu89PaJO0xAglv9l75vyXn9ddQ3Bj71t9Wgx8D0yLo51j/85wJ+jf/1pGdcdve20b/L/nDGvt5NE5cyOTG4yeqZoPyFeiPiRpn1nKrwZfBz3+l4HLCkD7ijIqeRriS3gun3+v3s3ldDwE8rDq8CVPbB9LwwfD0qyv9M5UAnLJI5DsBDpSzx2AwsQGfU64IFJ8U00pmqVz7Agg9h0gwIDAQAB"
     },
     "sources": [
       {
@@ -854,8 +820,7 @@
         "format": "Standard",
         "support_url": "https://github.com/AdguardTeam/AdguardFilters#adguard-filters"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3OprrW39GOSV0SAkNXvAczZKi1MiWLMeO4tqLM+U/tO5QISel0KnFX/3Rb9r3KiF3Ve7kWd8q76M/Fy90UryeHQsDrtKN+iO9UCU3OHBGhVfjiAyk41/9FnHtSYNiLF/EJAzOF/YN5u2gW4dJ9+EQwqNhz3uu6tqibZNdqEUchHYYRVh/RIoht4eJPYF64FN3sSHwHpSDEYXP95f9z60JWDUv4DgEtAMyunJYTRh+TqppDU3YrcM3dlhtkGtM3vPAnkhjUcawaOjBDfdaVX4aPrkOgbYL0biXZpR51MZdL/ubdCNhHw8jXB8NjWab4Vfc8MrczcrslvU4iRfSydX7wIDAQAB"
+    ]
   },
   {
     "uuid": "45B3ED40-C607-454F-A623-195FDD084637",
@@ -866,7 +831,7 @@
     ],
     "list_text_component": {
       "component_id": "gdlpebjigadbdpjpfpdbmogebilelnbh",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzxK8C+OOYuI/Bhn+5h1csSnTv+99W99BbgGQbziHdChvip2SSwWcAumckCTr6NWbGO1laGK+Bz/bK3ZwWkCybQT2402dOY9xZt8vbU15Gn2flW9yM471RZle4GyWslCpBQtblvW54bzG9NpDe7sw9lfetiAXe9HRgQRtK/2ezdAaQEFCd4OSkbgGwekq2Bet5FDyh2ndUW2dT7u1V3IG3/T1w3Y2o0rPGhZIm0C44Vhsa9MdfYrYt0kohHUIBbV+pgeFnmgFs5xEH01V1C9/TmZjhpEVmjV4AAdmts0q/AkoN64jnz0MNHV3Mj40Bz2Th2YlVlL7qEb++RpvxLmZqwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuaxhtY769wbtyEQlwrPfpFqbbCXNhauKW+lehDuVWlaNvIrOnK5DyaEMfSnFIbrIVY/MryKnd4F0Zm4Ql+oo6v1xVF24hX3+bnWIuVsUQp4RNVfhnFpokR3SqmrsOYO6Bc3hFsGtsxAUzD9picoYeEKcj/tu3E0u7+2x9rmzhreMDcNbH9J2/FV9r+pX2F1jPTx+P9DTsF0+Rs2PNNNQqmop8h6gGQbJZOzgpbFm8CGyA73Qmn0zlRcrFE4VqyNewELyMvO1aOmuiQsiCpYKQiPchVqnXqEX1jmoQmd1j3sBF8XpAluQwQms4BiGsyWXcwloGhDjJOv3oBdFxqYDzwIDAQAB"
     },
     "sources": [
       {
@@ -874,8 +839,7 @@
         "format": "Standard",
         "support_url": "https://github.com/yous/YousList"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn6C+Z+L64VaNsBEiEmu3VviXt+FpM6F0Eid87tMz+/uA3d51ndDQUuZogxymy4DrSoi+sssLrfyeV2wM4OYIgFDyOHF7weKLg0tKSVzH0gncGCLQbJHj5G7d6Q27mHIYIF+0vfs5aDuDudi8dhbYznCROuI7K5IwA7I4AmFouILq1x97e6+i6/5ijFhTPigHoQU2YZyQ7kbStQfx9IQqZPWvIIXo3lfkw+fwmgj/UXryNEnKFIkm9sl6bdifsUYo9hXGnwOl8pUR9mxcbg0eowVWvvQLphZXZVABrSc50LWJvNLuiTSsKbEBt1NeGPaUaCdZLrzqUr+Vzer5y8HMoQIDAQAB"
+    ]
   },
   {
     "uuid": "51260D6E-28F8-4EEC-B76D-3046DADC27C9",
@@ -884,7 +848,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "iihfaghdnbilkdhmmnnkebhodfgeaopd",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy8v2ePlGzhC9ZfJbmaxNtMD2mRmmMcCoj5a19An/3/yd0AMumrYsZcA8UNQz+mX7lkR9ZGwEhmqas9NDkLNBbitjOtWNFq5hyvZdW07iIrh5Oe5IupYNKcFbWYzBSiGphgbOr0j0KFs+kC0S1V5Ujp1lwLaOtWHch10A8jVabrD7VamcUmFg4W4VHtFL91WoNXaZbSwKOHvNjM5mJiv3Mm57kycY/QDNK2R8iJcO/UfEUB5YiOrV6VVS1htdpu7v1E6vgemxrolzpXplHLEE6ZEmEgiVgvsxL1YqGFHzc/RO1rMcSXOC2loEk1YGIanOnjaW8F0X9ltgYafVOm18DQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApfk7svvqIsBJHmRGOBAEN1ixq3aoEBp8Gce6Qn55eYizSeGU1FsYho4CX216U2vEbu3F2dLsqTIHE75k+HnJXH8B0Rxgundcgl9U3c2fsVPJwPeVomah/sScH59R/xyUs3PntyJnBIg2/37/giP2Q9Wm8axTSTWYwRSjhJrXl4aEeEdsS3tBABJM8LVMmk/Ium9fQlKac6Yu3aDn32pvWnR3xPPyF5uQ5Bp7/ull+VEpXKSRY/xCI5uY3HKvMNiedk7uKG0oTKwaucKsPT/VkyiCuo6RCslz3/D2fQORRK3q4xT9bp932AlgrFDof5gQwv4lH0TzcjoIFSEtY7dnsQIDAQAB"
     },
     "sources": [
       {
@@ -892,8 +856,7 @@
         "format": "Standard",
         "support_url": "https://forums.lanik.us/"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvzyQcZJg3yiY8K0zNSAas2h+/mAZn1zO7+DgNOyI17Si026HZutWGefbHVLuPV5cZOFguDRy5JuGc9ALj9Hx1rGzHTtteOjNTJ0r+pGINq+8v0RRtscb4pve5D8fRtJ8eyZ9cizkeC/kP85cxMn1BUP2xPj/KN32bV4/WRlJxe6Coom35cbugfnUVbnDnd4bX/5v9wBsQLNaS6/kj77LEXtj9rPmL5l72fL1pthCIVa01ZW5cVsfwtI6gg1xRS2TkKKxFAOW61CArq7/bfqBbi3fF0ciImR8UxQ4ULJ3K0Z4HXH3o5XxT4zsGvabjm/G0F6bWkZ1Ban9htZ7raYTVQIDAQAB"
+    ]
   },
   {
     "uuid": "4E8B1A63-DEBE-4B8B-AD78-3811C632B353",
@@ -904,7 +867,7 @@
     ],
     "list_text_component": {
       "component_id": "fmddkdeghohhfoglgdpkhlnfgmmffklg",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArNjlchQkvfdn8LQdHAMZQdTsM1HkcHq6TaTjtF9rUNGoME/0k5naYGbUSdqJWqfjXXt4oQ9JQR3qOscVzbJekhgn9wkKqQtpP3wNS4zo/MtK629WUqT8nbFZanPrwTzl+FoZxdAOWDPGaj/v8qVxXzkaeYHNQzdfFlsat0upecbpJuf3ySvJSXyII3xbCFCut7/h48gZ1T9duMcedU5KziTyqlRTROgb3+IEZ5jPrBAqNTg8A8h89Yn2nC1fCXjwV+boAlT/pcSXeFDjfzB9HOtV0YsDb4n90Lzu3+grr3DYJc2SwtYbAUJr4+3nJSMN60vPCYjm0wfL3U5H0bUMIQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx8Zn6GO18kBnRoKpyCp/qIJvs0/M7aKBp7ULa47kKliP+KPuezFwsJZh9vdVB4Ym9sfn7/nFrJKK4NsjvZ2rXSom2ns/+BorLdDhQMtciWR0kYpW9Ck3Writ3rGXWQ6aevQE3Juyuj3j5iyAhRtr0xWjCOqIFNRBwm0wvqS6cQ9nhbvOE/VcGAJM7sNAqs/jPdC+BJGCDMbiQ9ZbJgsX0isS5coqC2vVgryNxgAjRc6g/SXOgCs+f7wMo2ejPhzF8yoyjhdRtU5KSrP5QoCljF7GBItFqWSUxi+MQ334NKqzsc7F3bdmql5DSfwlnPgLRDU7NEi00J+5UoVq1PKoSwIDAQAB"
     },
     "sources": [
       {
@@ -912,8 +875,7 @@
         "format": "Standard",
         "support_url": "https://github.com/EasyList-Lithuania/easylist_lithuania"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv0TsH2KME0kJ7YOizjn/Cae+dAcl/RGOPpt0H+jzZODoEmNCuhEvAdVnGWuI/xbE8Mcb0Hy4sYEFMN0yvG1+tTidZCVSHqVmN5Gnyg2EtCCBmyhWGWaI6DKYqRtjRp4oo05XV/fdHIlGsOb8Yz1BFWuesPUcq/c6ZRxd626lKee4t35qJhBKIHrq51kGK8r9vyF6c6usCb7YRmcvGHjgfyMjKFFukkyvU0YUVxhNHViwJrVuDNrBOtZ7s5CpgBpSvZUuRRQ1/f22M7LNmgP/errAJiFFeQJnrQAmYsHBeDOqxn2ZWdqhLEcIc1bzEQ3AEuzGOvWXK7GBv/FwkTXg3QIDAQAB"
+    ]
   },
   {
     "uuid": "15B64333-BAF9-4B77-ADC8-935433CD6F4C",
@@ -924,7 +886,7 @@
     ],
     "list_text_component": {
       "component_id": "hkeaopcnlcfbmbogejmbipnnopjlpiph",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7gm6PR15Op1mHPv5U0B3xFJBPcBFPe6giuxgPNGTa0ZbOha1y1TA3lGYG+fLiwVXFaY+15EWYzJG+MCAa89EXxrh+1l7+BUX/5JMUQ7PHJxc6U5/h1CPmTneEaVTWKe4FCN7Mwox/4kJvnotlM13ran9LtsAoSY6G132dTaOR442Yh5DapJ2mTQsLKh26mbEhxILKYIRr7mL86tL8+Xvj6xjEsQk6BQ8knS+4AXDs6t5UATwi6HjDO0RLNTVcwrt/Rvg0/UwXZ6etl/ygtGGleGcG4rfL7vzKbtmLa1xOMxvSbY/H4by2pLVM4RCdx06lS1tij+m05CXmmCEVlIcTQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwAPUFo2x7X+Al7l1/OhgZk/CDutbg0wdktF2QXKAerwmIN00qHnj8Pt5twdkJFde+p90dOSyy6YHoGf8xHHn0Lc7sP4rFE6PAHDEN+n+XCezJTwfkYgLJ67kkp6H6FJvxdS6gSJ2VBqkqXKhzhUNohg/i+mUlgMgVWabzbT/daeuHe0djOrXS4zMBi5+WEZ7ZNcRiVyeuLXS3vv1YnJ4He5UQog48HQPf2j5lgyQDHyHPLfGvSv1rHBKUSCsdrG9dJh5T9/QSkSSorGc2wXxyKsYQHOHcES2S/MX3SDAmHyNmlbDTaYSOv9k8kkpfMSTrS+rqrMpWcWsxXkJC560qQIDAQAB"
     },
     "sources": [
       {
@@ -932,8 +894,7 @@
         "format": "Standard",
         "support_url": "https://github.com/Latvian-List/adblock-latvian"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzmzixHlJS7cco6NhrYTurQqZl4MgZHkiWTI1pnhR0JoE9ocXYiROZ//oXnb4bSMKR09bcZa1tQJddvDVuQhug/C/xly6YYnz1j3tj67/UuTrbFqdiMJzYVf6p/0Wsfloasv6V7BBomM3rQRnld97UEBLbIpzq5u7NfpaUwcO9fDnz9f3jcRHfVoB7weEqaM74//6TDW77PNtxI5pmpjMBJXgXDL6jE6LwXb8w96XKex+OPJSu2c0tL6pFcJWqWDfAGzxjreMM/BA5ClmnP0yWSvGCGig0XJ3qKDwsw4Xw5WboluyViWHtxxMg6RuysuiVdXiVZgrcvi85/3bpYptswIDAQAB"
+    ]
   },
   {
     "uuid": "9D644676-4784-4982-B94D-C9AB19098D2A",
@@ -944,7 +905,7 @@
     ],
     "list_text_component": {
       "component_id": "oojedkppeblkjkcdlmlahnhndjmbicoi",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAryhsKijuMWqJ2TuBvgIAcTt2llweKG0bhAb139zQU3s3Q6glvo4pt//atlB7kYQCYND/R6u5t+0J+mDxmTLrHftmKLdiqazB5M94ISK+64rpZdAvlVNcYId01cewyORc1xO0r4xPoLZNDp/vmKhdqbQugDTdMTu32CwZe3Qt/8ubJQrxEeCTqBeOnA78bDq0g6xcGAcvzdDiI555qXSKG/RIqBNghqHB+xRq01GkEeuv8KyYZMYb8WkFDp9tUbCaDLtUFAnPUGQPX+A2/H3hA5s39WFgjsWNorwhEFKNbdZ/aUXgfyFjYHp8RUdyl0D4J5cw8fQMWnyKxBXWgRDbfQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqj49klLd6vcJs94m6m3DdAIN9e9FU7EmuCL+2HMEjJYfMo/38MNJ4kNaQchy4CDzKmChHuFCoguAZ1PyqexoxvmLqw/Mo6yWHu3mmSYbxvp2kzEghrqPoTOukzI4D/Hip+nFH7vQB7nx0XGP3AZmsC5q4w7kOEFGGZzLzko6pBh8Jju0K0rt97UJPpP+wwcQN//PHmO9ZKszeC0aOnzN0eM2ozOOtwX3ZKmz3urddWyU5s85Mije6tDgkIZ+8oE256/kYjnZ4oGBrcjZTxy7niiVcSpfhGxoXj/GGeg79WTOgPh+vahJ0rzrR7OOjG059FAtb3Q28KayL5KbxR1Q/wIDAQAB"
     },
     "sources": [
       {
@@ -952,8 +913,7 @@
         "format": "Standard",
         "support_url": "https://kb.adguard.com/en/general/adguard-ad-filters"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtsjjmlR6KJqkFiehkhsrg/CcJehhfq1wHYhu5JpjEdZQOxRr5OKVzQ/oaPiYecsGDYLvzl5CMk306cer4D58eVH5C2K7idL2/e8FPtk72xOXTfvpETchJ2CxQIjnvDTeWx5gv8L1zy6emKwsTSZ/AEcVDOMM4rbygSddDU3XE3iGyKw3RWxcZR0Rh99DWlhoePOysFC70yMrddzC16EHedtd46HtmCO1mGF+xNBfiyW52lI3IfuXGS6FQXr8dqKxgyOfOGhN/+Q3gfy2y6OJPaPETQKUwhbNNsqSpZ1F6nkMOsEGiZMOenmjLe8FCOAPdQMHO8NDWiNd4b8MsremPQIDAQAB"
+    ]
   },
   {
     "uuid": "8BEDBAA8-4FE2-4FEA-82F2-81B8124A4A74",
@@ -968,7 +928,7 @@
     ],
     "list_text_component": {
       "component_id": "kjdbffhfijkonelaglifggkchhmgmeli",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw0U0reI6xS6rIgRaUmwNaLeZMIo41Lgg8CYt1bUl9Y+6fVxB7vHURTEDs+1fSmYhBEYu7pFxdmHZbcLM/w0Iuj7X1dcsB32aQNxnWDCCYW8VHxcBGGwRWjS80IUq9Z/4k3Lxo+ITveagLQLvmN7oAWMHQ9HbS8QUYP2INhUyl/wVlchfr2+TqDcu0iHf8dd52HP3vufxhLXGz8LCehI229yo1NvyMFriGJ6lMYJxnxS+XF/LdszHK55Rpjt/SZYOLBRPcdOVuTl5mTvKELadWVAoQCusASy5NG3OqPgFCY3XEPN0gGP0nzCuKj+gckFGS78MkuAS5FjHd0S8kpxrcQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxNbVxp7fJabPaxhrIh3kYKBbA2+Xps6nsyZ0CPVbFGAG0xbfjtLzvjLnT58M4rfTc+gwxo5BPkrYpbutEKYd2YZpf4nyF6YHuOx/zSG6zcv4Sut7Ur1hYZo7lvjQSJAbGV2ZbC2hywSbyRFgih5Hf1vSaPdjZrCColhc8ZK2NRL02DYXijNHIGwS17/fVD6+GSocfJC7wqMgouq2WCYzSS0QAb1pjyMDc4mk1Ercbe90YP0mgd+4dmrPsyHoyYeLDAMacUT1NT9t6YpnTFpeHLs+HnosjWxT/cW6M9ql7syHzNTLeXPsdzoP086LX9Mu4Z6Fioa5lkupz9gOCaEnGQIDAQAB"
     },
     "sources": [
       {
@@ -976,8 +936,7 @@
         "format": "Standard",
         "support_url": "https://github.com/DandelionSprout/adfilt/issues"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxIeRewMF1d11OiDlVVNpfx9V+DWO+1NLN5OTdGWGseFuPnyx6axup2GDlJh5NeDGN5Tjs9PF72NX8ObA6eXcI8afdROW2fHaLogE7nUGebjnwsXIDL55ceW4ZRM6P6e4oJzNU0Nx9Badlu+eiF/1dHeCg+ex5s6OE0QY58zxjH4lYSxC7A2FUxs7xSbfIMM8AlDrwM/O2B6KZ8eQRbl2utJg32qif+8S9dI+y5JfcmREdZYJwQhmWPBMSBScUsnvfq9vJJpELM8rI7XFT3AYRmo5AdvBzFZH6Niih5Ds19N6Pgou19HtgyJvi0jwmFO6TSGeskGdbhNgB1r8oq6+DQIDAQAB"
+    ]
   },
   {
     "uuid": "BF9234EB-4CB7-4CED-9FCB-F1FD31B0666C",
@@ -988,7 +947,7 @@
     ],
     "list_text_component": {
       "component_id": "ngcohbdfildjnmfnicgdipopmlhdcokg",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA31g5qkol+mJun3kMcrYyvk/BaHubMzMqJqeLxRj5HpReXC9vdO7iikabU27YY/IS+1jjWPBAgJ4Ogp7iQeBAnfJ07Y8E8v9aMJ2iADI8MPDLZVEgp2Q+fI9kc9Z/11ThAFkV+dvGMOFRrhrwrRXeiXpgVPpymi3d50RuVR4l+uDf3zaQGTJVH1jgub9fycVV2NeP7+XXZa2lHgREnubYzbLAsETQIvAVI+J048Kxo3uNCRw9sII5cyDjErmA/Oivc7IUriTlS/khsRmCdyxWwQbBGQ0pKnuEe08YJIPL6DBoKLDQHBOqgd8Do2XpLVhcYwusD/Lb7q5OZtaEQo34WQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAooZGziEyykAyX/lPhqHJCSn/jUOHKNsgc6UP/6XSiTMcTHC/ji4O64ODkuffltbQMkme06wkl8cMGr79vxp1rFlKGu3GzM9OEl7+PxawtFgqe1aLvR2R59HLh0kf+e46SMjMq2SgBsvHm5OmxX4/KDeeSAV+AbUxRrMIozq9A56Yy13QLmK/fmQzYM+8ibOivcthVufnYUNiT4EBVbbe0EkUGilC+T4xBOfkzNYLgOub1f+m4J5TbvSCT8VMrn1dNMJ+x90iRRyP3E/9CfHnTRNQsFzUIC2uSHAA0sNSzVeG/CD4cfN4SJXwt8Cmoz0xFZ8tj4WW2Vavs3D9JcUuRwIDAQAB"
     },
     "sources": [
       {
@@ -996,8 +955,7 @@
         "format": "Standard",
         "support_url": "https://github.com/MajkiIT/polish-ads-filter/issues"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxuAYpwWrh0EGIToQDRZx5VRN3Nl26A/S2sMkthVS0q3KCqa/ZQBP+todbdRAN2oAR23U55UPz63iy7H62MMK57cerLyy/GDCP5h25CRIY5w7i2oBZZxZrlxAl++nFqwElEWMQrw5rm2FvEhUHPVH/gleM0HT5llxSLuXG+Ki7W0iw12JfoIUpyYA0NP5SDHcWaaYIddlGK0KQQfH6QxJmjQ1g+WkUHzUG6Q6fZKxQ651B3rzwEcSpkSegMS+e8rnVfjGqW/QRrrOszh9cr1KrENhAFAi4bA6eEAcVRhlZC7NafRvLeat2bMWXqNdMMjUUE1cclXDhHZHfg92808HFwIDAQAB"
+    ]
   },
   {
     "uuid": "867EF333-8336-455C-9CC6-98749AEE69E4",
@@ -1008,7 +966,7 @@
     ],
     "list_text_component": {
       "component_id": "beeceepafhbchnbfdkfalfipoancnjkm",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo2YidhJviulwfVrtjHA3a3m7ouGngyys4hYz9wL2ktotbVKZ4qAx94xQ7MgZ2HO/4/k3INBHH2yBWwVlv/BwGYo4pQib/GNTOOWLGKld0/vMuhTinkiiBk41Fs2eaRVIPdEjlxdR5PdMBwx+hR7B7znFVGUbn1gH1Kde9dBd2eY8wtmGY0dluuPZ/mzq48aijElGhQw1riPg3Ga/qf0edOlyGSgvd9DpKndgdHENBtjqOUipvuV0Or0AZJZP9M5A/tmePBGW1/gKZbK37liM8ZiNPRDtGgScDVua8CKblay+OS4iavUwvcZFwD0cWBduXA1YAb3f9jZ93KOi1OXovQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAugIXbb9zMtpTWTIVwuXbFAl0HnbbDD3lFtLT1ohlZrdMFukpoQDaVOz1uDamXgDYlj3By/i86JHpS+WoJlRHoo59rTvfsNJ00rBQg4e0bwLQkolVlyOz5/N1XBXvyps/GVhsVph9QiYsJYdtB6PFfLYrQdnBQxq/cG9noz6qui0wy+W9dA2m6wQGb9QoAMI6+QgwNr9xQbBvK46nSzf0hSCrsuOsa8u/JLDGr8vo+DpJWXr3HU4wt7V7dD+s+ndmPXYEd4dWtBP5xm5Rbm2f7W2vCjPEnLtn+TT8PSypsJEYfC9Kj6fPigPNBFJijmnwi0R3zyieboNJ2uf1DXkGEQIDAQAB"
     },
     "sources": [
       {
@@ -1021,8 +979,7 @@
         "format": "Standard",
         "support_url": "https://github.com/olegwukr/polish-privacy-filters/issues"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7AMgW9TrDX+OFouLkTgdzYCUZH0gI1U9WMjat9E5CCW9IajkwNS/BmPUTdHZodnQZfiKYN4mJCTgDxY8pTNckv0GrS+5uGzX5V8uxndtEj/BahGpdvFymt6GBoTq7An3cv5R9inl0LppBHeuLaTwkrtSVmPEh+UUJfUxR8sepoNKMnuFPf1/bb9P7KfZQokgPN2rXKohMqTjz4/s6WjH6EsdlGj1EoWfR9pPdetOeWZiChMd9RFvtK4NDg+dySH5ZJ0onAK+X3CjBgwz1L9FiieHzbwMIT9CNFKwSBOqw+pzvJxoWgpaOtdu5FCK0YtpnSU9sATlx202g+OHCzkX3wIDAQAB"
+    ]
   },
   {
     "uuid": "AD3E8454-F376-11E8-8EB2-F2801F1B9FD1",
@@ -1033,7 +990,7 @@
     ],
     "list_text_component": {
       "component_id": "cgmhmpbimmakidhlkcnnehhicoclofep",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv3NouMqeq2/DdU7UmYs+mzQrQz4TKIIyD+baKTckSPGggiGFhiaQAvjjOokp+t0yXkDwPg1BWE1Vo2J4OfFbJxP6UpzQiWRdCvi7qIFNZ7oST/2hHUJm32ewXBJp8OB4Y6obkfglo/fRC42JG/Z2+R76erbNvahI+AU0kQ+WZh6tcGrp/hfOAV3VCf+t6P88g1zV2yE0a/dAZW0/5KOxfpa9jQZaJa84R4uSkHtTu3bwoJxrduAg8UxUathUIhoJFbAwvzd3dOtNBGLFRwwfxu/c9faa9la14ivhzYhRw7yGUu+gKKsdhzoM6TOgMrjr6a8y53qBWVAMD8uC30FP4QIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsTjrvNEz9Yt/APT6SlFgp4v3nXfZ3nmEthH2vTVxDQzIm9hriQHsv1ihRVkhJSM+7lXM9LtKLTmiYXumZt/R3UDF7SN0tTjxZflCPc/XUTPpHGe6/+4S+ghhZJwxW8pXgFiL9j5CKBAYVqnCG2upBBvaLqZh+EMIShJ0If3HkwM1JJ+BSZNxn5SGx/hMgapFCNHmxWbQ2gHzLa4T/eYwQXFN57XXdmIUF4BUsRVxAIE51OZZOX6PTWO4yOx1//KdIBRGB29thsCePM962+zMWZn6g//6TzeuuzpTI47dDacXUwh5M/2Ax4VWhFLbX4PDNQ/1apBaQupKbp3ZCXqd3QIDAQAB"
     },
     "sources": [
       {
@@ -1046,8 +1003,7 @@
         "format": "Standard",
         "support_url": "https://github.com/tcptomato/ROad-Block"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl8Vj2SYkZIEXH0ue9FZ2230VsktKt4cn/yqOTWpByy1k5gGMJ7AbrNSrs41o62QZoHqypHnu2hC8RU0bnRZpfZTPoho35lJHPQw57+djOc2JIASLD3MDeWKIUIwVsAAk1A3RQsLJliT9c//xMLkYBRvGoJ0xuBo/sGJ0528yycCGZECaEnz++E/wUZ+Mjw0BKBxOnodbzKP8LEzaH0qxyvNF9eVByZ7FTn3UD00YEtqBR3vEGDIdXHHSZn1gTSupTSpSCsRGOVXS/XrpmgmPsJlokflm4/K8xnRcuk9cpX6o7QM32Hi8fAsC0/gmwg/dTSYKnJajNIVIQJdytPvyDwIDAQAB"
+    ]
   },
   {
     "uuid": "80470EEC-970F-4F2C-BF6B-4810520C72E6",
@@ -1060,7 +1016,7 @@
     ],
     "list_text_component": {
       "component_id": "phmomndefejccjmpiehbogokakkmnmgb",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsVVBz2oEMbLCG6n1NDM+1TpK8gZf2xv172lVSEr7Cm8+vZyZPuBbLHfFbDogKNUQxlerx3zgsbD0AboQhmObLzbdx//T2TYG0KJKzBIFW9XAvrv0Fortj55Gdy3UAYuEtZkkiM5ibSbLkwJfS4g7LVXBNoCTBRHnqhSE6k1OOWFUQ3PpzIyRuRQRlCXPcQ5J3Q79QYeZTeNZsTn2oxd1BLI9XIpTp6aOeOK/ACXkUpqCsxu0hJsZaXxHM9T7x7KqtNBtPxU4U7B2jDbeFP4shcPGCWcqbVhcFbHSMflAvuhbt1nT1p6RadNFMI+koMUxnhdRANVP/CzOlXFafzTJxwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApKZaI97a9bLBCtXyRO+hMzJtzRCuFgFJuS1eiPbaIr7RPMU3PnhACqZVILlAlml+FS+zyraWve5dpbjkOhxTc2LBPdPbbmW36xP9EvcxoHGU0lLFLCsQbf0TBF38Dr6mDZCEnzyD/t1FWLickKGVNgMcce3coqXzZv1+BVg/ENmBTvoiI2C5qy+DjR3tuvpYvzAcNdbqld7SregbdOQRZFBdrN4LCBxtOmzG2OqwJGU5hSZCeXjWddJHzCOSJSYrvu8NzU0plvnbJIOORooxhSeukJ+8X0WIxg6uuiyBqFwbMC3/Km72cVJXieXp9CBvDhDnkeTJmItzsWtqBRBOQQIDAQAB"
     },
     "sources": [
       {
@@ -1073,8 +1029,7 @@
         "format": "Standard",
         "support_url": "https://forums.lanik.us/viewforum.php?f=102"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp3GmmYnKQi3eJIA7QRlwSqTVJlbCjXkUgTFtd0l0fmq3SnMOBxb9Ay3uKXWuqCKR621+Vu4+qm5E/vP9YQ75zFYxhMuZoF/kDbBsFmO+3loz4itXXzhaWFtFGOSo/yc6FR5bdV36cJj/gjbAcFIS9SmTJz0zIw1WiVFjjUtyC0HPX+InkVIghvlfS1Ql2Y6ilCOdkK8CI0NZyF7Iq1qzvE/ZPUv+MV2xKY6BzJ0XohGby7e7nSlDNfF8rhMols5dO8HtpOIv9lVjafOTF3ez25MUIBaZEoIrz2znd4gpa8G8XmKeNrivl2gu1zBQI3XL2zf02Yn3W8/CmIQgYBE6uQIDAQAB"
+    ]
   },
   {
     "uuid": "1088D292-2369-4D40-9BDF-C7DC03C05966",
@@ -1083,7 +1038,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "jiajbjlakknofnkmlokcbanjbajpbdkl",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxtWdoPioDlhVWLY0qxCjXbADoI9nGN/pa8D9RDU6D8kO7byrZ9LGLSPITRSM76e65xgmux2/wYnsVPLMFiTdszr0CpTfKGJVkrd183anklpX2HaPI9zK2VCB5SHnKXnpXFnyimHoVWeW0qAMLTcNnbVMSJq5v6iBoJeBsuP8Wbb7gV6RXUBM3aXkkS//rG/v9jEAQK0DGd4EDnxJG33u/YPYQTdkNSHvqHOSnXlO8VvP1/mrs+Okqpo/HU1zGnoHYIu6wABA/jYPbWGZB0KIwaVdwFViAog4sVT2bvQSQHPMs5WMvwj4yJwdC63Xz7tivddhCwCh/SJpXYDQrMoYEwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA079rAKRnavW9z/w0e7AIsWHB3C3JmgjZUr5gIBd0fB5WgOVZDQS0e2y24qt7xOECjELqLL98DKPj++NCatnb+LaL+87fbzfxRuZYPULpyy6zFxARbklQCy43d2HHGWeNqED/tLBeVYAlxjPrii9tyA8zUQhtor8ihCypZct8/bVEoQjTXkvrYfjSRrjjJ9do618fGb3bqdvJ88FyTZ2QTpFYHw06d03WR9BPselbt7Q+fy96obbo5Cc0eNRh1k1clGMFmtbA9OZZRS2Sv/UJmX2lGaAOrQbWD3k2564MXZ96PO6EyfsBR+K0eAYoBpi9mkegbbaWIR7eRrSZSLaAGQIDAQAB"
     },
     "sources": [
       {
@@ -1091,8 +1046,7 @@
         "format": "Standard",
         "support_url": "https://github.com/AdguardTeam/AdguardFilters#adguard-filters"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwypUIz6V+Eky1wBmb2nYER2yT30/CmIEb5A6qZhEx49Jik6gHFKDVNspMQiju4WpBlMPLH36UwpbEn0pw8wsISgxUhbUplPAnIbW3nR2yiCL/8g9LR3PBo8NaRW9fMxm89rTz/B3D3LZJpm52rZt47kMdqo05M0QS4FK7ByFR/73Ji6LELXk93O0A8M+AmW8ASNZFdnz/jDt4ggoq8cZOc7s/wWakzl1p1XPOmcpSAMRvYlZZDWGOnpj7+gNo7fGfqC6WWKeqacR8Gvy/QcKqgXqF251BZuwaZtto3762J50FE+Y/UuuPiokSq5EgIo7qfCik+oxEN6nl0UbygNDTwIDAQAB"
+    ]
   },
   {
     "uuid": "DABC6490-70E5-46DD-8BE2-358FB9A37C85",
@@ -1101,7 +1055,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "iiglahilpgmhlcogkkihklnbcjjgpddl",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRBzmYKl0CbI+83PG2S40TBWrvrUmmcPuXwGLahVuBOjVn8VcENIqUlGRweDyd2MHSRfHi4EBZtVHsO14ec7vEowNJJNDkDVOEi5V2+TsnzWlSDUCEGjH+MxJwS3j1+zSrbapLkTx2h40zGmTKv6h85XE11TTPcP+iqiNl9+DIqDhiM3xNpHA8IOzQsXYeoA78OCWmlr4wvy45PBY24UFZAphjgjWsAZdVaFcjT0cjh3dyyH2OPU38A36//40ABZQt+z5UReo7k4QPfcDFAAKT/Jb0QvcucIVDjSuTobsxpl2ERngRcGfYsWzBfKAW95NriJqwEkhfgiZy1YdowlHQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2MpKJC0N1dYKppdMhyYgmNOafaEdnPfklOzlYBBeSGfV11S40ftkEObUTSoV3luBCP9pj1S8OyYzBxviRqW3SDWNYdw0fTdN3pgv6ChKac4HCpTQEZFchjAMGfbkEcBRJufXIuBcsBXPN1sLNlf4bhmNzhTkz25R7dZ9JxnI4as4co9jfsxiAPR+Nx4qAmQ+mOMFdL43jeSN68YL9rHKcz4FUt7aVxFEA1K+c9YpVCCx2Vo+zp5RB3a3lAY+nmPdvBYCFUUDnXONPtKHYrActkZmnSpIo89gSctBojiOMLKqm8HLhTq/7e0BRJ9ybfrCwWnc+aQbTXvGpVD2Cc0ZsQIDAQAB"
     },
     "sources": [
       {
@@ -1109,8 +1063,7 @@
         "format": "Standard",
         "support_url": "https://forums.lanik.us/viewforum.php?f=102"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi/cTRR664QnUaJ61w9fgMpOLBPAi64BAn7GaiqiaQuCVQ0pSIEPvIE8hIgZPZx0ma9v1gSfVra9f7iPRbbky5IDs1L99FbanRFXeKUpEz4kpbvwZN0ou7NOQRXXVV8VoIabTd62bJroZSIYxw45HGwDHzP5MKd+FP+ZA8i+mLL/E+IG/WkTvEz0Oj9ihUEAgrHPW3SKfp7O2iUpWGaoijIZnUp/6ctyCBmCHznK3rJp8bzQ6IoaRCu55GFYv5aHecrx4yFd4qkRY2+UEbNitJcwEHpP22RoRyP+9rsbeg5FOnqxpVXOEDiSz5hn0oCXSan7GqyeWzZqCtoRtUsfz+QIDAQAB"
+    ]
   },
   {
     "uuid": "AE657374-1851-4DC4-892B-9212B13B15A7",
@@ -1122,7 +1075,7 @@
     "first_party_protections": true,
     "list_text_component": {
       "component_id": "fejmaeodjeekfldnbegjagemjgnmhfof",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7hFHvHCU0ZUG0+BltEbhPqd6CIL+jhQEvu6m9780p7gw2qt38Xanoip9a0s2jipz+3RFbRHg6zH+L5QFR7BM3mY+sMl9QAFNU5aKQNaWCtdtDcZUrmiobKVMlEaab4oyg46CxnLk86kykGKEMB9ZMpviYG16ZQg3coRfGmaE58e/P0amGY54mWrh281RXxoFFcU/Ws9F3PSmvyffUIa5Gr3vkD54p6+XRAZ4cuJR7rGisdlKaB2ZI7/wB441sMXI7JVTm9TvHjVye24x2YIWf7QSghYfHahfgaucFuYyyq15a8QtP5enCGEpZ0peAZrs02rzYdcGH2tV9owWA1zvMQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAygOhds4IeqIBn3sSHa9lrQswvVcbqSg0dXexpTV/Lwr0cXHm2EOghc9KVuaZrrE7f109sNrhxz17WvZPwBRymU/XwD7xLoEo3krE6wQ0mngsD8rq3K2kMXbsFI7w2Hg7AuDN9gd5rjdmLHXNWWJuODpoccA5Z5hc/nLa1wiVTI/Xk6i0P9+fouvLl1zzLDPqWBlvyrsbvpcDJYGAHAUwCeNC258pGa6u/8oa1wg6iLLWuHyBh/fH098ArFuclk6uCjow3eH2qdr6dC858yIVzlQIVxZYj9x4Jn2NrgWDrDs2FFpBHRlk+RkZoUU9yEA0tanKelOuHHIpZyJpXr999QIDAQAB"
     },
     "sources": [
       {
@@ -1130,8 +1083,7 @@
         "format": "Standard",
         "support_url": "https://forums.lanik.us/viewforum.php?f=103"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmmYuGDV14GXtfi2qeNMxlGO8IpS6K/ADWAC3tmXRTB1xKE5WJbr7s4hg2FLU1Evt6Uxoxi5+wd8anmCzf1YJenPG5J59RaUfKNRZyNSt34wOcCK0zLLKMY1rxvNMzGzJHiqyeWBdlBZ9icbqbU09X+9Y7Bc8j4LgFJ7uvGVhS+tCV7XQVzKcymYKv4fMsvsNCChmTcTJMHavjmRDgjhQog+OGpcg1bb68VIfgkpen97T/uo0WtsohjYpZ+0G64evhRvRHBrol+Gn+wRJtU0pev2BERDy6JGrCgO6B/GUhP2Ct/BFif7E7aySU8Dm/YlBzQAbD/rKYwjj+RNU4R4Z5wIDAQAB"
+    ]
   },
   {
     "uuid": "1FEAF960-F377-11E8-8EB2-F2801F1B9FD1",
@@ -1144,7 +1096,7 @@
     "first_party_protections": true,
     "list_text_component": {
       "component_id": "meimhmgfbckapkbbbdaoefgnbppmkodp",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjluea/DcuAPHj0mAGyi5P1KdQwa/5ebKyFzKuf402XVTXqXgx3e6NSX9HCbwnmj8VLaHBJLJ3q76JDcNVy50AB8SOOdg5802mg9niFsjmpLzX/dvLH71CHcBHwDH7JPuHTeOHZ/dKG6qL6Nr6mADDzpS7YPe1UoCri+CV06uT9H9txb//LSRCP51vwAVtik39BpQvKv8uQIOVAfgYn6uBoDyTk2W3ANjJ5F186TSRpjH+KkvSUy6Jqg7wCXWrJhRObEJJBU4sof+hgyWxZJzLRCpPODY9H58bx8G72rEZJ2ktL7YRk2lHsLqERsWiHrlXD0lT1fUDObTF2mdrhGvwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsv9wfu8nzmPOMg4MdBvyX6Fw8nefqMqb5FZie1EM+mPRt+R43SJyWSXWUmURVb9A+Ozj6wbXPBcS6jbuAnoJZPOjXjbh2D4plN57Omk7a0O+e7GLG6pL4mTk8MajjNpRob8ogV0qW2zSxisDzYaTB6hmb3ABRTJ3kFmilgkFU+SWQ6/23Th0wSGG+r62GhDhksxjIjcKHrjRkCdisu7XMSdF/yMoVopqiq8Gy+37kuUTZ07wNz8SKp+Z+AOw3He+KNTVLpRyQdLLhxDdwucUSg2UpsROUnJqHM25Wjh+Lh6RcH5lT0cJu1VpZhvZ5SA6aPiQiYtff5/X08L7N6SLZQIDAQAB"
     },
     "sources": [
       {
@@ -1152,8 +1104,7 @@
         "format": "Standard",
         "support_url": "https://github.com/AdguardTeam/AdguardFilters#adguard-filters"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAopsUAM3RDinFzKQ6m0eEkhmLG4TAod09EwOk/AbX20bv5DyMteCTBu7c3AcBj7mRn6fRVfbCYx5Ig6pmkf5oVoBMcZyi1byRedp3m2gvS5ZJOZh9LoRcCQ0J97nfxVm3fcXPSVopjgUIthxXjwbzXKKpRO5D+Ux3ay0LKOcnFWSX0nLHY8iNOOJCfbuXd53kpU8kpbpsgBgmvZAe9dvFeHxfcvdVE0KjrQPYlxQshSjm1yUeojySyHJ9aSE9bR96wOwv4sBp9Gy4Ga1oz3T9cnTkkQaj6vlvuXvFzstmatzSYOzXIwscZ+HSeajofw4LiRpcbu07ePElSAonEYhF2wIDAQAB"
+    ]
   },
   {
     "uuid": "418D293D-72A8-4A28-8718-A1EE40A45AAF",
@@ -1164,7 +1115,7 @@
     ],
     "list_text_component": {
       "component_id": "nnpbcdahaefknppiijdmnckpdgojejck",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqdoutIpE/Nm1lUTW8HSuhi1q094xcXIGjFYYHrcZZq3fovT20rgvxR8jRna2z+Z7C7VgL9HL0hTcdmjoShkl81FSvGxBGni50B9h5+yW0BUgENfRKmHxeSZ/v+YI7rUipDYA8Rbc69mnKJIFRYnz97SpNsWYGlvgKG1aFMEkt4nvDg2/0RO+NoDF91YdRji0fnRI++HC6U72SmpNfqB7EMNGVydY1q1ilD0g/rXbtXXXgtQZJRiOvQLNoOvuAduSzhWIKHPUOsvH1vNjay/ZuU+3pEMmAo7YNseqZCFgBuNZHyD1ODN1vkg0F4qWQpfRSlMVKoKW7TDG2kT3auDGQQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2ztdyhw47cdTIJpnL92SrWH0ZNzQo8pFiXsa52rcQf4zD5lMUGbcAypAlpY2hVrBnr7ur5meWIS3QM1Y+eSzwVntLaAAdA+Et2yXP3K1tcljoWeZXEvohypN2gFGXDruTh9/MW59e2nFRujqH0KKXuk6+svNZR9Ykh6xi8EwPMgLh1UM/bew9KtJBe5vvLj7/jXeXwTNGjR/rJH6e/VoC8FU/9jKGgcHKMed+ys50RZzgFDwD8lLO+ARsd4YO9pzQZa2HBPHqa6xHAJFhtZLXn8yUl4H9yBpqlE0/i3h7+gm6MLJtSZ/cWNtQagD4Avz+8Pnz258nUtla9Jl9SyjjQIDAQAB"
     },
     "sources": [
       {
@@ -1172,8 +1123,7 @@
         "format": "Standard",
         "support_url": "https://github.com/betterwebleon/slovenian-list"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwwnp/j6PNPiWFGhdMpdwJevKdN+l68Cx+hfDlaLh8L+HliW1PcxiZLfzgiWF3TtBj2wMuCsV7mOZsnBo8VSKUjjojBBqNE/SNB8T7yRPrQO6vZ2iN1Q7216nQ5IMchb2sshPOmO7KNkgbvnTh941zfdT23luAUmJleng+vrsnjZ86BtOHkcxzbBZam5CQfcoUhHYc8lH4KbLRAGhPdL+4t3o+wNdeqDVfyswV+nNaU4go2znyR1Kd4+SkLHU0GzPS5DabytGw7gYgdZVpOtRPUh/+GLfLKkIRBSg/OUu1V4+YSK6k7NPdcJJiK3C3pZmqqC81Vg5BFMYWzV3frZBywIDAQAB"
+    ]
   },
   {
     "uuid": "7DC2AC80-5BBC-49B8-B473-A31A1145CAC1",
@@ -1184,7 +1134,7 @@
     ],
     "list_text_component": {
       "component_id": "ggjlfgjhaeedkajcdpomeidjlniafdnp",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt6rPYGM7c+fmwvTYfrP7Rq90WRkqo4BvBAuXwNThhWPTh5FMlkcRzGWbP4xI72I5UMjQprETlN5o7EAnR1GUQ6qUut7gT1u4eZRU6stEJXh49Ne9UJ7zS3yA7bL6mYrzKytVontU0poARcz/cXZTgjEkdutCRyAQPuhDqbcWh2AEfAb8jObB+J4Cl8ZZmVjiG17ESNG1MtA22Di0oSGgQ3b1aGc+/BDWjd/rmgLgyz81fu6Jg2ZJr4D6W2gjqJ+cHheLhxZ47RzAc2uWRtleIsUHj9rOyWHf1rND/3CWkPsQaQ6BmDjrrQUP8grB/7TctJiov+Y1TRafKJQcDhQXlQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp++a4lSBbgKkeLr5AZwAGH1ycHC2Ma3cAeV/gtyDlMgSkRVkC6jZ2Y+Oro2AKVKMqNkxyLZLVmJjR3iLS2ARWAwcmI6KAb/pMbphpXjDoxATNdI298qmSVHqiGqX3peGfHu1zDQv0H+xcSWhTJN1EYuybI3XjhUf4ftV4lGWCVG+2UaVc1fD8ydEm7fBuRDrN30N/NygJwGzIM7L3PSNqRP7CLZCboiT5tg2SYldEYn68zI63Wpfh1QLT+zVN2a21evRqJxkhnpUWM8cKqK81WtJQJ/jRiCJR6tNBqBNkyyoyrowkjxOQWlA3LxzXDvESEg7Mr69GKjrfgBaDc0s/wIDAQAB"
     },
     "sources": [
       {
@@ -1192,8 +1142,7 @@
         "format": "Standard",
         "support_url": "https://github.com/lassekongo83/Frellwits-filter-lists"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqg48OLpo1UwBAbln4H+8Is705AMC6DuT+QZfTH/sfcW5eUaO5VBFYu85xFeslfkpkXDy1+8NruNvHdWBAhQPagiS4fcRK1w3Z5h59e0kA979pzjkAjSV9fyxuZQZymzCusYV99/awp0JZ8bHYnViukTB4AcHGfIUTWylpslZo0URU3L8+22uP4Vi9Rsj2o5qPOVHK+PrNSY3hqfRLL7+Lnl3gZk7FIidCDoXnSz1PAxZk1tlu+VyfC8c5O3Vw7gZDyUjIcW3x/5/NXdvbJf9q4hmWluNxpuX2gll9T0PVkgj9L/OWvqEvzt196gQpfEWku29ES2lfzh11w7PoGmZxQIDAQAB"
+    ]
   },
   {
     "uuid": "658F092A-F377-11E8-8EB2-F2801F1B9FD1",
@@ -1204,7 +1153,7 @@
     ],
     "list_text_component": {
       "component_id": "johkmlmpfakcaopiapbmcocgpkabdmed",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAskDzVAKS6M8u0Ikc8eTQF90pt2+t39Qj1afZv04MXDb8LU2KFMtGCQPLRXxcanR+aY1JNkkzk+3Va7q2hs1UZt3FrHAbEvIw/e9ekSDbX1r3WJQH2HTrGqkIxhdkW2fpGzD+lzerTMzhbg0N+ACAGIpYz26lS830DqyKxHFzbR8mWYuK9hezLxFIHIyd1FNopDlCqptVPVsgm3WNKimuMvJuKxO4Xh9KfP65lo8akKMMMoA4o42E01e1EZvzE8LxWIF5oSV0qfQaKBMG2rv5ZHI8j/XLNbzYmL+38qonJqZcPGOZD44UX+O1JSRU6PLucMBGgbQwQKSX2acCDlzbFwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoi3T9QMAFJKx2ol6hVPCVIqhs7mPDK+WdUMnXaXs4cRfaaMGJXbrXVWmivBF+LougwrbIsxDGT9WwrtOmNszPUxMNbnFW3EF9oko3I9WAS3iYPMYHwbGGitsWisfsRbPb1hLDzuUUFq9JnKaVYJCsssHvAwxPzqlPh7ZlcLVYVMsjLKwLWwicOBznWCm6/1VPR/d7jqmg8DbmPVmMPYUzimbzjnjEMgu9J5hLrCkKowFjWGXNYayDTi+UCSvCrjaevPIDmzOvI4mUNKiT7xQfexE79pe5+bv6W4PDAs7aqqiKPeTyzxmeyAyEK8QEwYXh65YsHkUYZ/6wXUoCtXoywIDAQAB"
     },
     "sources": [
       {
@@ -1212,8 +1161,7 @@
         "format": "Standard",
         "support_url": "https://github.com/easylist-thailand/easylist-thailand"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx5wM5rik22dXpVh4IwEv666CT+jO5mCwxH6Xt4AKRh/lABOgo210C4Kz98tuKedbQHPtpjuHonLQl/GOwcTGlTDnpDZFVtcSYrzKa5SqTwqyxWnTzjDACuRhOdaRCPPtzCXZTWVbDA5q5MtzMjLqakMqy+3+z/6Vr5XYO4RsX9LC4Ji+lsOnBmLXfhAFJ0RuiQuR6x+33J+grbprDEk/2ICBDqg427pAo/ixoMxocixVawIO4jPVAZIQbUmtR6fC4+qSrEP7aO0+7zao5ZbNk3XwFdnePZJh1UEj1Nsfmh0a2o1im3x9ONYbuF4im4WHJ18NcJC70WsK77sLVrExuQIDAQAB"
+    ]
   },
   {
     "uuid": "1BE19EFD-9191-4560-878E-30ECA72B5B3C",
@@ -1224,7 +1172,7 @@
     ],
     "list_text_component": {
       "component_id": "gomenlogbembmkbghmaoledggliepdef",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA22hDTSPF2eqUBzSJ71Q4kOXDG4wCmB3oPs30JVJkRQleqCMduBK8GmFbSm+9yhfukpI44tfoet0Il4gaomU/9lmaJqHH5cuSr4dQ5Npyd8ujh3O4E+YGEbTl6W4BFEWJ/CtyrzOXKeHnEy9tKIPtCDlE5+oJc7zCsHwO0SGtvRTdbNp4FzqMhfAJodmvdqoAgLKsPKC2bCV9gKDXKcv7wYkJO34WglWyN2o0g/O2hpnSnRi752hBGQJ2H6AkKr9Mus1dOvStAdX+su+1jtQmzqlU7oSW/sRnLz6xE2UqI1VYreLuDNzsLptAWIvOQ5angkg12eMAZbQ2rRyt6a+dcQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1HaYDGqhKdKmAZHysUtd878Uoybo8wlqABWS4XgGyDsK52SVYh7zjO59kOIGZxaXjKvFOSRM6RtEIcQfPEmdsq8qoUAuOvVGwb79bfwvBDtVtd+tDIjUCfwwAFQ7UE7V5UswSncZR24e1blbmJbpW5gDcMi/521amelQi4+zo/WS0zzdW3qjZ85kSvc5NwKT1pZK2oRgd0JSPX0DzeZKThPvMnGzkwaUPOXKtKOkJufJcMUjTsAPwWybcUz2dfCQ6a+QwOHAMK9Fz0p1R57JNpdUKxm64RM3v84FftBINWN/iFwQ1FkY/ZxeoyhP2VcoMQEg/Ildd3B0E5mHLtOuaQIDAQAB"
     },
     "sources": [
       {
@@ -1232,8 +1180,7 @@
         "format": "Standard",
         "support_url": "https://github.com/AdguardTeam/AdguardFilters#adguard-filters"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmD42lql6c2zEhxFRyBT7p/bovPKIMZAddkjIfS/KW6TpPeq45pnablqvamq+Bg4ZVR0xr07hpnnvrqMdqpbQUXsUinWBDnvW1Ln/tcbcvYhWQR/DLL3FJHHU8KV1D0u7QTjgIMEVskd/iXPtYMT3gDTQb7JbBZOBpDdTIFuo9T849m5TmBzqdQAfyncF+QOdu1MBX0TzXZScsSNrMWr9+7C7KMf4QH40BA10W5c7Z73FX8PlYvO7KPo67NN5uE3UQYdXblyvXwXB7iYahgBle1GcHrrqjrG/ocJCdxGqLqG4mFEol96xiwSYCDZvywPMt++IAJnDG36lpvSvn3uqaQIDAQAB"
+    ]
   },
   {
     "uuid": "6A0209AC-9869-4FD6-A9DF-039B4200D52C",
@@ -1244,7 +1191,7 @@
     ],
     "list_text_component": {
       "component_id": "ooamlicohiiaodkaemgoimcihidbedmp",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA59M4IcHdNhl2o3GE1DkiYxBmgy31/kakiPQEE0l/+UifvjML2bqJd2hShwMgZV/hv4giLuhi37GF46eyLQKi2mlnmTze9956Qm5F2WqgbDkZA7JWRHXmcO15uJM/L0US7bycJWscvnmprvwzElh9DdQXa3N/XxP0U7U+fzd1xXCBG/AUDN6JHFsiXV0tC9riK3HO7pqw870dw5ZE058UKeBdqQYzID0kxyT4OwhdDi4na3UQaZ7n9SDKI6/JTIvBXHamg+bOpS3r07qOT6vAmfFD8VQOkafb0c7gCTsjh1yzUyLSqLT+keywYCHjgtIbImTvI5vDlU3MGt6i7owkRwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoXfCGn3Eo5OKs9GDVfeqTJyb31Okag5HELyefKl/AkqFzjOQ9qlKNhb2HRInFX7rKlp6gLN0cgiG8x4hiVk3WTBq07HcRqcY/PwrotbvXCDvTq2KZPjQ8CbtlFApnsMv9u+8hsYIZtHLhdsomZnnXggfXTvDydaoZ0hl+ugNsItM/gSzvfdqh2IBSc+4N/GDpfs20YWKceSgTlaiOgaRsV3UuJYgCEmbqHtrNE6lz2AFopYFIpptOJEuWHbGZefte96suRFr/d15ZVjSSKZkkvhxPEGfkTn4oK7bSfjLn3j1vr64E1kbc+I3GAszwRpjyNU9VAiSWKYRFgYyIwpyqQIDAQAB"
     },
     "sources": [
       {
@@ -1252,8 +1199,7 @@
         "format": "Standard",
         "support_url": "https://abpvn.com/"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwFhc+0xPnDQukj4n6cyM5Z9r32WLkVU8qd99pcEvk8pbFFLbSbl50GSAnnAU2Nk4aBQCm6hO92ljO88qdgTpYImbNjMcScL3g+WJrVx3bl1Xf3o+6WyaAai+t0HRXxqLq6OAhp3TH8lKt6PMHK6mu2HJjwbjvmWYWT2U4kALPRcySLEB6jWQCqGKlY7R1KHkZ5gf+piSas8dXB/o++2xMUbbYcEZDyZEv6pmYQmx78nI+LpzKrjVIKayJw/BImy5rmQxd3nRMUYSK/hMcNNmCDfXcQk+w+NqjWnhZB5CkIzL188fRw/x6exooQb3eSw2jKQkicviDef94XPbYa+KeQIDAQAB"
+    ]
   },
   {
     "uuid": "529A3F3B-7EBA-4351-B986-D176A82E7F5A",
@@ -1262,7 +1208,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "mhccgcegedfkhdbfbgllfkkcjhgkoinc",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2eKDoX0Y/7nUHC6LAFxk6UTakucO70X3lMNZcJqRaX8fS0jZChtNAyAE4Cww/i7eawKgMG/fBjFYhVMZtyGhc4jF+TevDZjG1iKYoOSCi7m85XIIzJCnrNa62oYfOyb8jdJOIxP+3G6Z9U6Dj2XLfFlHBKerx5x4cJOM4Jd2zLYJg9oFcEyo0qdm+gZTsfIxpyghDXIy97ckoWreks7oibuKHX4FZ0ZJ9UYzGGJ12H1eq/rKJxmEfJRZkcSvBnNgjBa34c4IFGMiSmfbcvJimPj/eAnLh1NYNPZCp2tGmFHupJjEss+fgK84MvZ6wjb4imPfrL0cg/a2ETEEeJZmfwIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwwLAZVg9gFX0rK72vC5f7Bid6utRxwHKtQ+1TzMHJLBABi9aL/5jrMWRzDt4pdv4mzroYSnsOB9kfKWUSa2szq6OV1xeZ6kJqsM/CE+pKbZr6KEblZnNh+KrCR3hSXUjpBL2C6qm8966BsVKXSAyN27ssOT36k2OJIR0kTJxZVU0rc0HeL5qQYZ+IJRbq99SgqX5rlh94QpL+XXayvUHtaTksykQ/fKp2v2jlIe69qljGWPiJZO1FF6NTpE598HWWKzcJAGSKn7gpq5vsNiMMnrRKGjV+WRRfWl/7xZP02P88ZTOHJpzYNFOfV43m8SMa8eiF3rqs5nMMqre9CWigwIDAQAB"
     },
     "sources": [
       {
@@ -1270,8 +1216,7 @@
         "format": "Standard",
         "support_url": "https://github.com/brave/adblock-lists"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEnP+rvQm0mD2sSGeIberGEMYvwge0iHCBuDvYSL4oersKgyM0wptQNlM83WaQVSnH0TS3EET97zm4qtvb/8k/vUdZ3tStGlbDZkDTXBvLUndEej823DbZ9AJFGhrhfvG1p9Yd1mzldcwFWa0Gg9KzT6J+BEYx0I+YkcrP8NHcyBNc/NBSTDTDqwfmp11OHgDq5Q0gkggYYzI3E09kLYjPtbiknqcqs3SJhVQQ5JGqMjgNMjJkqD7z1d8qjYpIrJep9+bIIXMNouohFprAKShiihvW9sCDeUdQzfhjJ4gcGTsDq/CKux36SWBI3TdN4F8B58htsqdlsMDs0ghZ3Y1wIDAQAB"
+    ]
   },
   {
     "uuid": "564C3B75-8731-404C-AD7C-5683258BA0B0",
@@ -1280,7 +1225,7 @@
     "langs": [],
     "list_text_component": {
       "component_id": "jcfckfokjmopfomnoebdkdhbhcgjfnbi",
-      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApAv4tlCr9wadoy+aHIaZzAzJBBNL5o2vBg+Ba9mBS3iKcEbkj/aVoNbj59MmwyAbBkQCEX7YXyf4MXCBo8JyTfjPvArkWSU1YyfmmrEMv50DjMmCGzUQwiugl74qOlbwiVlGjOc0FZwVIH3Xv9r5lqzKKUje/a8ggSIQmpHIYl+nmQosqVwQU0pbWJZdHirMT4DDW/VbrryXpl3AYzJxOckwcp4XPLlG+meAj3m4+Jf+K6IidIx3T3yZ1k18PT+K/LOz+YmvoOTfxJC+fGB8a/zF5762cUMMMzYO4tEBZcOU8dep9M4nlbSOareiGO3wJQeIAF/8U8P/WecA/N6ZkQIDAQAB"
+      "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp71eCU9IH/5mrgI9urCpUSpi/MSbzn3T8eeQNQHGwAnaYOdAJEuy47kMNrTFFynz/5aa4gkBPx4OT39ltl7aeWApFaMsmxJZEE0FRKkJLwkgigOUz7GcULMzMNmr1NL9YkQhio7zAuuMZt7RaXT5XlI4HaXoy6vCQOxwjNwPeJpMMLia3/p051wirQBJ22PMm47pvxmpH9Io+r+7CvsE/JcbVE4+wQzcIXuAaNh7gKtrvwhwZ6hcUIFZhXgh01CCG+Och/dr3ks9vF8KsPepxT5UqfFty5rW87KuNDkxNPC/wYV6t+b+iilpCbbkqmtmigCHQ9B9fxTHvKgpOR2T3QIDAQAB"
     },
     "sources": [
       {
@@ -1288,7 +1233,6 @@
         "format": "Standard",
         "support_url": "https://github.com/brave/adblock-lists"
       }
-    ],
-    "base64_public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl0H8CRDIHiQ7ODCXerg58jtzwfYFm/k3V8K8VSFOMqyHeVQ2w9csreN97E0Wa9+EEIT2miFdErGIwmDf4CoAu9d1bW/83Fw85fberGXKo+cD9BD8lEpYUSs0gSesAPliHvZvcClVtdweY8cvUlZppLdzGN579Kn5MluE6tUrvm9e9Okr0KJJNJ1gOvxkUe1VVJ5Vb3sgwH9m5jvn08GpXTOVeB5oRi5AJl26/S9Tgzo9Am1VoNbm1zrUsUMfMDUVNOoVVWnPZ094TqK8BhzKDTx6nAPNyaxHbxYpQx9coCCYGg1zdCvwAZZlt4Z7/BpVWiAQfD2GpN2Y8DgRTJUWIQIDAQAB"
+    ]
   }
 ]

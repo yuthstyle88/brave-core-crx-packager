@@ -34,6 +34,7 @@ const generateManifestFilesForAllLists = async () => {
   const catalog = await getListCatalog()
   return Promise.all(catalog.map(async entry => {
     const title = util.escapeStringForJSON(entry.title)
+    console.log('Generating manifest for ' + title)
     await generateManifestFile(title + ' (plaintext)', entry.list_text_component.base64_public_key, entry.list_text_component.component_id)
   }))
 }

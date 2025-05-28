@@ -3,7 +3,7 @@ import path from 'path'
 import ntpUtil from '../lib/ntpUtil.js'
 
 const PROJECT_ROOT = path.resolve()
-const AD_BLOCK_PATH = '/Users/yongyutjantaboot/WebstormProjects/brave-core-crx-packager/out-ad-block-updater-pem'
+const AD_BLOCK_PATH = './out-all-pem'
 const CATALOG_FILE = path.join(PROJECT_ROOT, 'list_catalog.json')
 
 // อ่าน public key จาก .pem file
@@ -18,7 +18,7 @@ const getPublicKeyFromPem = (pemFile) => {
 }
 
 // อัพเดท list_catalog.json
-const update_list_catalog = async () => {
+const update_list_catalog =  () => {
   // อ่านไฟล์ catalog เดิม
   const catalog = JSON.parse(
     fs.readFileSync(
@@ -30,7 +30,7 @@ const update_list_catalog = async () => {
   // อัพเดทแต่ละ entry
   for (const entry of catalog) {
     const componentId = entry.list_text_component.component_id
-    const pemFile = path.join(AD_BLOCK_PATH, `ad-block-updater-${componentId}.pem`)
+    const pemFile = path.join(AD_BLOCK_PATH, `${componentId}.pem`)
 
     if (fs.existsSync(pemFile)) {
       const publicKey = getPublicKeyFromPem(pemFile)
@@ -55,4 +55,4 @@ const update_list_catalog = async () => {
 }
 
 // รัน script
-update_list_catalog().catch(console.error)
+update_list_catalog()

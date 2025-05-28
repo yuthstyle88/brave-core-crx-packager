@@ -64,8 +64,7 @@
     "package-manifest-v2-extensions": "node ./scripts/packageManifestV2Extensions",
     "generate-puffpatches": "node ./scripts/generatePuffpatches",
     "upload-component": "node ./scripts/uploadComponent",
-    "update-catalog": "node scripts/update_list_catalog.js",
-    "update-components": "node scripts/getComponentUpdate.js"
+    "update-catalog": "node scripts/update_list_catalog.js"
   },
   "repository": {
     "type": "git",

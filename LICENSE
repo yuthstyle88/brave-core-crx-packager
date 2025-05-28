@@ -1,6 +1,12 @@
 Mozilla Public License Version 2.0
 ==================================
 
+------------------------------------------------------------------------
+NOTICE: This project is a fork of Brave's CRX Packager and retains the
+original Mozilla Public License (MPL) 2.0. All modifications and usage
+related to iBrowe are provided under the same license.
+------------------------------------------------------------------------
+
 1. Definitions
 --------------
 
