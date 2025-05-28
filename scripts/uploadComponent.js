@@ -12,8 +12,8 @@ util.installErrorHandlers()
 commander
   .option('-d, --crx-directory <dir>', 'directory containing multiple crx files to upload')
   .option('-f, --crx-file <file>', 'crx file to upload', 'extension.crx')
-  .option('-e, --endpoint <endpoint>', 'DynamoDB endpoint to connect to', '') // If setup locally, use http://localhost:8000
-  .option('-r, --region <region>', 'The AWS region to use', 'us-west-2')
+  .option('-e, --endpoint <endpoint>', 'DynamoDB endpoint to connect to', 'http://localhost:4566') // If setup locally, use http://localhost:8000
+  .option('-r, --region <region>', 'The AWS region to use', 'us-east-1')
   .parse(process.argv)
 
 let crxParam = ''

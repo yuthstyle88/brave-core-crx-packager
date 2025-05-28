@@ -20,6 +20,7 @@ services:
     environment:
       - SERVICES=s3,dynamodb
       - DEBUG=1
+
       - PORT_S3=4566
       - PORT_DYNAMODB=4567
     volumes:
