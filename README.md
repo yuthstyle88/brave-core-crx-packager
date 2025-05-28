@@ -40,6 +40,7 @@ Currently
 ### Component Extensions
 
 To package a component extension, first generate the appropriate DAT file(s) if any. For example, to generate all of the DAT files used by the Ad Block component extension use the following command:
+
 step 1
 ```bash
 npm run data-files-ad-block-rust
@@ -68,7 +69,8 @@ us-west-2
 --keys-directory
 out-ad-block-updater-pem
 ```
-
+step 4 
+Upload component to server
 where:
 
 * `keys-dir` is the directory containing the associated private keys used to sign the CRX files

@@ -14,12 +14,6 @@ const getOriginalManifest = () => {
   return path.join('manifests', 'leo-local-models-updater', 'default-manifest.json')
 }
 
-function getFilenameFromPath(path) {
-  const filename = path.split(/[\\/]/).pop() || '';
-  const dotIndex = filename.lastIndexOf('.');
-  return dotIndex > 0 ? filename.substring(0, dotIndex) : filename;
-}
-
 const stageFiles = (version, outputDir) => {
   util.stageDir('leo-local-models', getOriginalManifest(), version, outputDir)
 }
@@ -46,7 +40,7 @@ const processDATFile = (binary, endpoint, region, key, publisherProofKey, publis
   // const originalManifest = getOriginalManifest()
   // const parsedManifest = util.parseManifest(originalManifest)
   // const id = util.getIDFromBase64PublicKey(parsedManifest.key)
-  const id =  getFilenameFromPath(key)
+  const id =  util.getFilenameFromPath(key)
 
   if (!localRun) {
     util.getNextVersion(endpoint, region, id).then((version) => {

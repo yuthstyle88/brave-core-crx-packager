@@ -30,11 +30,18 @@ const uploadJobs = []
 if (fs.lstatSync(crxParam).isDirectory()) {
   fs.readdirSync(crxParam).forEach(file => {
     if (path.parse(file).ext === '.crx') {
-      uploadJobs.push(util.uploadCRXFile(commander.endpoint, commander.region, path.join(crxParam, file)))
+      const id = util.getFilenameFromPath(file)
+      const isChanged = util.isUpdateCRXFile(commander.endpoint, commander.region, id)
+      if (isChanged) {
+        uploadJobs.push(util.uploadCRXFile(commander.endpoint, commander.region, path.join(crxParam, file), id))
+      }
     }
   })
 } else {
-  uploadJobs.push(util.uploadCRXFile(commander.endpoint, commander.region, crxParam))
+  const id = util.getFilenameFromPath(crxParam)
+  const isChanged = util.isUpdateCRXFile(commander.endpoint, commander.region, id)
+  if (isChanged)
+      uploadJobs.push(util.uploadCRXFile(commander.endpoint, commander.region, crxParam, id))
 }
 
 Promise.all(uploadJobs).then(() => {
