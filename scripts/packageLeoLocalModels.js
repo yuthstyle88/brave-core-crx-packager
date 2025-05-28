@@ -14,6 +14,12 @@ const getOriginalManifest = () => {
   return path.join('manifests', 'leo-local-models-updater', 'default-manifest.json')
 }
 
+function getFilenameFromPath(path) {
+  const filename = path.split(/[\\/]/).pop() || '';
+  const dotIndex = filename.lastIndexOf('.');
+  return dotIndex > 0 ? filename.substring(0, dotIndex) : filename;
+}
+
 const stageFiles = (version, outputDir) => {
   util.stageDir('leo-local-models', getOriginalManifest(), version, outputDir)
 }
@@ -26,7 +32,7 @@ const postNextVersionWork = (key, publisherProofKey, publisherProofKeyAlt, binar
   const crxFile = path.join(crxOutputDir, `${componentType}-${datFileName}.crx`)
   let privateKeyFile = ''
   if (!localRun) {
-    privateKeyFile = !fs.lstatSync(key).isDirectory() ? key : path.join(key, `${componentType}-${datFileName}.pem`)
+    privateKeyFile = !fs.lstatSync(key).isDirectory() ? key : path.join(key, `${datFileName}.pem`)
   }
   stageFiles(version, stagingDir)
   if (!localRun) {
@@ -37,9 +43,10 @@ const postNextVersionWork = (key, publisherProofKey, publisherProofKeyAlt, binar
 }
 
 const processDATFile = (binary, endpoint, region, key, publisherProofKey, publisherProofKeyAlt, localRun) => {
-  const originalManifest = getOriginalManifest()
-  const parsedManifest = util.parseManifest(originalManifest)
-  const id = util.getIDFromBase64PublicKey(parsedManifest.key)
+  // const originalManifest = getOriginalManifest()
+  // const parsedManifest = util.parseManifest(originalManifest)
+  // const id = util.getIDFromBase64PublicKey(parsedManifest.key)
+  const id =  getFilenameFromPath(key)
 
   if (!localRun) {
     util.getNextVersion(endpoint, region, id).then((version) => {
@@ -61,7 +68,6 @@ util.installErrorHandlers()
 
 util.addCommonScriptOptions(
   commander
-    .option('-d, --keys-directory <dir>', 'directory containing private keys for signing crx files')
     .option('-f, --key-file <file>', 'private key file for signing crx', 'key.pem')
     .option('-l, --local-run', 'Runs updater job without connecting anywhere remotely'))
   .parse(process.argv)
