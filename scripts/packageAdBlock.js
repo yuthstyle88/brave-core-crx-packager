@@ -75,8 +75,9 @@ const processComponent = (
     return
   }
 
-  const parsedManifest = util.parseManifest(originalManifest)
-  const id = util.getIDFromBase64PublicKey(parsedManifest.key)
+  // const parsedManifest = util.parseManifest(originalManifest)
+  // const id = util.getIDFromBase64PublicKey(parsedManifest.key)
+  const id = componentSubdir
 
   let fileToHash
   if (componentSubdir === regionalCatalogComponentId) {
