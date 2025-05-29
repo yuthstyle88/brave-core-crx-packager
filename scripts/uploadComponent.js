@@ -31,7 +31,8 @@ if (fs.lstatSync(crxParam).isDirectory()) {
   fs.readdirSync(crxParam).forEach(file => {
     if (path.parse(file).ext === '.crx') {
       const id = util.getFilenameFromPath(file)
-      const hash = util.generateSHA256HashOfFile(file)
+      const filePath = path.resolve(crxParam, file)
+      const hash = util.generateSHA256HashOfFile(filePath)
       // Push Promise ที่ผลลัพธ์ของ isUpdateCRXFile ครอบคลุมทั้งฟังก์ชัน upload
       uploadJobs.push(
         util.isUpdateCRXFile(commander.endpoint, commander.region, id, hash).then(isChanged => {
