@@ -32,7 +32,7 @@ const postNextVersionWork = (componentSubdir, keyDir, publisherProofKey,
   publisherProofKeyAlt, binary, localRun, version, contentHash, verifiedContentsKey) => {
   const stagingDir = path.join('build', 'ad-block-updater', componentSubdir)
   const crxOutputDir = path.join('build', 'ad-block-updater')
-  const crxFile = path.join(crxOutputDir, `ad-block-updater-${componentSubdir}.crx`)
+  const crxFile = path.join(crxOutputDir, `${componentSubdir}.crx`)
   const contentHashFile = path.join(crxOutputDir, `ad-block-updater-${componentSubdir}.contentHash`)
   stageFiles(version, stagingDir).then(() => {
     // Remove any existing `.contentHash` file for determinism

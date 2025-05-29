@@ -31,9 +31,10 @@ if (fs.lstatSync(crxParam).isDirectory()) {
   fs.readdirSync(crxParam).forEach(file => {
     if (path.parse(file).ext === '.crx') {
       const id = util.getFilenameFromPath(file)
+      const hash = util.generateSHA256HashOfFile(file)
       // Push Promise ที่ผลลัพธ์ของ isUpdateCRXFile ครอบคลุมทั้งฟังก์ชัน upload
       uploadJobs.push(
-        util.isUpdateCRXFile(commander.endpoint, commander.region, id).then(isChanged => {
+        util.isUpdateCRXFile(commander.endpoint, commander.region, id, hash).then(isChanged => {
           if (isChanged) {
             return util.uploadCRXFile(commander.endpoint, commander.region, path.join(crxParam, file), id)
           }
@@ -43,8 +44,9 @@ if (fs.lstatSync(crxParam).isDirectory()) {
   })
 } else {
   const id = util.getFilenameFromPath(crxParam)
+  const hash = util.generateSHA256HashOfFile(crxParam)
   uploadJobs.push(
-    util.isUpdateCRXFile(commander.endpoint, commander.region, id).then(isChanged => {
+    util.isUpdateCRXFile(commander.endpoint, commander.region, id, hash).then(isChanged => {
       if (isChanged) {
         return util.uploadCRXFile(commander.endpoint, commander.region, crxParam, id)
       }
