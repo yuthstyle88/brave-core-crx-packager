@@ -127,7 +127,12 @@ util
       )
   )
   .parse(process.argv)
-
+commander.binary = process.env.BINARY
+commander.region = process.env.S3_REGION
+commander.endpoint = process.env.S3_ENDPOINT
+commander.publisherProofKey = process.env.PUBLISHER_PROOF_KEY
+commander.publisherProofKeyAlt = process.env.PUBLISHER_PROOF_KEY_ALT
+commander.verifiedContentsKey = process.env.VERIFIED_CONTENTS_KEY
 let keysDir = ''
 if (fs.existsSync(commander.keysDirectory)) {
   keysDir = commander.keysDirectory

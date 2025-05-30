@@ -110,7 +110,12 @@ util.addCommonScriptOptions(
     .option('-d, --keys-directory <dir>', 'directory containing private keys for signing crx files', 'abc')
     .option('-f, --key-file <file>', 'private key file for signing crx', 'key.pem'))
   .parse(process.argv)
-
+commander.binary = process.env.BINARY
+commander.region = process.env.S3_REGION
+commander.endpoint = process.env.S3_ENDPOINT
+commander.publisherProofKey = process.env.PUBLISHER_PROOF_KEY
+commander.publisherProofKeyAlt = process.env.PUBLISHER_PROOF_KEY_ALT
+commander.verifiedContentsKey = process.env.VERIFIED_CONTENTS_KEY
 let keyParam = ''
 
 if (fs.existsSync(commander.keyFile)) {

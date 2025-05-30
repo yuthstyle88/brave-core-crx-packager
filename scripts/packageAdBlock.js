@@ -125,13 +125,12 @@ const getComponentList = async () => {
 }
 
 const processJob = async (commander, keyDir) => {
-  (await getComponentList())
-    .forEach(processComponent.bind(null, commander.binary, commander.endpoint,
-      commander.region, keyDir,
-      commander.publisherProofKey,
-      commander.publisherProofKeyAlt,
-      commander.localRun,
-      commander.verifiedContentsKey))
+  (await getComponentList()).forEach(processComponent.bind(null, commander.binary, commander.endpoint,
+    commander.region, keyDir,
+    commander.publisherProofKey,
+    commander.publisherProofKeyAlt,
+    commander.localRun,
+    commander.verifiedContentsKey))
 }
 
 util.installErrorHandlers()
@@ -141,6 +140,12 @@ util.addCommonScriptOptions(
     .option('-d, --keys-directory <dir>', 'directory containing private keys for signing crx files')
     .option('-l, --local-run', 'Runs updater job without connecting anywhere remotely'))
   .parse(process.argv)
+commander.binary = process.env.BINARY
+commander.region = process.env.S3_REGION
+commander.endpoint = process.env.S3_ENDPOINT
+commander.publisherProofKey = process.env.PUBLISHER_PROOF_KEY
+commander.publisherProofKeyAlt = process.env.PUBLISHER_PROOF_KEY_ALT
+commander.verifiedContentsKey = process.env.VERIFIED_CONTENTS_KEY
 
 if (!commander.localRun) {
   let keyDir = ''

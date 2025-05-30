@@ -55,6 +55,12 @@ util.addCommonScriptOptions(
   commander
     .option('-k, --key-file <file>', 'file containing private key for signing crx file'))
   .parse(process.argv)
+commander.binary = process.env.BINARY
+commander.region = process.env.S3_REGION
+commander.endpoint = process.env.S3_ENDPOINT
+commander.publisherProofKey = process.env.PUBLISHER_PROOF_KEY
+commander.publisherProofKeyAlt = process.env.PUBLISHER_PROOF_KEY_ALT
+commander.verifiedContentsKey = process.env.VERIFIED_CONTENTS_KEY
 
 let privateKeyFile = ''
 if (fs.existsSync(commander.keyFile)) {

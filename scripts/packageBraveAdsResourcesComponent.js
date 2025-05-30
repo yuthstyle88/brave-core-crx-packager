@@ -288,9 +288,15 @@ const generateCRXFile = (binary, endpoint, region, keyDir, publisherProofKey,
 util.installErrorHandlers()
 
 util.addCommonScriptOptions(
-    commander
-      .option('-d, --keys-directory <dir>', 'directory containing private keys for signing crx files'))
-      .parse(process.argv)
+  commander
+    .option('-d, --keys-directory <dir>', 'directory containing private keys for signing crx files'))
+  .parse(process.argv)
+commander.binary = process.env.BINARY
+commander.region = process.env.S3_REGION
+commander.endpoint = process.env.S3_ENDPOINT
+commander.publisherProofKey = process.env.PUBLISHER_PROOF_KEY
+commander.publisherProofKeyAlt = process.env.PUBLISHER_PROOF_KEY_ALT
+commander.verifiedContentsKey = process.env.VERIFIED_CONTENTS_KEY
 
 let keyDir = ''
 if (fs.existsSync(commander.keysDirectory)) {

@@ -17,7 +17,8 @@ commander
   .option('-e, --endpoint <endpoint>', 'DynamoDB endpoint to connect to', 'http://localhost:4565') // If setup locally, use http://localhost:8000
   .option('-r, --region <region>', 'The AWS region to use', 'us-east-1')
   .parse(process.argv)
-
+commander.region = process.env.S3_REGION
+commander.endpoint = process.env.S3_ENDPOINT
 let crxParam = ''
 
 if (fs.existsSync(commander.crxFile)) {
