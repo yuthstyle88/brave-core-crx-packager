@@ -38,7 +38,7 @@ const generateCRXFile = (binary, endpoint, region, componentID, privateKeyFile,
   mkdirp.sync(stagingDir)
   mkdirp.sync(crxOutputDir)
   util.getNextVersion(endpoint, region, componentID).then((version) => {
-    const crxFile = path.join(crxOutputDir, 'heplpbhjcbmiibdlchlanmdenffpiibo.crx')
+    const crxFile = path.join(crxOutputDir, 'mfekjlbfljomfliflcokbikdgiohocmn.crx')
     stageFiles(version, stagingDir)
     util.generateCRXFile(binary, crxFile, privateKeyFile, publisherProofKey,
       publisherProofKeyAlt, stagingDir)

@@ -10,20 +10,21 @@
     "@sentry/node": "7.120.3",
     "adblock-rs": "0.9.5",
     "brave-wallet-lists": "^1.24.18",
+    "commander": "2.20.3",
     "crx3": "^1.1.3",
+    "dotenv": "^16.5.0",
+    "fs-extra": "11.3.0",
     "glob": "^11.0.2",
+    "level": "8.0.1",
+    "mkdirp": "3.0.1",
     "node-fetch": "^3.3.2",
     "p3a-config": "github:brave-experiments/p3a-config",
     "pbf": "4.0.1",
     "playlist-component": "github:brave/playlist-component",
     "recursive-readdir-sync": "1.0.6",
-    "unzip-crx-3": "0.2.0",
-    "commander": "2.20.3",
-    "fs-extra": "11.3.0",
-    "level": "8.0.1",
-    "mkdirp": "3.0.1",
     "replace-in-file": "7.2.0",
-    "rimraf": "5.0.10"
+    "rimraf": "5.0.10",
+    "unzip-crx-3": "0.2.0"
   },
   "devDependencies": {
     "brave-site-specific-scripts": "github:brave/brave-site-specific-scripts",
@@ -65,7 +66,8 @@
     "package-manifest-v2-extensions": "node ./scripts/packageManifestV2Extensions",
     "generate-puffpatches": "node ./scripts/generatePuffpatches",
     "upload-component": "node ./scripts/uploadComponent",
-    "update-catalog": "node scripts/update_list_catalog.js"
+    "update-catalog": "node scripts/update_list_catalog.js",
+    "update-comname": "node scripts/updateConponentName.js"
   },
   "repository": {
     "type": "git",

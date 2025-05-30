@@ -1,23 +1,32 @@
 import util from '../lib/util.js'
-import { getListCatalog,resourcesComponentId,regionalCatalogComponentId } from '../lib/adBlockRustUtils.js'
+import { getListCatalog, regionalCatalogComponentId, resourcesComponentId } from '../lib/adBlockRustUtils.js'
 import commander from 'commander'
+
 const initDB = async (commander) => {
   await util.createTableIfNotExists(commander.endpoint, commander.region)
-  let catalog = await getListCatalog()
+  const catalog = await getListCatalog()
   const regionalItem = {
-    title: "iBrowe Ad Block Updater (Regional Catalog)",
+    title: 'iBrowe Ad Block Updater (Regional Catalog)',
     list_text_component: {
-      component_id: regionalCatalogComponentId,
+      component_id: regionalCatalogComponentId
     }
   }
   const resourceItem = {
-    title: "iBrowe Ad Block Updater (Resources)",
+    title: 'iBrowe Ad Block Updater (Resources)',
     list_text_component: {
-      component_id: resourcesComponentId,
+      component_id: resourcesComponentId
     }
   }
+  const dataUpdaterItem = {
+    title: 'iBrowe Local Data Updater',
+    list_text_component: {
+      component_id: 'afalakplffnnnlkncjhbmahjfjhmlkal'
+    }
+  }
+
   catalog.push(regionalItem)
   catalog.push(resourceItem)
+  catalog.push(dataUpdaterItem)
   await Promise.all(
     catalog.map(entry =>
       util.insertExtension(

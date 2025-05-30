@@ -62,10 +62,10 @@ const postNextVersionWork = (key, publisherProofKey, publisherProofKeyAlt, binar
 }
 
 const processDATFile = (binary, endpoint, region, key, publisherProofKey, publisherProofKeyAlt, localRun) => {
-  const originalManifest = getOriginalManifest()
-  const parsedManifest = util.parseManifest(originalManifest)
-  const id = util.getIDFromBase64PublicKey(parsedManifest.key)
-
+  // const originalManifest = getOriginalManifest()
+  // const parsedManifest = util.parseManifest(originalManifest)
+  // const id = util.getIDFromBase64PublicKey(parsedManifest.key)
+  const id = util.getFilenameFromPath(key)
   if (!localRun) {
     util.getNextVersion(endpoint, region, id).then((version) => {
       postNextVersionWork(key, publisherProofKey, publisherProofKeyAlt,
@@ -86,7 +86,6 @@ util.installErrorHandlers()
 
 util.addCommonScriptOptions(
   commander
-    .option('-d, --keys-directory <dir>', 'directory containing private keys for signing crx files')
     .option('-f, --key-file <file>', 'private key file for signing crx', 'key.pem')
     .option('-l, --local-run', 'Runs updater job without connecting anywhere remotely'))
   .parse(process.argv)
@@ -96,10 +95,8 @@ let keyParam = ''
 if (!commander.localRun) {
   if (fs.existsSync(commander.keyFile)) {
     keyParam = commander.keyFile
-  } else if (fs.existsSync(commander.keysDirectory)) {
-    keyParam = commander.keysDirectory
   } else {
-    throw new Error('Missing or invalid private key file/directory')
+    throw new Error('Missing or invalid private key file')
   }
 }
 

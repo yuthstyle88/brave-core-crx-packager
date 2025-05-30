@@ -6,13 +6,15 @@ import commander from 'commander'
 import fs from 'fs'
 import path from 'path'
 import util from '../lib/util.js'
+import 'dotenv/config'
+import ntpUtil from '../lib/ntpUtil.js'
 
 util.installErrorHandlers()
 
 commander
   .option('-d, --crx-directory <dir>', 'directory containing multiple crx files to upload')
   .option('-f, --crx-file <file>', 'crx file to upload', 'extension.crx')
-  .option('-e, --endpoint <endpoint>', 'DynamoDB endpoint to connect to', 'http://localhost:4566') // If setup locally, use http://localhost:8000
+  .option('-e, --endpoint <endpoint>', 'DynamoDB endpoint to connect to', 'http://localhost:4565') // If setup locally, use http://localhost:8000
   .option('-r, --region <region>', 'The AWS region to use', 'us-east-1')
   .parse(process.argv)
 
@@ -30,7 +32,7 @@ const uploadJobs = []
 if (fs.lstatSync(crxParam).isDirectory()) {
   fs.readdirSync(crxParam).forEach(file => {
     if (path.parse(file).ext === '.crx') {
-      const id = util.getFilenameFromPath(file)
+      const id = ntpUtil.generatePublicKeyAndID(file)
       const filePath = path.resolve(crxParam, file)
       const hash = util.generateSHA256HashOfFile(filePath)
       // Push Promise ที่ผลลัพธ์ของ isUpdateCRXFile ครอบคลุมทั้งฟังก์ชัน upload
@@ -44,7 +46,7 @@ if (fs.lstatSync(crxParam).isDirectory()) {
     }
   })
 } else {
-  const id = util.getFilenameFromPath(crxParam)
+  const id = ntpUtil.generatePublicKeyAndID(crxParam)
   const hash = util.generateSHA256HashOfFile(crxParam)
   uploadJobs.push(
     util.isUpdateCRXFile(commander.endpoint, commander.region, id, hash).then(isChanged => {

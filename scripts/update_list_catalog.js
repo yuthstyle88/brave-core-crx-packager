@@ -1,24 +1,15 @@
 import fs from 'fs'
 import path from 'path'
-import ntpUtil from '../lib/ntpUtil.js'
+import util from '../lib/util.js'
 
 const PROJECT_ROOT = path.resolve()
-const AD_BLOCK_PATH = './out-all-pem'
 const CATALOG_FILE = path.join(PROJECT_ROOT, 'list_catalog.json')
 
 // อ่าน public key จาก .pem file
-const getPublicKeyFromPem = (pemFile) => {
-  try {
-    const [publicKey] = ntpUtil.generatePublicKeyAndID(pemFile)
-    return publicKey
-  } catch (err) {
-    console.error(`Error getting public key from ${pemFile}:`, err)
-    return null
-  }
-}
 
 // อัพเดท list_catalog.json
-const update_list_catalog =  () => {
+// eslint-disable-next-line camelcase
+const update_list_catalog = () => {
   // อ่านไฟล์ catalog เดิม
   const catalog = JSON.parse(
     fs.readFileSync(
@@ -29,17 +20,10 @@ const update_list_catalog =  () => {
 
   // อัพเดทแต่ละ entry
   for (const entry of catalog) {
-    const componentId = entry.list_text_component.component_id
-    const pemFile = path.join(AD_BLOCK_PATH, `${componentId}.pem`)
-
-    if (fs.existsSync(pemFile)) {
-      const publicKey = getPublicKeyFromPem(pemFile)
-      if (publicKey) {
-        entry.list_text_component.base64_public_key = publicKey
-        console.log(`Updated public key for ${componentId}`)
-      }
-    } else {
-      console.warn(`No .pem file found for ${componentId}`)
+    const componentId = util.getIDFromBase64PublicKey(entry.list_text_component.base64_public_key)
+    if (componentId) {
+      entry.list_text_component.component_id = componentId
+      console.log(`Updated public key for ${componentId}`)
     }
   }
 
