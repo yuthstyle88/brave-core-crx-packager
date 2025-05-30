@@ -3,7 +3,7 @@
   "images": [
     {
       "name": "sunset_in_forest",
-      "source": "wallpapers/sunset.jpg",
+      "source": "wallpapers/sunset.png",
       "author": "John Doe",
       "link": "https://unsplash.com/photos/sunset",
       "originalUrl": "https://images.unsplash.com/photo-1234567890",
@@ -11,7 +11,7 @@
     },
     {
       "name": "mountain_view",
-      "source": "wallpapers/mountain.jpg",
+      "source": "wallpapers/mountain.png",
       "author": "Jane Smith",
       "link": "https://unsplash.com/photos/mountain",
       "originalUrl": "https://images.unsplash.com/photo-0987654321",
