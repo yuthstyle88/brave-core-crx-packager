@@ -46,7 +46,7 @@ if (fs.lstatSync(crxParam).isDirectory()) {
     }
   })
 } else {
-  const id = ntpUtil.generatePublicKeyAndID(crxParam)
+  const id = util.getFilenameFromPath(crxParam)
   const hash = util.generateSHA256HashOfFile(crxParam)
   uploadJobs.push(
     util.isUpdateCRXFile(commander.endpoint, commander.region, id, hash).then(isChanged => {
