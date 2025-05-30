@@ -18,13 +18,13 @@ const stageFiles = util.stageDir.bind(
   path.join(path.resolve(), 'build', 'ntp-background-images', 'resources'),
   getOriginalManifest())
 
-const generateManifestFile = (publicKey) => {
+const generateManifestFile = (publicKey, countryCode) => {
   const manifestFile = getOriginalManifest()
   const manifestContent = {
     description: 'iBrowe NTP background images component',
     key: publicKey,
     manifest_version: 2,
-    name: 'iBrowe NTP background images',
+    name: `iBrowe NTP background images [${countryCode}]`,
     version: '0.0.0'
   }
   fs.writeFileSync(manifestFile, JSON.stringify(manifestContent))
@@ -38,7 +38,7 @@ const generateCRXFile = (binary, endpoint, region, componentID, privateKeyFile,
   mkdirp.sync(stagingDir)
   mkdirp.sync(crxOutputDir)
   util.getNextVersion(endpoint, region, componentID).then((version) => {
-    const crxFile = path.join(crxOutputDir, 'mfekjlbfljomfliflcokbikdgiohocmn.crx')
+    const crxFile = path.join(crxOutputDir, `${componentID}.crx`)
     stageFiles(version, stagingDir)
     util.generateCRXFile(binary, crxFile, privateKeyFile, publisherProofKey,
       publisherProofKeyAlt, stagingDir)
@@ -50,7 +50,8 @@ util.installErrorHandlers()
 
 util.addCommonScriptOptions(
   commander
-    .option('-k, --key-file <file>', 'file containing private key for signing crx file'))
+    .option('-k, --key-file <file>', 'file containing private key for signing crx file')
+    .option('-c, --country-code <country>', 'Runs updater job without connecting anywhere remotely'))
   .parse(process.argv)
 commander.binary = process.env.BINARY
 commander.binary = process.env.BINARY
@@ -68,7 +69,7 @@ if (fs.existsSync(commander.keyFile)) {
 
 util.createTableIfNotExists(commander.endpoint, commander.region).then(() => {
   const [publicKey, componentID] = ntpUtil.generatePublicKeyAndID(privateKeyFile)
-  generateManifestFile(publicKey)
+  generateManifestFile(publicKey, commander.countryCode)
   generateCRXFile(commander.binary, commander.endpoint, commander.region,
     componentID, privateKeyFile, commander.publisherProofKey, commander.publisherProofKeyAlt)
 })
