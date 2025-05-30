@@ -20,7 +20,7 @@ const initDB = async (commander) => {
   const dataUpdaterItem = {
     title: 'iBrowe Local Data Updater',
     list_text_component: {
-      component_id: 'afalakplffnnnlkncjhbmahjfjhmlkal'
+      component_id: 'hpkcniamlhhhnnojaemlpmlkfjljakac'
     }
   }
 
