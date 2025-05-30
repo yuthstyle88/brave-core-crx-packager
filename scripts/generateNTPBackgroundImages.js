@@ -79,6 +79,7 @@ async function prepareAssets (jsonFileUrl, targetResourceDir) {
     const targetImageFilePath = path.join(targetResourceDir, imageFileName)
     const targetImageFileUrl = new URL(imageFileName, jsonFileUrl).href
     const response = await util.s3capableFetch(targetImageFileUrl)
+    mkdirp.sync(path.dirname(targetImageFilePath))
     const ws = fs.createWriteStream(targetImageFilePath)
     await finished(Readable.fromWeb(response.body).pipe(ws))
     console.log(`Downloaded ${targetImageFileUrl}`)
