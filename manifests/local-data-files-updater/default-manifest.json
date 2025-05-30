@@ -1,6 +1,6 @@
 {
   "description": "iBrowe Local Data Files Updater extension",
-  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn8zMYhHVD4WKJstAcA0GhA68Pj70C5KbNoRuHjCzmqa9oCnAeYD3I1R0el6WIux5YrciwFM6yQr0mThA4d2Y+gbbovHzXQZtO5NC+KVNLaSz4U19V+pOW2kZUqD+1mc9oJ8a9VjpnZXdiaBREMFyILLhGYT+X2yomp+5dqyCUz39zOB3mFyI6ZnNzwsxMN4e8q14OEGkSR6Ao51Cjqhhg7rIkiL8Gv2OZIAMt/hUlg2vhedbiUW9dgj0kuH29CT0lGxjMYCYht53UCqFfOZ3TQHHV4mldAHKqJlB5dio/afXmcSfeaPm5fVHkRnRS212BQizuV7+9OGKXHbLuZNomwIDAQAB",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwBjJiG/+8Jx/j7BNUs4RogBeNMGxj2JW9xYjGgvbkf6am0z+oU629yJAOT3oGOCySI0pTFa8O5u0CqX6oReT99SCEeT+QQlQEtDR+3fR7H+9mq+3coibIG6bZ+G/gZ1K5tFT5gSYWaQRuoCi+xMMx0z/r7ORU5ZMpWd6y2ZHDOFObx+vmGSO7NQpLicBVPRzJHsN8Atx2aOQ4he8enpg1nGlwk82Dcmz3DihXbwW8Vuqn72x+/1ocFT2DlKu1SfjyledaauQ5ihsju7G0fM5jcwI4UzONkBuT5NjtWGqnw2JFUiutjWbcGcriXc0sSeCqtAywXw5YicB8s0sjhJxIQIDAQAB",
   "manifest_version": 2,
   "name": "iBrowe Local Data Files Updater",
   "version": "0.0.0"

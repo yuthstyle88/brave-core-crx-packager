@@ -1,6 +1,6 @@
 {
   "description": "Leo Local Files Updater extension",
-  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqXqhMcE+3BcvgoqUqyyVbTlgelMTyWsJGo8vBoT7vOyMyDsFUMeu5piGrKQSvqqcPF43eLYYMAnoz4DI/o2INIl8Uba7Ae/kJG9y4dFj3RuG5UO/OuCWD//7QvE/hzgN6O5HLi2xW2D8Qm8c9rOLCFiGr7HvnfVuWxfS1GsIGmCwTUbCNv38zNwHji3bALlj9pKrayUU+fPuEFaQB2jFangZAqqa3ibw3xL3yHRw+64y8B9Yx7saIvoKlZiCxVvdhwdc5+MsONibSODAEi/FI1zByPJ/Hy9D7CsMU6A3p1VO3w1YnhPIv3ebuE7dSQ/36kRhztPDLwZaNX4tulFUBwIDAQAB",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2ZM6qDjS1DIi6rjZmJqWl7OtzVzCcBkIH9Yb17+oB7NbKzPap2Y07jENAUCem5gx7mtdCsXJDJQvhot7UMRBvfZbifB8Qc/LH2h4iLjzv+HW6ESoW0tjPBdNiNqMzdxOC46VxH7of6DhYHFDSHnsLhR0uJha8M4h5jmp2zTodjsi/UbFfrtGAtQ0s0IAEPYwdtmwBwwu/q5ksYkDpAcmrTMvJUsBguqZI0aKG841U/GQ+SVNvdYwW2FFBLJ8ViKVTZRQthsS/O1CnTwCpfnzzFFTC3p2gXJ0vkAlCMhZze0UaMtby1Quy8SqM3e1L9sj8JBRFyG5F44/h8Aer7P2pQIDAQAB",
   "manifest_version": 2,
   "name": "Leo Local Files Updater",
   "version": "0.0.0"
