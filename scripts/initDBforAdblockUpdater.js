@@ -49,5 +49,6 @@ util.addCommonScriptOptions(
   commander
     .option('-l, --local-run', 'Runs updater job without connecting anywhere remotely'))
   .parse(process.argv)
-
+commander.region = process.env.S3_REGION
+commander.endpoint = process.env.S3_ENDPOINT
 await processJob(commander)
