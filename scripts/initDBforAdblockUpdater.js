@@ -29,10 +29,17 @@ const initDB = async (commander) => {
       component_id: 'hgkbeeaccabnjfplcbbipalcbohmgknc'
     }
   }
+  const leoLocalModelsUpdater = {
+    title: 'Leo Local Files Updater',
+    list_text_component: {
+      component_id: 'ejhejjmaoaohpghnblcdcjilndkangfe'
+    }
+  }
   catalog.push(regionalItem)
   catalog.push(resourceItem)
   catalog.push(dataUpdaterItem)
   catalog.push(dataNTPItem)
+  catalog.push(leoLocalModelsUpdater)
   await Promise.all(
     catalog.map(entry =>
       util.insertExtension(
