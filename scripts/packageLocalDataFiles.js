@@ -43,7 +43,7 @@ const stageFiles = (version, outputDir) => {
   util.stageFiles(files, version, outputDir)
 }
 
-const postNextVersionWork = (key, publisherProofKey, publisherProofKeyAlt, binary, localRun, version) => {
+const postNextVersionWork = (publisherProofKey, publisherProofKeyAlt, binary, localRun, version) => {
   const componentType = 'local-data-files-updater'
   const datFileName = 'default'
   const stagingDir = path.join('build', componentType, datFileName)
@@ -51,7 +51,7 @@ const postNextVersionWork = (key, publisherProofKey, publisherProofKeyAlt, binar
   const crxFile = path.join(crxOutputDir, `${componentType}-${datFileName}.crx`)
   let privateKeyFile = ''
   if (!localRun) {
-    privateKeyFile = !fs.lstatSync(key).isDirectory() ? key : path.join(key, `${componentType}-${datFileName}.pem`)
+    privateKeyFile = path.join('out-all-pem', `${datFileName}.pem`)
   }
   stageFiles(version, stagingDir)
   if (!localRun) {
@@ -61,52 +61,43 @@ const postNextVersionWork = (key, publisherProofKey, publisherProofKeyAlt, binar
   console.log(`Generated ${crxFile} with version number ${version}`)
 }
 
-const processDATFile = (binary, endpoint, region, key, publisherProofKey, publisherProofKeyAlt, localRun) => {
+const processDATFile = (binary, endpoint, region, publisherProofKey, publisherProofKeyAlt, localRun) => {
   const originalManifest = getOriginalManifest()
   const parsedManifest = util.parseManifest(originalManifest)
   const id = util.getIDFromBase64PublicKey(parsedManifest.key)
 
   if (!localRun) {
     util.getNextVersion(endpoint, region, id).then((version) => {
-      postNextVersionWork(key, publisherProofKey, publisherProofKeyAlt,
+      postNextVersionWork(publisherProofKey, publisherProofKeyAlt,
         binary, localRun, version)
     })
   } else {
-    postNextVersionWork(key, publisherProofKey, publisherProofKeyAlt,
+    postNextVersionWork(publisherProofKey, publisherProofKeyAlt,
       binary, localRun, '1.0.0')
   }
 }
 
-const processJob = (commander, keyParam) => {
+const processJob = (commander) => {
   processDATFile(commander.binary, commander.endpoint, commander.region,
-    keyParam, commander.publisherProofKey, commander.publisherProofKeyAlt, commander.localRun)
+    commander.publisherProofKey, commander.publisherProofKeyAlt, commander.localRun)
 }
 
 util.installErrorHandlers()
 
 util.addCommonScriptOptions(
   commander
-    .option('-d, --keys-directory <dir>', 'directory containing private keys for signing crx files')
-    .option('-f, --key-file <file>', 'private key file for signing crx', 'key.pem')
     .option('-l, --local-run', 'Runs updater job without connecting anywhere remotely'))
   .parse(process.argv)
-
-let keyParam = ''
-
-if (!commander.localRun) {
-  if (fs.existsSync(commander.keyFile)) {
-    keyParam = commander.keyFile
-  } else if (fs.existsSync(commander.keysDirectory)) {
-    keyParam = commander.keysDirectory
-  } else {
-    throw new Error('Missing or invalid private key file/directory')
-  }
-}
+commander.binary = process.env.BINARY
+commander.region = process.env.S3_REGION
+commander.endpoint = process.env.S3_ENDPOINT
+commander.publisherProofKey = process.env.PUBLISHER_PROOF_KEY
+commander.verifiedContentsKey = process.env.VERIFIED_CONTENTS_KEY
 
 if (!commander.localRun) {
   util.createTableIfNotExists(commander.endpoint, commander.region).then(() => {
-    processJob(commander, keyParam)
+    processJob(commander)
   })
 } else {
-  processJob(commander, keyParam)
+  processJob(commander)
 }
