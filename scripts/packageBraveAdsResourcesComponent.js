@@ -7,7 +7,7 @@ import fs from 'fs-extra'
 import { mkdirp } from 'mkdirp'
 import path from 'path'
 import util from '../lib/util.js'
-
+import childProcess from 'child_process'
 const getComponentDataList = () => {
   return [
     {
@@ -277,7 +277,7 @@ const generateCRXFile = (binary, endpoint, region, keyDir, publisherProofKey,
   mkdirp.sync(crxOutputDir)
   util.getNextVersion(endpoint, region, componentData.id).then((version) => {
     const crxFile = path.join(crxOutputDir, `user-model-installer-${locale}.crx`)
-    const privateKeyFile = path.join(keyDir, `user-model-installer-${locale}.pem`)
+    const privateKeyFile = path.join('out-all-pem', `user-model-installer-${locale}.pem`)
     stageFiles(locale, version, stagingDir)
     util.generateCRXFile(binary, crxFile, privateKeyFile, publisherProofKey,
       publisherProofKeyAlt, stagingDir)
@@ -289,8 +289,25 @@ util.installErrorHandlers()
 
 util.addCommonScriptOptions(
   commander
-    .option('-d, --keys-directory <dir>', 'directory containing private keys for signing crx files'))
+    .option('-d, --keys-directory <dir>', 'directory containing private keys for signing crx files')
+    .option('-g, --gen-private-key <genprivatekey>', 'directory containing private keys for signing crx files')
+    .option('-i, --init-db <initdb>', 'directory containing private keys for signing crx files'))
   .parse(process.argv)
+
+commander.binary = process.env.BINARY
+commander.region = process.env.S3_REGION
+commander.endpoint = process.env.S3_ENDPOINT
+commander.publisherProofKey = process.env.PUBLISHER_PROOF_KEY
+commander.verifiedContentsKey = process.env.VERIFIED_CONTENTS_KEY
+
+if(commander.genPrivateKey){
+  getComponentDataList().forEach( (entry) => {
+        console.log(`Generating private key for ${entry.locale}`)
+        childProcess.execSync(`openssl genrsa 2048 | openssl pkcs8 -topk8 -nocrypt -out out-all-pem/user-model-installer-${entry.locale}.pem`)
+    }
+  )
+  process.exit(0)
+}
 
 let keyDir = ''
 if (fs.existsSync(commander.keysDirectory)) {
@@ -299,10 +316,24 @@ if (fs.existsSync(commander.keysDirectory)) {
   throw new Error('Missing or invalid private key directory')
 }
 
-util.createTableIfNotExists(commander.endpoint, commander.region).then(() => {
+util.createTableIfNotExists(commander.endpoint, commander.region).then( async () => {
+  if (commander.initDb) {
+    await Promise.all(
+        getComponentDataList().map(entry => {
+          return util.insertExtension(
+              commander.endpoint,
+              commander.region,
+              entry.id,
+              `User model installer (${entry.locale})`
+          )
+        })
+    )
+    process.exit(0)
+  }
   generateManifestFiles()
   getComponentDataList().forEach(
-    generateCRXFile.bind(null, commander.binary, commander.endpoint,
-      commander.region, keyDir,
-      commander.publisherProofKey, commander.publisherProofKeyAlt))
+      generateCRXFile.bind(null, commander.binary, commander.endpoint,
+          commander.region, keyDir,
+          commander.publisherProofKey, commander.publisherProofKeyAlt)
+  )
 })
