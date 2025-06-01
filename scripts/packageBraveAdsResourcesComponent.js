@@ -290,8 +290,7 @@ util.installErrorHandlers()
 util.addCommonScriptOptions(
   commander
     .option('-d, --keys-directory <dir>', 'directory containing private keys for signing crx files')
-    .option('-g, --gen-private-key <genprivatekey>', 'directory containing private keys for signing crx files')
-    .option('-i, --init-db <initdb>', 'directory containing private keys for signing crx files'))
+    .option('-g, --gen-private-key <genprivatekey>', 'directory containing private keys for signing crx files'))
   .parse(process.argv)
 
 commander.binary = process.env.BINARY
@@ -317,19 +316,6 @@ if (fs.existsSync(commander.keysDirectory)) {
 }
 
 util.createTableIfNotExists(commander.endpoint, commander.region).then( async () => {
-  if (commander.initDb) {
-    await Promise.all(
-        getComponentDataList().map(entry => {
-          return util.insertExtension(
-              commander.endpoint,
-              commander.region,
-              entry.id,
-              `User model installer (${entry.locale})`
-          )
-        })
-    )
-    process.exit(0)
-  }
   generateManifestFiles()
   getComponentDataList().forEach(
       generateCRXFile.bind(null, commander.binary, commander.endpoint,
