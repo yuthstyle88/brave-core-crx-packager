@@ -7,7 +7,6 @@ import fs from 'fs-extra'
 import { mkdirp } from 'mkdirp'
 import path from 'path'
 import util from '../lib/util.js'
-import ntpUtil from '../lib/ntpUtil.js'
 
 const getOriginalManifest = () => {
   return path.join(path.resolve(), 'build', 'ntp-background-images', 'ntp-background-images-manifest.json')
@@ -30,13 +29,18 @@ const generateManifestFile = (publicKey, countryCode) => {
   fs.writeFileSync(manifestFile, JSON.stringify(manifestContent))
 }
 
-const generateCRXFile = (binary, endpoint, region, componentID, privateKeyFile,
+const generateCRXFile = (binary, endpoint, region, privateKeyFile,
                          publisherProofKey, publisherProofKeyAlt) => {
   const rootBuildDir = path.join(path.resolve(), 'build', 'ntp-background-images')
   const stagingDir = path.join(rootBuildDir, 'staging')
   const crxOutputDir = path.join(rootBuildDir, 'output')
   mkdirp.sync(stagingDir)
   mkdirp.sync(crxOutputDir)
+  const manifestFile = getOriginalManifest()
+  const parsedManifest = util.parseManifest(manifestFile)
+  generateManifestFile(parsedManifest.key, commander.countryCode)
+  const componentID = util.getIDFromBase64PublicKey(parsedManifest.key)
+
   util.getNextVersion(endpoint, region, componentID).then((version) => {
     const crxFile = path.join(crxOutputDir, `${componentID}.crx`)
     stageFiles(version, stagingDir)
@@ -50,7 +54,6 @@ util.installErrorHandlers()
 
 util.addCommonScriptOptions(
     commander
-        .option('-k, --key-file <file>', 'file containing private key for signing crx file')
         .option('-c, --country-code <country>', 'Runs updater job without connecting anywhere remotely'))
     .parse(process.argv)
 commander.binary = process.env.BINARY
@@ -61,15 +64,17 @@ commander.publisherProofKey = process.env.PUBLISHER_PROOF_KEY
 commander.publisherProofKeyAlt = process.env.PUBLISHER_PROOF_KEY_ALT
 commander.verifiedContentsKey = process.env.VERIFIED_CONTENTS_KEY
 let privateKeyFile = ''
-if (fs.existsSync(commander.keyFile)) {
-  privateKeyFile = commander.keyFile
-} else {
+
+if(commander.countryCode){
+  privateKeyFile = `out-all-pem/user-model-installer-iso_3166_1_${commander.countryCode}.pem`
+}
+
+if (!privateKeyFile) {
   throw new Error('Missing or invalid private key')
 }
 
 util.createTableIfNotExists(commander.endpoint, commander.region).then(() => {
-  const [publicKey, componentID] = ntpUtil.generatePublicKeyAndID(privateKeyFile)
-  generateManifestFile(publicKey, commander.countryCode)
+
   generateCRXFile(commander.binary, commander.endpoint, commander.region,
-      componentID, privateKeyFile, commander.publisherProofKey, commander.publisherProofKeyAlt)
+      privateKeyFile, commander.publisherProofKey, commander.publisherProofKeyAlt)
 })

@@ -16,7 +16,7 @@ import util from '../lib/util.js'
 // Downloads the current (platform-specific) Tor client from S3
 const downloadTorClient = (platform) => {
   const torPath = path.join('build', 'tor-client-updater', 'downloads')
-  const torS3Prefix = process.env.S3_DEMO_TOR_PREFIX
+  const torS3Prefix = process.env.S3_DEMO_TOR_PREFIX || 's3://ibrowe-tor-client/'
 
   const torVersion = '0.4.8.14'
   const braveVersion = '0'
@@ -28,16 +28,16 @@ const downloadTorClient = (platform) => {
 
   switch (platform) {
     case 'darwin':
-      sha512Tor = 'ba9d2321ff9004d064cfa8f01789761bca4e92068fa50ed3125dccd5ba13ebd6dd385e83254f50879a4217b98a2e6b16dfc98a8432d146d62c71a312b5a5f6a7'
+      sha512Tor = '9b0ef744a868ddf9a682ed774398c063313525961b767114ff2d4eb4ae06409af0638de4f1491a817accf196944491e47969714ae29b822ed145853c0e3ecf62'
       break
-    case 'linux':
-      sha512Tor = '6968d8f8211aa643539e9cecadbb4d6f2ba53beda7814b984a76785babbc66987813a4e8d2dd9953422051972c8cdc34ae07ce405570149b927876200f9cfb95'
-      break
+    // case 'linux':
+    //   sha512Tor = '6968d8f8211aa643539e9cecadbb4d6f2ba53beda7814b984a76785babbc66987813a4e8d2dd9953422051972c8cdc34ae07ce405570149b927876200f9cfb95'
+    //   break
     case 'linux-arm64':
-      sha512Tor = '63aab8871d82114788701b3771172dddeebff6f36011a5d22040dbadd7e66c0f93f0a11905987dd7166156303610824bad01fe9ea8dba3021e7a86ad13ea7939'
+      sha512Tor = 'a20d1dee0761a0582d988aed4797a1be2392ccbfdd1193507f1279d9bcac781dae000164babbade7a5ad83afad6dc653b178736b3ab3641e1b2ca50e25439956'
       break
     case 'win32':
-      sha512Tor = '97dac1de3bcf2f99ba618df997e8d2f0a33b3bd50e70321acb409a59345ffd9826907bceaf1e2c0ae23b0e3c0b35d2dc9d34e3eff1c20089c9087bb61d441833'
+      sha512Tor = '183f5cd8d406fc729be54d1bcfb682ba46952a179e3b59ba35b5fe6e9955873b22a7ba00c20da30ea292d92316339c8ced0a0caa01fdb968c7f4cd179bc6e97c'
       break
     default:
       throw new Error('Tor client download failed; unrecognized platform: ' + platform)
@@ -46,7 +46,7 @@ const downloadTorClient = (platform) => {
   mkdirp.sync(torPath)
 
   const torClient = path.join(torPath, torFilename)
-  const cmd = 'aws s3 cp ' + torURL + ' ' + torClient
+  const cmd = 'aws --endpoint-url http://localhost:4565 s3 cp ' + torURL + ' ' + torClient
 
   // Download the client
   execSync(cmd)
@@ -111,6 +111,11 @@ util.addCommonScriptOptions(
     .option('-f, --key-file <file>', 'private key file for signing crx', 'key.pem'))
   .parse(process.argv)
 
+commander.binary = process.env.BINARY
+commander.region = process.env.S3_REGION
+commander.endpoint = process.env.S3_ENDPOINT
+commander.publisherProofKey = process.env.PUBLISHER_PROOF_KEY
+commander.verifiedContentsKey = process.env.VERIFIED_CONTENTS_KEY
 let keyParam = ''
 
 if (fs.existsSync(commander.keyFile)) {
@@ -122,7 +127,7 @@ if (fs.existsSync(commander.keyFile)) {
 }
 
 util.createTableIfNotExists(commander.endpoint, commander.region).then(() => {
-  for (const platform of ['darwin', 'linux', 'linux-arm64', 'win32']) {
+  for (const platform of ['darwin', 'linux-arm64', 'win32']) {
     packageTorClient(commander.binary, commander.endpoint, commander.region,
       platform, keyParam, commander.publisherProofKey, commander.publisherProofKeyAlt)
   }

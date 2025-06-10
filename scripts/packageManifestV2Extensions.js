@@ -7,7 +7,7 @@ import fs from 'fs'
 import unzip from 'unzip-crx-3'
 import path from 'path'
 import commander from 'commander'
-import glob from 'glob'
+import { glob } from 'glob'
 import util from '../lib/util.js'
 import crx from '../lib/crx.js'
 
@@ -88,11 +88,12 @@ const packageV2Extension = (
 
   const processExtension = async () => {
     const sources = await downloadExtension(config)
-    const extensionKeyFile = path.join(keysDir, `${extensionName}-key.pem`)
+    const extensionKeyFile = path.join(keysDir, `${extensionName}.pem`)
     crx
       .generateCrx(sources.unpacked, extensionKeyFile, [], verifiedContentsKey)
       .then((extension) => {
-        if (id !== util.getIDFromBase64PublicKey(extension.manifest.key)) {
+        const testId = util.getIDFromBase64PublicKey(extension.manifest.key)
+        if (id !== testId) {
           throw new Error(`${extensionName} invalid extension key used.`)
         }
 
@@ -131,7 +132,11 @@ util
       )
   )
   .parse(process.argv)
-
+commander.binary = process.env.BINARY
+commander.region = process.env.S3_REGION
+commander.endpoint = process.env.S3_ENDPOINT
+commander.publisherProofKey = process.env.PUBLISHER_PROOF_KEY
+commander.verifiedContentsKey = process.env.VERIFIED_CONTENTS_KEY
 let keysDir = ''
 if (fs.existsSync(commander.keysDirectory)) {
   keysDir = commander.keysDirectory
