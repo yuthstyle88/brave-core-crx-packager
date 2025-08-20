@@ -16,7 +16,7 @@ services:
   localstack:
     ports:
       - "${PORT_S3:-4566}:4566"
-    image: localstack/localstack
+    image: localstack/localstack:4.6
     environment:
       - SERVICES=${LOCALSTACK_SERVICES:-s3,dynamodb}
       - DEBUG=${LOCALSTACK_DEBUG:-1}
@@ -28,7 +28,7 @@ services:
     security_opt:
       - no-new-privileges:true
     healthcheck:
-      test: "curl -s localhost:${PORT_S3:-4566}/_localstack/init/ready | fgrep '\"completed\": true'"
+      test: ["CMD-SHELL", "curl -s localhost:${PORT_S3:-4566}/_localstack/init/ready | fgrep '\"completed\": true'"]
       interval: 5s
       retries: 10
       timeout: 10s
